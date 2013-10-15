@@ -15,18 +15,20 @@
 // .span2		170px
 // .span1		80px
 
+
+
 .container,
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container
-  width: 1070px
+  width: 1100px
 
 .g-menu
+  +casp_b
   a
-    color: #34373f
+    color: #fff
     font-size: 12px
     font-weight: bold
-    +text-shadow(0 1px 0 white)
     text-decoration: none
     &:hover
       text-decoration: underline
@@ -36,7 +38,13 @@
   li
     float: left
     margin-right: 20px
-
+    &.active
+      a
+        background: #2d93a6
+        padding: 5px
+        @include border-radius(10px)
+        @include background-clip(padding-box)
+        background-color: #2d93a5
 .page
   margin-top: 30px
   margin-bottom: 20px
@@ -703,6 +711,12 @@
     +background-image(linear-gradient(lighten(#898d8f, 2%), lighten(#6b6f71, 20%)))
     +transition(all 0.3s ease-in-out)
     +box-shadow(0 1px 2px #282a2c)
+
+.g-btn-green
+  +background-image(linear-gradient(#86aa63, #527d2c))
+  color: #FFF
+  text-transform: none
+  text-shadow: none
 
 .btn-mini
   padding: 0 6px

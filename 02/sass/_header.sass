@@ -3,7 +3,7 @@
 // Header
 
 .header
-  background: url("../img/bg.jpg") 100% 0% #e6eff3
+  background: url('../img/icons/header-bg.png') 0 0 repeat
   padding-top: 20px
 
 .header__topper
@@ -44,13 +44,15 @@
   a
     color: #33373f
     font-size: 60px
+    +casp_b
     font-weight: bold
     text-decoration: none
     &:hover
       text-decoration: none
 
 .header__description
-  color: #9caeb6
+  +casp_it
+  color: #34373f
   font-size: 18px
   font-style: italic
 
@@ -58,7 +60,8 @@
   vertical-align: top
   display: inline-block
   margin-top: 28px
-  color: #33373f
+  +casp
+  color: #fff
   font-size: 24px
   p
     &:last-child
@@ -68,26 +71,42 @@
   .navbar-inner
     padding-left: 0
     padding-right: 0
-    background-color: #5491b1
-    background-image: none
+    -webkit-border-radius: 4px 4px 0 0
+    border-radius: 4px 4px 0 0
     border: none
-    box-shadow: 0 1px 0 #1f5774
+    overflow: hidden
+    background-color: #55b1c1
+    @include box-shadow(inset 0 1px 0 #a4dfea)
+    +background-image(linear-gradient(#55b1c1, #71bdcb))
   .divider-vertical
     margin: 0
-    border-left: 1px solid #4784a4
-    border-right: 1px solid #4784a4
+    border-left: none
+    border-right: none
   .nav
+    padding: 0 20px
     li
+      position: relative
+      &:first-child
+        &:before
+          content: none
+      &:before
+        content: ""
+        width: 2px
+        height: 14px
+        background: #4aa8b8
+        @include box-shadow(inset -1px 0px 0 #85cdda)
+        position: absolute
+        left: 0px
+        top: 50%
+        margin-top: -7px
       a
-        color: #fff
-        text-shadow: 0 1px 0 #2f576c
+        +casp_b
+        color: #eff3f4
+        font-size: 18px
+        @include text-shadow(0 1px 0 #3e8390)
+        letter-spacing: 0.8px
         &:hover
           color: #fff
-          text-shadow: 0 1px 0 #2f576c
-          background-color: #3c7c9d
-      &:first-child
-        a
-          +border-radius(4px 0 0 4px)
     .active
       a
         // &:first-child{
@@ -119,50 +138,88 @@
 .header__filter
   padding: 0 15px
   font-size: 12px
-  +background-image(linear-gradient(#c26762, #b3423c))
+  background: #919ca4
+  +casp
+
+  .header__filter-top
+    height: 57px
+    padding: 0 15px
+    margin: -10px -15px 10px
+    +background-image(linear-gradient(#919ca4, #909ba3, #818d95))
+    @include box-shadow(0 1px 0 #748088, 0 2px 0 #a4adb4)
   .h1
     color: #fff
-    font-size: 18px
+    font-size: 24px
     font-weight: normal
-    text-transform: uppercase
-    +text-shadow(0 1px 0 rgba(106, 25, 21, 0.75))
+    line-height: 57px
+    +text-shadow(0 1px 0 #454f57)
+
   .header__filter-item-heading
-    color: #f6e9e8
+    color: #f0f4f5
     font-size: 12px
     font-weight: normal
+    margin: 0
 
 .header__filter-add
   margin-top: 10px
 
 .header__filter-advanced
-  float: left
-  width: 50%
-  a
-    color: #fff
-    text-decoration: none
-    &:hover
-      text-decoration: underline
-
-.header__filter-btn
   float: right
   width: 50%
   text-align: right
-  .g-btn
-    text-transform: uppercase
-    +text-shadow(0 1px 0 rgba(146, 93, 0, 0.75))
+  padding-right: 15px
+  position: relative
+  text-decoration: underline
+  +box
+  &:after
+    content: ""
+    width: 0px
+    height: 0px
+    border-style: solid
+    border-width: 3px 0 3px 5px
+    border-color: transparent transparent transparent #fff
+    position: absolute
+    right: 0
+    top: 50%
+    margin-top: -3px
+  &:hover
+    text-decoration: none
+  a
+    color: #fff
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+.header__filter-btn
+  float: left
+  width: 47%
+  text-align: left
   .icon-search
     +sized-sprite($icons, ico_search)
     margin-right: 10px
+  .btn-success
+    width: 100%
+    height: 39px
+    +border-radius(12px)
+    @include box-shadow(0 1px 0 #7f8e89, inset 0 1px 0 rgba(182, 197, 205, 0.75))
+    +background-image(linear-gradient(#86aa63, #527d2c))
+    color: #FFF
+    text-shadow: none
+    background-color: #527d2c
 
 .header__filter-long
   width: 100%
+  color: #3a3c3e
+  +casp_b
 
 .header__filter-short
+  width: 47%
+  float: right
+  color: #3a3c3e
+  +casp_b
   &:first-child
     margin-left: 0
     float: left
-  width: 47%
-  float: right
 
 .header__promo
   position: relative
@@ -192,6 +249,11 @@
   padding: 8px 10px
   color: #fff
   font-size: 12px
+  @include opacity(.9)
+  @include border-radius(0 0 5px 5px)
+  @include background-clip(padding-box)
+  background-color: #eff3f5
+  @include box-shadow(0 1px 0 #fff)
 
 .header__promo-left
   float: left
@@ -279,3 +341,4 @@
       border: 1px solid #fff
   .header__testimonials-text
     overflow: hidden
+
