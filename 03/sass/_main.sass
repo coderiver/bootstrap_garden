@@ -1,0 +1,80 @@
+@import base
+
+// Styles
+
+// .span12		1070px
+// .span11		980px
+// .span10		890px
+// .span9		800px
+// .span8		710px
+// .span7		620px
+// .span6		530px
+// .span5		440px
+// .span4		350px
+// .span3		260px
+// .span2		170px
+// .span1		80px
+
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container
+	width: 980px
+
+// carousel
+.carousel
+	margin-bottom: 0
+.carousel-control
+	display: none
+.carousel-indicators
+	position: absolute
+	bottom: 30px
+	top: auto
+	right: 30px
+	left: auto
+	li
+		display: inline-block
+		background: #fff
+		width: 12px
+		height: 12px
+		+border-radius(50%)
+	li.active
+		background: #dd542c
+.item__block
+	position: absolute
+	bottom: 30px
+	left: 0px
+	width: 350px
+	+box
+	padding: 30px
+	background: #c43a13
+.item__table
+	margin: 20px 0
+.item__left
+	font-size: 11px
+	color: #d59286
+.item__right
+	font-size: 16px
+	color: #fff 	 		 
+.item__bottom
+	+clr
+.item__price	
+	float: left
+	font-size: 20px
+	+casp_b
+	color: #f6c20c
+.item__more
+	position: relative
+	top: 3px
+	float: right
+	text-transform: uppercase
+	font: bold 11px Arial, sans-serif
+	color: #fff
+	text-decoration: underline
+	&:hover
+		color: #fff
+		text-decoration: none
+.filters
+	padding: 30px 50px 30px 30px
+				
+			
