@@ -162,6 +162,8 @@
 
 .header__filter-add
   margin-top: 10px
+  line-height: 45px
+  overflow: hidden
 
 .header__filter-advanced
   float: right
@@ -196,16 +198,7 @@
   text-align: left
   .icon-search
     +sized-sprite($icons, ico_search)
-    margin-right: 10px
-  .btn-success
-    width: 100%
-    height: 39px
-    +border-radius(12px)
-    @include box-shadow(0 1px 0 #7f8e89, inset 0 1px 0 rgba(182, 197, 205, 0.75))
-    +background-image(linear-gradient(#86aa63, #527d2c))
-    color: #FFF
-    text-shadow: none
-    background-color: #527d2c
+    margin-right: 20px
 
 .header__filter-long
   width: 100%
@@ -224,11 +217,15 @@
 .header__promo
   position: relative
   .h1
-    color: #ffa100
+    color: #08778c
     font-size: 24px
     font-weight: normal
     line-height: 1
-
+  .item
+    height: 400px
+  .carousel-indicators
+    top: initial
+    bottom: 110px
 .header__promo-image
   position: absolute
   top: 0
@@ -240,35 +237,44 @@
     display: block
 
 .header__promo-info
+
+.header__promo-text
   position: absolute
   bottom: 0
   left: 0
   right: 0
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  margin-bottom: 0
   z-index: 1
   background-color: rgba(53, 59, 61, 0.8)
   padding: 8px 10px
-  color: #fff
+  color: #141516
   font-size: 12px
   @include opacity(.9)
   @include border-radius(0 0 5px 5px)
   @include background-clip(padding-box)
   background-color: #eff3f5
   @include box-shadow(0 1px 0 #fff)
-
 .header__promo-left
   float: left
   width: 175px
   margin-right: 10px
+  +casp
   td
     &:first-child
       width: 80px
 
 .header__promo-right
   overflow: hidden
+  padding-bottom: 3px
 
 .header__promo-price
   font-size: 22px
-  +text-shadow(0 -1px 0 black)
+  color: #e24d12
+  +casp_b
   margin-bottom: 10px
 
 .header__staff
