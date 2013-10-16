@@ -63,10 +63,9 @@
 	font-size: 20px
 	+casp_b
 	color: #f6c20c
-.item__more
+.link
 	position: relative
 	top: 3px
-	float: right
 	text-transform: uppercase
 	font: bold 11px Arial, sans-serif
 	color: #fff
@@ -74,7 +73,122 @@
 	&:hover
 		color: #fff
 		text-decoration: none
-.filters
+.link_orange
+	color: #c43a13
+	text-transform: none
+	&:hover
+		color: #c43a13		
+.l-filters
 	padding: 30px 50px 30px 30px
-				
-			
+	+clr
+	background: #f2f1ef 
+	.h2
+		float: left
+	.link
+		float: right
+		color: #c43a13
+.filters
+	clear: both
+	+clr
+	margin-top: 36px
+.filter__item
+	float: left
+	width: 120px
+	margin-left: 18px
+	p
+		height: 14px
+		margin: 0px 0px 2px
+		font-size: 12px
+	&:first-child
+		margin-left: 0
+	input
+		width: 196px
+		+casp_b
+		color: #292b2c	
+	select
+		width: 120px
+		+casp_b
+		color: #292b2c 	
+.filter__item_long
+	width: 210px 
+.l-article
+	@include border-radius(0 0 10px 10px)
+	background-color: #464b54
+	@include box-shadow(0 1px 3px rgba(115,127,140,.42))
+.article
+	+box
+	padding: 30px 0px 30px 30px
+	p
+		margin: 20px 0 30px
+		color: #caccd1
+.l-popular
+	padding-left: 80px
+.popular
+	a
+		+casp_b
+		font-size: 13px
+		text-decoration: underline
+		color: #424b5a
+		&:hover
+			text-decoration: none		
+.comment_img
+	width: 89px
+	height: 99px
+	margin-right: 20px
+.comment__text
+	width: 211px		  
+.quote
+	font: italic 12px Arial, sans-serif
+	color: #393d3e
+	line-height: 1.8
+.page_bg
+	position: relative
+	border-top: 1px solid #d5d4d4
+	background: #ebe9e7
+	&:before
+		content: ""
+		position: absolute
+		top: 1px
+		width: 100%
+		height: 1px
+		background: #fff   
+.l-preoperties
+	padding: 30px 0
+	.h1
+		color: #141516
+		font-weight: bold
+.preoperties
+	margin-top: 30px
+.preoperties__main
+	margin: 20px 0 0
+	padding-bottom: 8px
+	border-bottom: 1px solid #d3d0cd
+	+casp_b
+	p
+		margin: 0
+.preoperties__img
+	display: block						
+.preoperties__adress
+	font-size: 16px
+	color: #c53b14
+	&:hover
+		color: #c53b14
+.preoperties__price
+	font-size: 14px
+	color: #424b5a
+.preoperties__info
+	padding: 15px 0 0
+	border-top: 1px solid #fff
+	li
+		margin-bottom: 8px
+		padding-left: 0
+		p
+			margin: 0
+			line-height: 1.2 
+.preoperties__type
+	font-size: 11px
+	color: #979694
+.preoperties__value
+	+casp_b
+	font-size: 13px
+	color: #424b5a				

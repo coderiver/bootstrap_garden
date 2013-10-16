@@ -8,19 +8,33 @@
 
 * { margin: 0; padding: 0; }
 
-ul, ol { list-style: none; }
+ul, ol { list-style: none; margin: 0; }
 
 button::-moz-focus-inner { padding: 0; border: 0; }
 
 input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
-.h1 { font-size: 26px; color: white; font-weight: normal; line-height: 1; margin: 0; }
+.button { width: 94px; text-transform: uppercase; }
 
-.h2 { font-size: 18px; color: white; font-weight: normal; line-height: 1; text-transform: uppercase; margin: 0; }
+.h1 { display: inline-block; font-size: 26px; color: white; font-weight: normal; line-height: 1; margin: 0; }
+
+.h1_up { font-size: 24px; text-transform: uppercase; }
+
+.h2 { font-size: 18px; font-weight: normal; color: #141516; line-height: 1; text-transform: uppercase; margin: 0; }
 
 .blue { color: #1a9cd9; }
 
 .filters { background: #f2f1ef; }
+
+.link-more { display: inline-block; height: 20px; line-height: 20px; padding: 0 11px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; background: #1379a9; -webkit-box-shadow: 0 1px 0 #0b4866, inset 0 1px 0 rgba(75, 169, 213, 0.39); -moz-box-shadow: 0 1px 0 #0b4866, inset 0 1px 0 rgba(75, 169, 213, 0.39); box-shadow: 0 1px 0 #0b4866, inset 0 1px 0 rgba(75, 169, 213, 0.39); color: white; }
+.link-more:hover { text-decoration: none; }
+
+.box { padding: 25px 0; }
+
+.box__inner { margin-top: 20px; }
+
+.img-box { -moz-box-sizing: border-box; box-sizing: border-box; padding: 3px; background-color: white; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.19); -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.19); box-shadow: 0 0 3px rgba(0, 0, 0, 0.19); }
+.img-box img { width: 100%; height: 100%; }
 
 @font-face { font-family: "Conv_Casper_B"; src: url("../fonts/Casper_B.eot"); src: local("☺"), url("../fonts/Casper_B.woff") format("woff"), url("../fonts/Casper_B.ttf") format("truetype"), url("../fonts/Casper_B.svg") format("svg"); font-weight: normal; font-style: normal; }
 
@@ -62,10 +76,71 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
 .item__price { float: left; font-size: 20px; font-family: "Conv_Casper_B", Arial, sans-serif; color: #f6c20c; }
 
-.item__more { position: relative; top: 3px; float: right; text-transform: uppercase; font: bold 11px Arial, sans-serif; color: white; text-decoration: underline; }
-.item__more:hover { color: white; text-decoration: none; }
+.link { position: relative; top: 3px; text-transform: uppercase; font: bold 11px Arial, sans-serif; color: white; text-decoration: underline; }
+.link:hover { color: white; text-decoration: none; }
 
-.filters { padding: 30px 50px 30px 30px; }
+.link_orange { color: #c43a13; text-transform: none; }
+.link_orange:hover { color: #c43a13; }
+
+.l-filters { padding: 30px 50px 30px 30px; background: #f2f1ef; }
+.l-filters:before, .l-filters:after { content: ""; display: table; }
+.l-filters:after { clear: both; }
+.l-filters .h2 { float: left; }
+.l-filters .link { float: right; color: #c43a13; }
+
+.filters { clear: both; margin-top: 36px; }
+.filters:before, .filters:after { content: ""; display: table; }
+.filters:after { clear: both; }
+
+.filter__item { float: left; width: 120px; margin-left: 18px; }
+.filter__item p { height: 14px; margin: 0px 0px 2px; font-size: 12px; }
+.filter__item:first-child { margin-left: 0; }
+.filter__item input { width: 196px; font-family: "Conv_Casper_B", Arial, sans-serif; color: #292b2c; }
+.filter__item select { width: 120px; font-family: "Conv_Casper_B", Arial, sans-serif; color: #292b2c; }
+
+.filter__item_long { width: 210px; }
+
+.l-article { -webkit-border-radius: 0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -ms-border-radius: 0 0 10px 10px; -o-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px; background-color: #464b54; -webkit-box-shadow: 0 1px 3px rgba(115, 127, 140, 0.42); -moz-box-shadow: 0 1px 3px rgba(115, 127, 140, 0.42); box-shadow: 0 1px 3px rgba(115, 127, 140, 0.42); }
+
+.article { -moz-box-sizing: border-box; box-sizing: border-box; padding: 30px 0px 30px 30px; }
+.article p { margin: 20px 0 30px; color: #caccd1; }
+
+.l-popular { padding-left: 80px; }
+
+.popular a { font-family: "Conv_Casper_B", Arial, sans-serif; font-size: 13px; text-decoration: underline; color: #424b5a; }
+.popular a:hover { text-decoration: none; }
+
+.comment_img { width: 89px; height: 99px; margin-right: 20px; }
+
+.comment__text { width: 211px; }
+
+.quote { font: italic 12px Arial, sans-serif; color: #393d3e; line-height: 1.8; }
+
+.page_bg { position: relative; border-top: 1px solid #d5d4d4; background: #ebe9e7; }
+.page_bg:before { content: ""; position: absolute; top: 1px; width: 100%; height: 1px; background: white; }
+
+.l-preoperties { padding: 30px 0; }
+.l-preoperties .h1 { color: #141516; font-weight: bold; }
+
+.preoperties { margin-top: 30px; }
+
+.preoperties__main { margin: 20px 0 0; padding-bottom: 8px; border-bottom: 1px solid #d3d0cd; font-family: "Conv_Casper_B", Arial, sans-serif; }
+.preoperties__main p { margin: 0; }
+
+.preoperties__img { display: block; }
+
+.preoperties__adress { font-size: 16px; color: #c53b14; }
+.preoperties__adress:hover { color: #c53b14; }
+
+.preoperties__price { font-size: 14px; color: #424b5a; }
+
+.preoperties__info { padding: 15px 0 0; border-top: 1px solid white; }
+.preoperties__info li { margin-bottom: 8px; padding-left: 0; }
+.preoperties__info li p { margin: 0; line-height: 1.2; }
+
+.preoperties__type { font-size: 11px; color: #979694; }
+
+.preoperties__value { font-family: "Conv_Casper_B", Arial, sans-serif; font-size: 13px; color: #424b5a; }
 
 @font-face { font-family: "Conv_Casper_B"; src: url("../fonts/Casper_B.eot"); src: local("☺"), url("../fonts/Casper_B.woff") format("woff"), url("../fonts/Casper_B.ttf") format("truetype"), url("../fonts/Casper_B.svg") format("svg"); font-weight: normal; font-style: normal; }
 
@@ -81,8 +156,8 @@ body { font-family: "Conv_Casper_R", Arial, sans-serif; font-size: 13px; color: 
 
 .header__topper { height: 37px; background: #2f3339; }
 
-.header__socials ul { margin: 8px 0; }
-.header__socials li { list-style: none; display: inline-block; vertical-align: top; margin-left: 5px; }
+.header__socials ul, .footer__socials ul { margin: 8px 0; }
+.header__socials li, .footer__socials li { list-style: none; display: inline-block; vertical-align: top; margin-left: 5px; }
 
 .social { font: 0/0 a; text-shadow: none; color: transparent; display: block; }
 
@@ -123,32 +198,30 @@ body { font-family: "Conv_Casper_R", Arial, sans-serif; font-size: 13px; color: 
 
 @font-face { font-family: "Conv_Casper_R"; src: url("../fonts/Casper_R.eot"); src: local("☺"), url("../fonts/Casper_R.woff") format("woff"), url("../fonts/Casper_R.ttf") format("truetype"), url("../fonts/Casper_R.svg") format("svg"); font-weight: normal; font-style: normal; }
 
-.footer__topper { height: 300px; }
-.footer__topper .h1 { color: #393d3e; font-size: 16px; line-height: 1; margin-top: 0; }
+.footer { height: 300px; background: url(../img/footer-bg.jpg); }
 
-.footer__info { margin-top: 20px; }
+.footer__inner { padding: 27px 0; }
+.footer__inner .h2 { text-transform: none; color: #ebe9e7; margin-bottom: 15px; }
+.footer__inner input { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background: #716765; -webkit-box-shadow: inset 0 1px 1px #48403d; -moz-box-shadow: inset 0 1px 1px #48403d; box-shadow: inset 0 1px 1px #48403d; color: white; border: none; }
+.footer__inner input.placeholder { color: white; }
+.footer__inner input:-moz-placeholder { color: white; }
+.footer__inner input::-webkit-input-placeholder { color: white; }
 
-.footer__menu { margin-top: 40px; }
+.footer__form { float: left; width: 230px; margin-right: 18px; }
 
-.footer__contact td { font-size: 14px; }
-.footer__contact td:first-child { width: 60px; color: #8d877e; font-size: 12px; font-weight: normal; display: inline-block; }
+.contact__name { font-size: 12px; color: #f3f5f7; }
 
-.footer__socials { margin-top: 40px; }
-.footer__socials ul { margin: 0; }
-.footer__socials li { list-style: none; display: inline-block; vertical-align: top; margin-left: 5px; }
-.footer__socials .social__fb { background: url('../img/icons-sf63e3a927b.png') 0 -316px no-repeat; width: 30px; height: 30px; }
-.footer__socials .social__tw { background: url('../img/icons-sf63e3a927b.png') 0 -66px no-repeat; width: 30px; height: 30px; }
-.footer__socials .social__gp { background: url('../img/icons-sf63e3a927b.png') 0 -140px no-repeat; width: 30px; height: 30px; }
+.contact__value { font-size: 14px; font-family: "Conv_Casper_B", Arial, sans-serif; color: #2d2624; }
 
-.footer__staff { margin-top: 20px; }
-.footer__staff .h1 { font-size: 20px; }
-.footer__staff .footer__staff-image { float: left; width: 100px; margin-right: 5px; }
-.footer__staff .footer__staff-image img { border: 1px solid white; }
-.footer__staff .footer__staff-text { overflow: hidden; padding-left: 5px; }
+.footer__menu a { font-size: 14px; color: #373737; }
 
-.footer__content { height: 35px; position: relative; bottom: 0; padding: 10px 0 20px; background-color: white; }
+.footer__bot { padding-top: 22px; border-top: 1px solid #877d7a; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.footer__copyright { color: #8d877f; font-family: "Myriad Pro"; font-size: 12px; }
+.footer__logo { display: inline-block; margin-right: 50px; }
+
+.copyrights { font-size: 12px; color: #454240; }
+
+.footer__socials ul { margin: 6px 0; }
 
 @font-face { font-family: "Conv_Casper_B"; src: url("../fonts/Casper_B.eot"); src: local("☺"), url("../fonts/Casper_B.woff") format("woff"), url("../fonts/Casper_B.ttf") format("truetype"), url("../fonts/Casper_B.svg") format("svg"); font-weight: normal; font-style: normal; }
 
@@ -160,8 +233,6 @@ body { font-family: "Conv_Casper_R", Arial, sans-serif; font-size: 13px; color: 
 
 html, body { height: 100%; }
 
-#push { height: 365px; }
+#push { height: 300px; }
 
-#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -364px; }
-
-#footer { height: 365px; position: relative; background-color: #f2efea; -webkit-box-shadow: inset 0 2px 15px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 15px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 15px rgba(0, 0, 0, 0.05); }
+#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -300px; }
