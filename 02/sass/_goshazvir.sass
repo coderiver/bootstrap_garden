@@ -27,3 +27,38 @@
   font-size: 14px
   +casp_b
   +placeholder(#b9c2c2)
+
+.link-more
+  position: relative
+  font-size: 11px
+  font-weight: bold
+  color: #A4BFC5
+  &:after
+    content: ""
+    width: 0px
+    height: 0px
+    border-style: solid
+    border-width: 3px 0 3px 5px
+    border-color: transparent transparent transparent #a4bfc5
+    position: absolute
+    right: -10px
+    top: 50%
+    margin-top: -2px
+  &:hover
+    color: #A4BFC5
+
+.carousel-indicators
+  top: initial
+  bottom: 110px
+
+.carousel_mini
+  .header__promo-text
+    padding: 12px 10px 40px
+  .carousel-indicators
+    right: initial
+    left: 5px
+    bottom: 13px
+  .header__promo-text-in
+    display: block
+    .g-btn2
+      position: relative
