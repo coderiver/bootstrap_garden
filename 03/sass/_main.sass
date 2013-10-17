@@ -40,6 +40,12 @@
 		+border-radius(50%)
 	li.active
 		background: #dd542c
+.item__img
+	height: 400px
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%    		
 .item__block
 	position: absolute
 	bottom: 30px
@@ -50,12 +56,16 @@
 	background: #c43a13
 .item__table
 	margin: 20px 0
+	li
+		min-height: 1px 
 .item__left
 	font-size: 11px
 	color: #d59286
+	min-height: 1px!important  
 .item__right
 	font-size: 16px
-	color: #fff 	 		 
+	color: #fff
+	min-height: 1px!important   	 		 
 .item__bottom
 	+clr
 .item__price	
@@ -77,7 +87,22 @@
 	color: #c43a13
 	text-transform: none
 	&:hover
-		color: #c43a13		
+		color: #c43a13
+.agent__info
+	padding: 20px 20px 13px
+	background: #ebe9e7
+	font: 12px Arial, sans-serif
+	line-height: 1.6
+	p
+		margin: 0 
+.agent__name
+	margin: 0 
+	+casp_b
+	font-size: 24px
+	color: #464b54
+.agent__img
+	width: 100%
+	height: 100%  	
 .l-filters
 	padding: 30px 50px 30px 30px
 	+clr
@@ -103,10 +128,6 @@
 		margin-left: 0
 	input
 		width: 196px
-		+casp_b
-		color: #292b2c	
-	select
-		width: 120px
 		+casp_b
 		color: #292b2c 	
 .filter__item_long
@@ -177,6 +198,7 @@
 	font-size: 14px
 	color: #424b5a
 .preoperties__info
+	position: relative
 	padding: 15px 0 0
 	border-top: 1px solid #fff
 	li
@@ -191,4 +213,124 @@
 .preoperties__value
 	+casp_b
 	font-size: 13px
-	color: #424b5a				
+	color: #424b5a
+	
+// preoperty
+
+.sidebar
+	padding-top: 32px
+	margin-bottom: 50px
+.sidebar__title
+	margin: 0px 0px 25px
+	+casp_b
+	font-size: 20px
+	color: #464b54
+	line-height: 1 
+.contact-agent
+	padding: 20px 20px 30px
+	margin-bottom: 40px
+	+border-radius(10px)
+	background-color: #ebe9e7
+	+box-shadow(0 1px 3px rgba(115,127,140,.42))
+.contact-agent__img
+	width: 88px
+	height: 98px
+	margin-right: 9px
+.contact-agent__text
+	width: 100px
+	font-size: 16px
+	color: #464b54
+	p
+		margin: 15px 0 8px 	
+.agent-link
+	+casp_b
+	color: #f24b1b
+	font-size: 18px
+.contact-agent__reting
+	i
+		display: inline-block
+.contact-agent__form
+	margin-top: 30px		
+.contact-agent__input
+	width: 182px!important
+.sidebar__similar
+	margin-bottom: 20px
+	.preoperties__img
+		display: block
+		+box
+		padding: 3px
+		img
+			width: 100%
+			height: 100%  
+	.preoperties__main
+		margin: 20px 10px 0
+	.preoperties__info
+		border-top: none
+		margin: 0 10px
+.l-preoperties__info
+	position: relative
+.preoperties__more
+	position: absolute
+	top: 15px
+	right: 10px
+	+box
+	padding-top: 3px
+	+box-shadow(0 1px 0 #fff, inset 0 1px 0 rgba(202,208,210,.28))
+	background: #d9dee0
+	font: 11px Arial, sans-serif
+	color: #2f3339 
+	z-index: 2
+	&:hover
+		color: #2f3339
+.l-sidebar__similar
+	padding-bottom: 20px
+	background: #fff
+	border-radius: 2px
+	+box-shadow(0 0 3px rgba(0,0,0,.19))
+.similar__more
+	padding: 0 10px
+.content
+	padding: 32px 0 0 10px
+	margin-bottom: 50px
+	.h1
+		margin-bottom: 20px
+		color: #c53b14
+.content__tabs
+	position: relative
+.montly
+	position: absolute
+	top: 0px
+	right: 0px
+	cursor: pointer
+	padding: 0px 20px 0 45px
+.payment
+	position: absolute
+	top: 7px
+	left: 15px
+	+s(ico_payment)				
+.tabs
+	li
+		margin-right: 5px
+		border-radius: 3px 3px 0 0
+		+box
+		border: 1px solid #cfcfcf
+		background: #fff
+		a
+			padding: 11px 12px
+			border: none
+			margin-right: 0
+			font: bold 11px Arial, sans-serif
+			color: #2f3339
+			text-transform: uppercase
+	li.active
+		border-bottom: 1px solid #f3f5f7
+		a
+			background: #f3f5f7
+			border: none
+			&:hover
+				border: none
+				 		
+
+
+
+
