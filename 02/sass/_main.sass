@@ -21,7 +21,7 @@
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container
-  width: 1100px
+  width: 1090px
 
 .g-menu
   +casp_b
@@ -53,12 +53,18 @@
     font-size: 26px
     font-weight: bold
     display: inline-block
-
+.page__sidebar
+  border-left: 1px solid #cdd3d5
+  @include box-shadow(inset 1px 0px 0 #fff)
+  margin: -10px 0 -20px
+  padding: 10px 0
+  .h1
+    padding-left: 30px
+    +casp_b
 .page__sidebar-nav
   ul
     margin: 0 0 10px 0
-    padding: 10px 0
-    background: #e3e8ea
+    padding: 0px 0 10px
     +border-radius(5px)
   li
     position: relative
@@ -67,35 +73,34 @@
     cursor: pointer
     border-top: 1px solid transparent
     border-bottom: 1px solid transparent
-    padding: 5px 0 5px 30px
-    &:before
-      +sized-sprite($icons, page_nav_li)
-      position: absolute
-      top: 14px
-      left: 15px
-      content: ""
-    &:hover
-      background: #f0f4f5
-      border-top: 1px solid #d6dee2
-      border-bottom: 1px solid #d6dee2
-      +box-shadow(0 1px white, inset 0 1px white)
-      &:before
-        +sized-sprite($icons, page_nav_lih)
-        position: absolute
-        top: 14px
-        left: 15px
-        content: ""
-      a
-        color: #0d77ae
-        &:hover
-          text-decoration: none
-          color: #0d77ae
+    padding: 0px 30px 0px 10px
   a
     text-decoration: none
-    color: #393d3e
+    color: #9da0a1
     width: 100%
     display: inline-block
     font-size: 12px
+    padding: 5px 0 5px 20px
+    position: relative
+    background-color: transparent
+    +casp
+    &:hover
+      background-color: #a5c1c7
+      @include border-radius(10px)
+      @include box-shadow(0 1px 0 #fff, inset 0 1px 0 #90adb4)
+      color: #FFF
+      &:after
+        content: ""
+        width: 0px
+        height: 0px
+        border-style: solid
+        border-width: 3px 0 3px 5px
+        border-color: transparent transparent transparent #fff
+        position: absolute
+        right: 20px
+        top: 50%
+        margin-top: -3px
+
   .link-orange
     color: #ffa100
     text-align: right
@@ -106,15 +111,17 @@
   font-size: 14px
 
 .properties
+  +casp
   .h1
-    color: #0d76ad
+    display: block
+    color: #141516
     font-size: 16px
-    font-weight: bold
+    +casp_b
     a
-      color: #0d76ad
+      color: #141516
       font-size: 16px
-      font-weight: bold
       text-decoration: none
+      +casp_b
       &:hover
         text-decoration: underline
   table
@@ -122,7 +129,6 @@
     td
       color: #393d3d
       font-size: 14px
-      font-weight: bold
       &:first-child
         width: 75px
         color: #818587
@@ -133,14 +139,19 @@
     .h1
       float: left
       width: 250px
-      color: #393d3d
+      color: #e04e24
       font-size: 26px
       font-weight: bold
       display: inline-block
-    .properties__nav
+      +casp_b
+    .properties__link
       float: left
       width: 100px
       margin-left: 10px
+      padding-top: 20px
+    .properties__nav
+      float: right
+      text-align: right
       padding-top: 20px
       .properties__nav-prev
         +sized-sprite($icons, pag_prev)
@@ -153,32 +164,28 @@
         display: inline-block
         cursor: pointer
         content: ""
-    .properties__link
-      float: right
-      text-align: right
-      padding-top: 20px
-      a
-        color: #b3423d
 
 .properties__item
   margin-bottom: 25px
+  .h1
+    line-height: 1
 
 .properties__image
   position: relative
-  border: 1px solid #b0b5b7
   +border-radius(3px)
   +background-clip(padding-box)
   background-color: #fff
-  padding: 2px
+  padding: 3px
   height: 155px
   img
     height: 100%
     width: 100%
 
 .properties__price
-  color: #818587
-  font-size: 16px
-  font-weight: bold
+  margin: 10px 0
+  color: #141516
+  font-size: 14px
+  +casp
 
 .contactagent
   padding: 20px
@@ -555,8 +562,8 @@
 .label-sold
   +sized-sprite($icons, label_sold)
   position: absolute
-  top: -1px
-  right: -1px
+  top: 10px
+  right: 10px
   content: ""
 
 .buildlist__title
@@ -689,6 +696,9 @@
     text-decoration: none
     +transition(all 0.3s ease-in-out)
     +box-shadow(none)
+  &:active
+    +transition(all 0s)
+    @include box-shadow(inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05))
 .g-btn2
   line-height: 20px
   text-align: center
@@ -770,6 +780,7 @@
     outline: none
 .btn_col-black
   color: $col-black
+.btn_arr
   padding: 2px 25px 2px 10px
   position: relative
   &:after
@@ -783,11 +794,17 @@
     right: 11px
     top: 50%
     margin-top: -3px
+.btn_col-blue
+  color: $col-blue
+
 .btn_bg-red
   background: #e47656
   &:hover, &:active, &:focus
     background: #d47356
     outline: none
+.btn_bg-gray
+  background: #e1e7e9
+
 //slider
 
 .building__photo

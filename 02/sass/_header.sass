@@ -1,9 +1,7 @@
 @import lib/base
 
 // Header
-
 .header
-  background: url('../img/icons/header-bg.png') 0 0 repeat
   padding-top: 20px
 
 .header__topper
@@ -68,11 +66,14 @@
       margin-bottom: 0
 
 .navbar
+  @include box-shadow(0 1px 3px #2d3a1d)
+  -webkit-border-radius: 10px 10px 0 0
+  border-radius: 10px 10px 0 0
   .navbar-inner
     padding-left: 0
     padding-right: 0
-    -webkit-border-radius: 4px 4px 0 0
-    border-radius: 4px 4px 0 0
+    -webkit-border-radius: 10px 10px 0 0
+    border-radius: 10px 10px 0 0
     border: none
     overflow: hidden
     background-color: #55b1c1
@@ -221,11 +222,17 @@
     font-size: 24px
     font-weight: normal
     line-height: 1
+    padding: 6px 0
+    border-bottom: 1px solid #babfc2
+    @include box-shadow(0 1px 0 #fff)
+
   .item
     height: 400px
   .carousel-indicators
     top: initial
     bottom: 110px
+  #myCarousel
+    margin-bottom: 0
 .header__promo-image
   position: absolute
   top: 0
@@ -236,46 +243,49 @@
     width: 100%
     display: block
 
-.header__promo-info
-
 .header__promo-text
   position: absolute
   bottom: 0
   left: 0
   right: 0
-  position: absolute
-  bottom: 0
-  left: 0
-  right: 0
-  margin-bottom: 0
   z-index: 1
-  background-color: rgba(53, 59, 61, 0.8)
-  padding: 8px 10px
+  padding: 12px 20px
+  margin-bottom: 0
+  background-color: #eff3f5
   color: #141516
   font-size: 12px
   @include opacity(.9)
   @include border-radius(0 0 5px 5px)
   @include background-clip(padding-box)
-  background-color: #eff3f5
   @include box-shadow(0 1px 0 #fff)
+.header__promo-text-in
+  display: inline-block
+  position: relative
 .header__promo-left
   float: left
   width: 175px
   margin-right: 10px
   +casp
   td
+    margin-bottom: 8px
+    display: inline-block
     &:first-child
       width: 80px
 
 .header__promo-right
   overflow: hidden
   padding-bottom: 3px
+  text-align: right
+  .g-btn2
+    position: absolute
+    right: 0
+    bottom: 0
 
 .header__promo-price
-  font-size: 22px
+  font-size: 30px
   color: #e24d12
-  +casp_b
   margin-bottom: 10px
+  +casp_b
 
 .header__staff
   .h1
@@ -310,13 +320,23 @@
 .header__testimonials
   margin-bottom: 20px
   p
-    color: #818586
-    font-size: 14px
+    color: #4e5357
+    font-size: 13px
+    font-family: "Arial", "Helvetica CY", "Nimbus Sans L" sans-serif
     +text-shadow(0 1px 0 white)
   .h1
-    color: #393d3d
-    font-size: 26px
-    font-weight: bold
+    color: #141516
+    font-size: 22px
+    +casp_b
+
+.header__welcome-top,
+.header__about-top,
+.header__testimonials-top
+  h1
+    float: left
+  .g-btn
+    float: right
+    margin: 20px 0
 
 .header__testimonials
   blockquote
@@ -334,11 +354,9 @@
     font-style: normal
     font-family: "Arial Black", "Helvetica CY", "Nimbus Sans L" sans-serif
   blockquote p:after
-    content: ""
+    content: '”'
   blockquote p:before
-    content: ""
-  .h1
-    color: #707b80
+    content: '“'
   .header__testimonials-image
     float: left
     width: 100px

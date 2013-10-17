@@ -137,3 +137,13 @@ input[type="submit"]::-moz-focus-inner
 
 /* variable */
 $col-black: #220e08
+$col-blue: #15799a
+
+// placeholder color
+@mixin placeholder($color)
+  &.placeholder
+    color: $color
+  &:-moz-placeholder
+    color: $color
+  &::-webkit-input-placeholder
+    color: $color

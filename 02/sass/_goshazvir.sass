@@ -5,10 +5,25 @@
   background: #fff
   margin-left: 0
   padding: 10px
+  background-color: #eff3f5
+  @include border-radius(10px)
+  @include box-shadow(0 1px 3px #2d3a1d)
   +box
+
+.cont_header
+  @include border-radius(0 0 10px 10px)
+
+.cont__in
+  margin-left: -10px
 
 .carousel-indicators
   .active
     background: #2d93a6
   li
     background: #bcbebe
+
+.input
+  color: #b9c2c2
+  font-size: 14px
+  +casp_b
+  +placeholder(#b9c2c2)

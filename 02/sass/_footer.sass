@@ -5,10 +5,11 @@
 .footer__topper
   height: 300px
   .h1
-    color: #393d3e
+    color: #f0f4f5
     font-size: 16px
     line-height: 1
     margin-top: 0
+    +casp_b
   // .btn-warning{
   // 	text-transform: uppercase;
   // }
@@ -18,16 +19,24 @@
 
 .footer__menu
   margin-top: 40px
+  a
+    &:hover
+      text-decoration: none
+      color: #e47656
+      +casp_b
 
 .footer__contact
   td
     font-size: 14px
+    color: #b9c2c2
+    +casp
+    a
+      color: #b9c2c2
   td:first-child
     width: 60px
-    color: #8d877e
     font-size: 12px
-    font-weight: normal
-    display: inline-block
+    font-weight: normal 
+    display: inline-block 
 
 .footer__socials
   margin-top: 40px
@@ -64,9 +73,9 @@
   position: relative
   bottom: 0
   padding: 10px 0 20px
-  background-color: #fff
 
 .footer__copyright
-  color: #8d877f
+  color: #b9c2c2
   font-family: "Myriad Pro"
   font-size: 12px
+  +casp
