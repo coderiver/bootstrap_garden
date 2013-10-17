@@ -57,14 +57,15 @@
   margin-top: 0
   .cont
     +border-radius(0 0 10px 10px)
-.page__sidebar
-  border-left: 1px solid #cdd3d5
-  @include box-shadow(inset 1px 0px 0 #fff)
-  margin: -10px 0 -20px
-  padding: 10px 0
   .h1
     padding-left: 30px
     +casp_b
+
+.page__sidebar
+  padding-left: 15px
+  .h1
+    margin-left: 15px
+
 .page__sidebar-nav
   ul
     margin: 0 0 10px 0
@@ -77,16 +78,18 @@
     cursor: pointer
     border-top: 1px solid transparent
     border-bottom: 1px solid transparent
-    padding: 0px 30px 0px 10px
+    padding: 0px
   a
     text-decoration: none
     color: #9da0a1
     width: 100%
     display: inline-block
     font-size: 12px
-    padding: 5px 0 5px 20px
+    padding: 5px 0 5px 25px
+    margin-left: -10px
     position: relative
     background-color: transparent
+    +box
     +casp
     &:hover
       background-color: #a5c1c7
@@ -322,14 +325,14 @@
 
 .building
   .h1
-    color: #0e77ae
+    color: #393d3e
     font-size: 26px
     font-weight: normal
-    margin-top: 0
-    line-height: 1
+    +casp_b
 
 .building__topper
   position: relative
+  margin-top: 10px
 
 .building__nav
 
@@ -356,6 +359,9 @@
     +sized-sprite($icons, ico_payment)
     margin-right: 5px
 
+.building__payment_green
+  background-color: #5b7f37
+
 .building__text
   color: #818586
   font-size: 14px
@@ -364,8 +370,9 @@
 .building__infrastructure
   margin-top: 20px
   .h1
-    font-size: 26px
+    font-size: 20px
     color: #393d3e
+    +casp_b
 
 .building__info
   @extend %clr
@@ -385,9 +392,10 @@
     width: 100%
     margin: 0
     margin-bottom: 10px
+    color: #08788d
+    +casp_b
   ul
     margin: 0
-    margin-bottom: 10px
   li
     list-style: none
   dl
@@ -396,19 +404,24 @@
   dt
     float: left
     width: 75px
-    color: #818587
+    color: #828587
     font-size: 12px
     font-weight: normal
+    line-height: 1.3
+    +casp
   dd
     overflow: hidden
-    color: #393d3d
+    color: #393d3e
     font-size: 14px
     font-weight: bold
+    line-height: 1.3
+    +casp_b
 
 .building__map
+  +border-radius(5px)
   img
     width: 100%
-  +border-radius(5px)
+    border: 3px solid #fff
 
 .building__labels
   margin-top: 20px
@@ -434,7 +447,7 @@
     position: absolute
     +sized-sprite($icons, input_ico)
     left: 0
-    top: 2px
+    top: 6px
     line-height: 16px
   .building__icons
     margin-top: -5px
@@ -831,7 +844,6 @@
     text-align: center
     height: 270px
     line-height: 270px
-    border: 1px solid #b0b5b7
     +border-radius(6px)
     padding: 4px
     margin-bottom: 10px
@@ -861,15 +873,14 @@
       height: 60px
       float: left
       margin: 0 5px 0 0
-      border: 1px solid #b1b5b7
       border-radius: 3px
       padding: 2px
       line-height: 48px
+      background-color: #fff
       cursor: pointer
       +opacity(0.55)
       &:hover, &.active
-        border-color: #ff9900
-        background-color: #ff9900
+        background-color: #56b1c2
         +opacity(1)
       img
         width: 100%

@@ -62,3 +62,29 @@
     display: block
     .g-btn2
       position: relative
+
+.nav-pills_mod > li > a
+  background: #FFF
+
+.nav-pills_mod > .active > a
+  background-color: #e47656
+
+.border-right
+  padding: 10px
+  margin: -10px 0
+  position: relative
+  +box
+  &:after, &:before
+    content: ""
+    width: 1px
+    position: absolute
+    top: -1000px
+    bottom: -1000px
+  &:after
+    right: -1px
+    background: #fff
+  &:before
+    right: 0
+    background: #cdd3d5
+
+
