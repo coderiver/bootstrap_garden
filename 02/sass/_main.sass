@@ -797,11 +797,24 @@
 .btn_col-blue
   color: $col-blue
 
+.btn_col-white
+  color: #fff
+  +casp_b
+
 .btn_bg-red
   background: #e47656
   &:hover, &:active, &:focus
     background: #d47356
     outline: none
+
+.btn_bg-green
+
+  border: 1px solid #4f7b29
+  background-color: #51813e
+  @include box-shadow(0 2px 0 rgba(56,87,28,.2), inset 0 1px 0 #86aa63, inset 0 0 5px rgba(106,146,67,.57))
+  @include background-image(linear-gradient(bottom, #4c7a26 0%, #5d7f39 100%))
+
+
 .btn_bg-gray
   background: #e1e7e9
 
