@@ -330,6 +330,201 @@
 			&:hover
 				border: none
 				 		
+//slider
+.building__gallery
+	margin-bottom: 20px
+.building__photo
+	+clr
+	.building__media
+		text-align: center
+		float: left
+		width: 615px
+		height: 506px
+		line-height: 270px
+		img
+			vertical-align: middle
+			text-align: center
+			width: 100%
+			height: 100%
+			display: block
+.building__thumbs
+	position: relative
+	float: left
+	width: 101px
+	+box
+	padding: 5px
+	background: #000  
+	.caro
+		height: 70px
+		width: 100%
+		height: 432px
+		overflow: hidden
+		position: relative
+	
+	ul
+		margin: 0
+		left: 0!important
+		position: absolute
+		height: 20000em
+		list-style: none
+		li
+			height: 70px
+			float: left
+			margin: 0 0 2px 0
+			cursor: pointer
+			@include opacity(.55)
+			&:hover, &.active
+				border-color: #ff9900
+				background-color: #ff9900
+				@include opacity(1)
+			img
+				width: 100%
+				height: 100%
+				vertical-align: middle
+.slide__arrow-prev
+	position: relative
+	display: block
+	height: 32px
+	+opacity(1)
+	cursor: pointer
+	+no-sel
+	i
+		position: absolute
+		top: 9px
+		left: 39px
+		+s(slide-prev)
+	&.disabled
+		+opacity(.2)
+.slide__arrow-next
+	position: relative
+	display: block
+	height: 32px
+	+opacity(1)
+	cursor: pointer
+	+no-sel
+	i
+		position: absolute
+		top: 9px
+		left: 39px
+		+s(slide-next)
+	&.disabled
+		+opacity(.2)
+.l-building__param
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 55px
+		left: 228px
+		bottom: 25px
+		width: 1px
+		background: #c5c5c4		
+.building__param
+	padding: 0 0 25px 20px
+	overflow: hidden
+	+box
+	
+	.building__param-price
+		font-size: 26px
+		+casp_b
+		display: block
+		width: 100%
+		margin: 0
+		margin-bottom: 10px
+		color: #c53b14
+	ul
+		margin: 0
+		margin-bottom: 10px
+	li
+		list-style: none
+	dl
+		@extend %clr
+		margin: 0
+	dt
+		float: left
+		width: 75px
+		color: #818587
+		font-size: 12px
+		font-weight: normal
+	dd
+		overflow: hidden
+		color: #393d3d
+		font-size: 14px
+		font-weight: bold
+	.building__descr
+		margin: 50px 0 0
+		padding: 0 18px
+		font: 12px Arial, sans-serif
+		color: #464b54  
+		p
+			line-height: 2
+.building__infrastructure
+	padding-top: 20px
+	.sidebar__title
+		padding-left: 20px			
+.building__map
+	img
+		width: 100%
+	+border-radius(5px)
+.building__labels
+	margin-top: 20px
+	padding-left: 20px
+	+clr
+	ul
+		margin: 0
+		margin-right: 20px
+		float: left
+		width: 160px
+	li
+		list-style: none
+	input
+		width: 15px
+		height: 15px
+		opacity: 0
+		position: relative
+		z-index: 2
+		cursor: pointer
+	input:checked + i.icon-ckeckbox-arrow
+		@include sized-sprite($icons, input_checked_ico)
+	input:checked
+		color: #ccc
+	.icon-ckeckbox-arrow
+		position: absolute
+		@include sized-sprite($icons, input_ico)
+		left: 0
+		top: 2px
+		line-height: 16px
+	.building__icons
+		margin-top: -5px
+		margin-right: 5px
+		display: inline-block
+		vertical-align: middle
+	.g-icon-school
+		+s(ico_school)
+	.g-icon-hschool 
+		+s(ico_hschool)
+	.g-icon-hospital 
+		+s(ico_hospital)
+	.g-icon-police
+		+s(ico_police)
+	.g-icon-fire 
+		+s(ico_fire)
+	.g-icon-shops 
+		+s(ico_shops)
+	.g-icon-restoraunt 
+		+s(ico_restoraunt)
+	.g-icon-market 
+		+s(ico_market)
+	.g-icon-airports 
+		+s(ico_airports)
+	.checkbox
+		display: inline-block
+		color: #3a3c3e
+		font-size: 14px
+		cursor: pointer
+		position: relative			
+	
+	
 
 
 
