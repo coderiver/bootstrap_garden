@@ -488,12 +488,14 @@
     position: relative
 
 .refine
-  +border-radius(5px)
-  background-color: #e3e8ea
+  background-color: #919ca4
   color: #3a3c3e
+  margin: -10px -20px -20px -31px
+  padding-top: 10px
+  position: relative
+  z-index: 100
 
 .refine__item
-  +box-shadow(0 1px #d6dee2, 0 2px #f8fafb)
   padding: 15px 20px
   select
     margin-bottom: 0
@@ -524,55 +526,86 @@
     width: 80%
 
 .buildlist
+  padding: 20px 20px 0
+  +box
   .h1
-    color: #393d3d
+    color: #393d3e
     font-size: 26px
     margin: 0
     margin-bottom: 20px
+    padding-left: 0
     line-height: 1
+    +casp_b
 
 .buildlist__item
-  margin-bottom: 20px
+  padding: 20px 0
+  overflow: hidden
+  +box-shadow(0 1px #d6dee2, 0 2px #f8fafb)
 
 .buildlist__meta
   margin-bottom: 10px
+  line-height: 40px
 
 .buildlist__count
-  color: #393d3e
+  color: #e47656
   font-size: 14px
   margin-right: 15px
-  span
-    color: #b3433d
+  +casp_b
 
 .buildlist__showing-page
-  color: #818587
+  color: #393d3e
   font-size: 14px
   strong
     color: #393d3e
+    +casp_b
 
 .buildlist__topper
   @extend %clr
   margin-bottom: 10px
+  .nav
+    margin-bottom: 0
+  .nav-pills > li
+    a
+      background-color: #fff
+  .nav-pills > .active
+    a
+      background-color: #e47656
 
-.buildlist__nav
-  float: left
-  width: 50%
+.buildlist__info
+  overflow: hidden
 
 .buildlist__sort
   float: right
   width: 230px
   text-align: right
 
-.buildlist__price
-  color: #818587
-  font-size: 16px
-  font-weight: bold
-  margin-bottom: 5px
+.buildlist__top
+  @extend %clr
+  .buildlist__title
+    float: left
+    color: #141516
+    font-size: 16px
+    font-weight: bold
+    margin-bottom: 5px
+    +casp_b
+    a
+      color: #141516
+      font-size: 16px
+      font-weight: bold
+      text-decoration: none
+      +casp_b
+      &:hover
+        text-decoration: underline
+  .buildlist__price
+    float: right
+    color: #141516
+    font-size: 16px
+    margin-bottom: 5px
+    +casp_b
 
 .buildlist__media
   position: relative
   float: left
-  border: 1px solid #b0b5b7
   +border-radius(3px)
   +background-clip(padding-box)
   background-color: #fff
@@ -591,18 +624,7 @@
   right: 10px
   content: ""
 
-.buildlist__title
-  color: #0d76ad
-  font-size: 16px
-  font-weight: bold
-  margin-bottom: 5px
-  a
-    color: #0d76ad
-    font-size: 16px
-    font-weight: bold
-    text-decoration: none
-    &:hover
-      text-decoration: underline
+
 
 .buildlist__params
   @extend %clr
@@ -618,22 +640,23 @@
     @extend %clr
   dt,dd
     float: left
+    +casp
   dt
     width: 90px
-    color: #818587
+    color: #141516
     font-size: 12px
     font-weight: normal
   dd
-    color: #393d3d
+    color: #141516
     font-size: 14px
-    font-weight: bold
 
 .buildlist__buttons
   @extend %clr
 
 .g-pagination
+  width: 435px
   position: relative
-  margin: 60px 0
+  margin: 30px 0
   .inactive
     +opacity(0.8)
     cursor: default
@@ -661,38 +684,34 @@
     display: inline-block
   li
     float: left
-    margin-right: 5px
+    margin-right: 20px
     list-style: none
-    color: #8a8c8c
-    font-size: 11px
-    +border-radius(50%)
-    border: 1px solid #a0a2a3
-    width: 20px
-    height: 20px
+    color: #67696a
+    font-size: 18px
     text-align: center
+    +casp
     &.active
-      border: 1px solid #b3423d
-      background-color: #b3423d
       color: #fbf6f6
+      color: #e04e24
+      +casp_b
       a
-        color: #fbfbfb
+        color: #e04e24
     &:hover
-      border: 1px solid #b3423d
-      background-color: #b3423d
-      color: #fbf6f6
+      color: #e04e24
       a
-        color: #fbfbfb
+        color: #e04e24
     a
-      color: #8a8c8c
+      color: #67696a
       text-decoration: none
       width: 100%
       height: 100%
       display: inline-block
+      +casp
       &:hover
         text-decoration: none
   li.g-pagination__more
-    border: none
-    color: #8a8c8c
+    color: #67696a
+    +casp
     &:hover
       background: none
       cursor: default
@@ -838,9 +857,11 @@
   @include box-shadow(0 2px 0 rgba(56,87,28,.2), inset 0 1px 0 #86aa63, inset 0 0 5px rgba(106,146,67,.57))
   @include background-image(linear-gradient(bottom, #4c7a26 0%, #5d7f39 100%))
 
-
 .btn_bg-gray
   background: #e1e7e9
+
+.btn_uppercase
+  text-transform: uppercase
 
 //slider
 
@@ -913,3 +934,60 @@
     +opacity(1)
     &.disabled
       +opacity(0.2)
+
+// select
+.select
+  position: relative
+  height: 30px
+  +box
+  +border-radius(3px)
+  background: #fff
+  +box-shadow(0 1px 0 #fff, inset 0 0 0 1px #cfcfcf)
+  select
+    position: absolute
+    top: 0px
+    left: 0px
+    right: 0px
+    width: 100%
+    +opacity(0)
+    +casp_b
+    color: #292b2c
+    z-index: 2
+  .select__arrow
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    width: 28px
+    +border-radius(0 3px 3px 0)
+    background: #f0f4f5
+    +box-shadow(0 1px 0 #fff, inset 0 0 0 1px #cfcfcf)
+    &:after
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      margin: -4px 0 0 -6px
+      +sized-sprite($icons, select)
+.select__value
+  line-height: 30px
+  text-align: left
+  +box
+  padding: 0 33px 0 5px
+
+.map
+  padding-left: 10px
+  color: #454647
+  font-family: "Arial", sans-serif
+  font-size: 11px
+  text-decoration: underline
+  position: relative
+  &:hover
+    color: #454647
+    text-decoration: none
+  &:after
+    content: ""
+    +sized-sprite($icons, ico_map)
+    position: absolute
+    top: 2px
+    left: 0
