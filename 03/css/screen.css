@@ -231,7 +231,7 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
 .payment { position: absolute; top: 7px; left: 15px; background: url('../img/icons-s2a15dc24aa.png') 0 -787px no-repeat; width: 16px; height: 16px; }
 
-.tabs li { margin-right: 5px; border-radius: 3px 3px 0 0; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #cfcfcf; background: white; }
+.tabs li { margin-right: 5px; min-width: 96px; text-align: center; border-radius: 3px 3px 0 0; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #cfcfcf; background: white; }
 .tabs li a { padding: 11px 12px; border: none; margin-right: 0; font: bold 11px Arial, sans-serif; color: #2f3339; text-transform: uppercase; }
 .tabs li.active { border-bottom: 1px solid #f3f5f7; }
 .tabs li.active a { background: #f3f5f7; border: none; }
