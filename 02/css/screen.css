@@ -215,8 +215,9 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
 .buildlist__topper { margin-bottom: 10px; }
 .buildlist__topper .nav { margin-bottom: 0; }
-.buildlist__topper .nav-pills > li a { background-color: white; }
-.buildlist__topper .nav-pills > .active a { background-color: #e47656; }
+.buildlist__topper .nav-tabs { border-bottom: none; }
+.buildlist__topper .nav-pills > li a { background-color: white; line-height: 1; border: none; }
+.buildlist__topper .nav-pills > .active a { background-color: #e47656; line-height: 1; border: none; }
 
 .buildlist__info { overflow: hidden; }
 
@@ -387,6 +388,8 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 .border-right:after, .border-right:before { content: ""; width: 1px; position: absolute; top: -1000px; bottom: -1000px; }
 .border-right:after { right: -1px; background: white; }
 .border-right:before { right: 0; background: #cdd3d5; }
+
+.tab-content { overflow: visible; }
 
 .g-pagination__prev, .g-pagination__next, .social { font: 0/0 a; text-shadow: none; color: transparent; }
 
