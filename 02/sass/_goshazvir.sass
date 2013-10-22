@@ -66,9 +66,22 @@
 .nav-pills_mod > li > a
   background: #FFF
 
-.nav-pills_mod > .active > a
+.nav-pills_mod > .active > a,
+.nav-pills_mod > .active > a:hover,
+.nav-pills_mod > .active > a:focus
   background-color: #e47656
 
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus
+  border-color: transparent transparent transparent
+
+.nav-tabs
+  border-bottom: none
+  li
+    a
+      padding-top: 4px
+      padding-bottom: 4px
+    
 .border-right
   padding: 10px
   margin: -10px 0
@@ -89,4 +102,5 @@
 
 .tab-content
   overflow: visible
+
 

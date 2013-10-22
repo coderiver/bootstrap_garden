@@ -80,45 +80,38 @@
 <!-- page -->
 <div class="page page_mod">
 	<div class="container">
-		<div class="row cont">
-			<div class="cont__in">
-				<div class="span8 border-right">
-					<div class="building">
-										<h1 class="h1">Crosby Ave Bronx, NY 10461</h1>
-										<div class="building__topper">
-											<div class="building__nav">
-												<ul class="nav nav-pills nav-pills_mod">
-													<li>
-														<a href="#">Photos</a>
-													</li>
-													<li class="active"><a href="#">Map</a></li>
-													<li><a href="#">Bird eye</a></li>
-													<li><a href="#">Street view</a></li>
-												</ul>
-											</div>
-											<div class="building__payment building__payment_green"><a href="#"><i class="icon-payment"></i>Monthly Payment</a></div>
-										</div>
+		<div class="tabbable">
+			<div class="row cont">
+				<div class="cont__in">
+					<div class="span8 border-right">
+						<div class="building">
+								<h1 class="h1">Crosby Ave Bronx, NY 10461</h1>
+								<div class="building__topper">
+									<div class="building__nav">
+										<ul class="nav nav-pills nav-pills_mod nav-tabs">
+											<li>
+												<a href="#tab1" data-toggle="tab">Photos</a>
+											</li>
+											<li class="active"><a href="#tab2" data-toggle="tab">Map</a></li>
+											<li><a href="#tab3" data-toggle="tab">Bird eye</a></li>
+											<li><a href="#tab4" data-toggle="tab">Street view</a></li>
+										</ul>
+									</div>
+									<div class="building__payment building__payment_green"><a href="#"><i class="icon-payment"></i>Monthly Payment</a></div>
+								</div>
+								<div class="tab-content">
+									<div class="tab-pane" id="tab1">
+										<p>Я 1 секция.</p>
+									</div>
+									<div class="tab-pane active" id="tab2">
 										<div class="building__info">
-
-
-
-
-
 											<div class="building__gallery">
 												<!-- <img src="img/scrollable1.png"> -->
-
-
-
 												<div class="building__gallery-wrap">
-
-
-
 													<div class="building__photo">
-
 														<div class="building__media">
 															<img src="http://placehold.it/500x350">
 														</div>
-
 														<div class="building__thumbs">
 															<a class="slide__arrow-prev disabled"></a>
 
@@ -171,50 +164,10 @@
 																	</li>
 																</ul>
 															</div>
-
 															<a class="slide__arrow-next"></a>
 														</div>
 													</div>
-
-
-
 												</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 											</div>
 											<div class="building__param">
 												<ul>
@@ -390,181 +343,190 @@
 											</div>
 										</div>
 									</div>
-				</div>
-				<div class="span4 pull-right">
-					<!-- page__sidebar -->
-					<div class="page__sidebar">
-						<div class="contactagent">
-							<h1 class="h1">Contact Agent</h1>
-							<div class="contactagent__info">
-								<div class="contactagent__image">
-									<img src="http://placedog.com/100/100">
-								</div>
-								<div class="contactagent__text">
-									<h1 class="contactagent__name">Daniel Sasse</h1>
-									<div class="contactagent__tel">(716) 218-9900</div>
-									<div class="contactagent__stars">
-										<ul>
-											<li class="active"><a href="#"></a></li>
-											<li class="active"><a href="#"></a></li>
-											<li class="active"><a href="#"></a></li>
-											<li class="active"><a href="#"></a></li>
-											<li><a href="#"></a></li>
-										</ul>
+									<div class="tab-pane" id="tab3">
+										<p>Я 3 секция.</p>
+									</div>
+									<div class="tab-pane" id="tab4">
+										<p>Я 4 секция.</p>
 									</div>
 								</div>
-							</div>
-							<form>
-								<input type="text" placeholder="Your name">
-								<input type="tel" placeholder="Phone">
-								<input type="text" placeholder="E-mail">
-								<textarea id="redex" maxlength="10" rows="4" placeholder="Massage"></textarea>
-								<button type="submit" class="g-btn btn_bg-red btn_uppercase btn_col-white">Contact Agent</button>
-							</form>
-						</div>
-						<div class="similar">
-							<h1 class="h1">Similar homes for Sale</h1>
-							<div class="similar__item">
-								<div class="similar__image"><img src="http://25.media.tumblr.com/tumblr_mcn1rsi5Kk1qzwmsso1_r2_1280.jpg"></div>
-								<div class="similar__info">
-									<div class="similar__price">$ 20, 000, 000</div>
-									<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
-									<table>
-										<tbody>
-											<tr>
-												<td>City:</td>
-												<td>Miami</td>
-											</tr>
-											<tr>
-												<td>Type:</td>
-												<td>Semi detached</td>
-											</tr>
-											<tr>
-												<td>Bedrooms:</td>
-												<td>5</td>
-											</tr>
-											<tr>
-												<td>Bathrooms:</td>
-												<td>5</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="similar__item">
-								<div class="similar__image"><img src="http://24.media.tumblr.com/tumblr_mcenga9RVn1qzwmsso1_1280.jpg"></div>
-								<div class="similar__info">
-									<div class="similar__price">$ 20, 000, 000</div>
-									<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
-									<table>
-										<tbody>
-											<tr>
-												<td>City:</td>
-												<td>Miami</td>
-											</tr>
-											<tr>
-												<td>Type:</td>
-												<td>Semi detached</td>
-											</tr>
-											<tr>
-												<td>Bedrooms:</td>
-												<td>5</td>
-											</tr>
-											<tr>
-												<td>Bathrooms:</td>
-												<td>5</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="similar__item">
-								<div class="similar__image"><img src="http://24.media.tumblr.com/tumblr_mcegmf5HVM1qzwmsso1_1280.jpg"></div>
-								<div class="similar__info">
-									<div class="similar__price">$ 20, 000, 000</div>
-									<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
-									<table>
-										<tbody>
-											<tr>
-												<td>City:</td>
-												<td>Miami</td>
-											</tr>
-											<tr>
-												<td>Type:</td>
-												<td>Semi detached</td>
-											</tr>
-											<tr>
-												<td>Bedrooms:</td>
-												<td>5</td>
-											</tr>
-											<tr>
-												<td>Bathrooms:</td>
-												<td>5</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="similar__item">
-								<div class="similar__image"><a href="#"><img src="http://25.media.tumblr.com/tumblr_mcasg7z1XN1qzwmsso2_1280.jpg"></a></div>
-								<div class="similar__info">
-									<div class="similar__price">$ 20, 000, 000</div>
-									<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
-									<table>
-										<tbody>
-											<tr>
-												<td>City:</td>
-												<td>Miami</td>
-											</tr>
-											<tr>
-												<td>Type:</td>
-												<td>Semi detached</td>
-											</tr>
-											<tr>
-												<td>Bedrooms:</td>
-												<td>5</td>
-											</tr>
-											<tr>
-												<td>Bathrooms:</td>
-												<td>5</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="similar__item">
-								<div class="similar__image"><a href="#"><img src="http://25.media.tumblr.com/tumblr_mcasg7z1XN1qzwmsso2_1280.jpg"></a></div>
-								<div class="similar__info">
-									<div class="similar__price">$ 20, 000, 000</div>
-									<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
-									<table>
-										<tbody>
-											<tr>
-												<td>City:</td>
-												<td>Miami</td>
-											</tr>
-											<tr>
-												<td>Type:</td>
-												<td>Semi detached</td>
-											</tr>
-											<tr>
-												<td>Bedrooms:</td>
-												<td>5</td>
-											</tr>
-											<tr>
-												<td>Bathrooms:</td>
-												<td>5</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<button class="g-btn btn-mini btn_bg-gray btn_round btn_col-blue" type="button">more preoperties</button>
 						</div>
 					</div>
-					<!-- /.page__sidebar -->
+					<div class="span4 pull-right">
+						<!-- page__sidebar -->
+						<div class="page__sidebar">
+							<div class="contactagent">
+								<h1 class="h1">Contact Agent</h1>
+								<div class="contactagent__info">
+									<div class="contactagent__image">
+										<img src="http://placedog.com/100/100">
+									</div>
+									<div class="contactagent__text">
+										<h1 class="contactagent__name">Daniel Sasse</h1>
+										<div class="contactagent__tel">(716) 218-9900</div>
+										<div class="contactagent__stars">
+											<ul>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+												<li class="active"><a href="#"></a></li>
+												<li><a href="#"></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<form>
+									<input type="text" placeholder="Your name">
+									<input type="tel" placeholder="Phone">
+									<input type="text" placeholder="E-mail">
+									<textarea id="redex" maxlength="10" rows="4" placeholder="Massage"></textarea>
+									<button type="submit" class="g-btn btn_bg-red btn_uppercase btn_col-white">Contact Agent</button>
+								</form>
+							</div>
+							<div class="similar">
+								<h1 class="h1">Similar homes for Sale</h1>
+								<div class="similar__item">
+									<div class="similar__image"><img src="http://25.media.tumblr.com/tumblr_mcn1rsi5Kk1qzwmsso1_r2_1280.jpg"></div>
+									<div class="similar__info">
+										<div class="similar__price">$ 20, 000, 000</div>
+										<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
+										<table>
+											<tbody>
+												<tr>
+													<td>City:</td>
+													<td>Miami</td>
+												</tr>
+												<tr>
+													<td>Type:</td>
+													<td>Semi detached</td>
+												</tr>
+												<tr>
+													<td>Bedrooms:</td>
+													<td>5</td>
+												</tr>
+												<tr>
+													<td>Bathrooms:</td>
+													<td>5</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="similar__item">
+									<div class="similar__image"><img src="http://24.media.tumblr.com/tumblr_mcenga9RVn1qzwmsso1_1280.jpg"></div>
+									<div class="similar__info">
+										<div class="similar__price">$ 20, 000, 000</div>
+										<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
+										<table>
+											<tbody>
+												<tr>
+													<td>City:</td>
+													<td>Miami</td>
+												</tr>
+												<tr>
+													<td>Type:</td>
+													<td>Semi detached</td>
+												</tr>
+												<tr>
+													<td>Bedrooms:</td>
+													<td>5</td>
+												</tr>
+												<tr>
+													<td>Bathrooms:</td>
+													<td>5</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="similar__item">
+									<div class="similar__image"><img src="http://24.media.tumblr.com/tumblr_mcegmf5HVM1qzwmsso1_1280.jpg"></div>
+									<div class="similar__info">
+										<div class="similar__price">$ 20, 000, 000</div>
+										<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
+										<table>
+											<tbody>
+												<tr>
+													<td>City:</td>
+													<td>Miami</td>
+												</tr>
+												<tr>
+													<td>Type:</td>
+													<td>Semi detached</td>
+												</tr>
+												<tr>
+													<td>Bedrooms:</td>
+													<td>5</td>
+												</tr>
+												<tr>
+													<td>Bathrooms:</td>
+													<td>5</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="similar__item">
+									<div class="similar__image"><a href="#"><img src="http://25.media.tumblr.com/tumblr_mcasg7z1XN1qzwmsso2_1280.jpg"></a></div>
+									<div class="similar__info">
+										<div class="similar__price">$ 20, 000, 000</div>
+										<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
+										<table>
+											<tbody>
+												<tr>
+													<td>City:</td>
+													<td>Miami</td>
+												</tr>
+												<tr>
+													<td>Type:</td>
+													<td>Semi detached</td>
+												</tr>
+												<tr>
+													<td>Bedrooms:</td>
+													<td>5</td>
+												</tr>
+												<tr>
+													<td>Bathrooms:</td>
+													<td>5</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="similar__item">
+									<div class="similar__image"><a href="#"><img src="http://25.media.tumblr.com/tumblr_mcasg7z1XN1qzwmsso2_1280.jpg"></a></div>
+									<div class="similar__info">
+										<div class="similar__price">$ 20, 000, 000</div>
+										<div class="similar__heading"><a href="#">115 Livingston St, Elizabeth</a></div>
+										<table>
+											<tbody>
+												<tr>
+													<td>City:</td>
+													<td>Miami</td>
+												</tr>
+												<tr>
+													<td>Type:</td>
+													<td>Semi detached</td>
+												</tr>
+												<tr>
+													<td>Bedrooms:</td>
+													<td>5</td>
+												</tr>
+												<tr>
+													<td>Bathrooms:</td>
+													<td>5</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<button class="g-btn btn-mini btn_bg-gray btn_round btn_col-blue" type="button">more preoperties</button>
+							</div>
+						</div>
+						<!-- /.page__sidebar -->
+					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 	</div>
 	<!-- /.container -->
