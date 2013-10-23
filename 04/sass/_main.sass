@@ -316,7 +316,7 @@
 // preoperty
 
 .sidebar
-	padding-top: 32px
+	padding-top: 42px
 	margin-bottom: 50px
 .contact-agent
 	margin: 12px 0 50px
@@ -418,45 +418,41 @@
 	padding: 32px 0 0 10px
 	margin-bottom: 50px
 	.h1
-		margin-bottom: 20px
-		color: #c53b14
+		margin-bottom: 15px
 .content__tabs
 	position: relative
 	clear: both
-.montly
-	position: absolute
-	top: 0px
-	right: 0px
-	cursor: pointer
-	padding: 0px 20px 0 45px
 .payment
 	position: absolute
 	top: 7px
 	left: 15px
 	+s(ico_payment)				
 .tabs
+	margin-bottom: 0
+	border-bottom: none
+	border-top: 1px solid #b1b4b9 
 	li
-		margin-right: 5px
+		margin-right: 1px
 		min-width: 96px
 		text-align: center
-		border-radius: 3px 3px 0 0
-		+box
-		border: 1px solid #cfcfcf
-		background: #fff
+		background: #b1b4b9
 		a
 			padding: 11px 12px
 			border: none
+			border-radius: 0
 			margin-right: 0
 			font: bold 11px Arial, sans-serif
 			color: #2f3339
 			text-transform: uppercase
+			&:hover
+				background: #b1b4b9
 	li.active
-		border-bottom: 1px solid #f3f5f7
 		a
-			background: #f3f5f7
+			background: #008fcf
 			border: none
 			&:hover
 				border: none
+				background: #008fcf
 				 		
 //slider
 .building__gallery
@@ -465,8 +461,6 @@
 	+clr
 	.building__media
 		text-align: center
-		float: left
-		width: 615px
 		height: 506px
 		line-height: 270px
 		img
@@ -477,28 +471,27 @@
 			display: block
 .building__thumbs
 	position: relative
-	float: left
-	width: 101px
+	+clr
 	+box
-	padding: 5px
+	padding: 10px
 	background: #000  
 	.caro
+		width: 508px
 		height: 70px
-		width: 100%
-		height: 432px
+		float: left
+		margin: 7px 13px
 		overflow: hidden
 		position: relative
-	
 	ul
 		margin: 0
-		left: 0!important
 		position: absolute
-		height: 20000em
+		width: 20000em
 		list-style: none
 		li
+			width: 100px
 			height: 70px
 			float: left
-			margin: 0 0 2px 0
+			margin: 0 2px 0 0
 			cursor: pointer
 			@include opacity(.55)
 			&:hover, &.active
@@ -511,29 +504,36 @@
 				vertical-align: middle
 .slide__arrow-prev
 	position: relative
-	display: block
-	height: 32px
+	float: left
+	width: 82px
+	height: 82px
+	+box
+	border: 2px solid #fff
 	+opacity(1)
+	border-radius: 50%
 	cursor: pointer
 	+no-sel
 	i
 		position: absolute
-		top: 9px
-		left: 39px
+		top: 22px
+		left: 30px
 		+s(slide-prev)
 	&.disabled
 		+opacity(.2)
 .slide__arrow-next
 	position: relative
-	display: block
-	height: 32px
+	float: left
+	width: 82px
+	height: 82px
+	border: 2px solid #fff
 	+opacity(1)
+	border-radius: 50%
 	cursor: pointer
 	+no-sel
 	i
 		position: absolute
-		top: 9px
-		left: 39px
+		top: 22px
+		left: 35px
 		+s(slide-next)
 	&.disabled
 		+opacity(.2)
