@@ -424,8 +424,8 @@
 	clear: both
 .payment
 	position: absolute
-	top: 7px
-	left: 15px
+	top: 11px
+	left: 20px
 	+s(ico_payment)				
 .tabs
 	margin-bottom: 0
@@ -538,27 +538,11 @@
 	&.disabled
 		+opacity(.2)
 .l-building__param
-	position: relative
-	&:before
-		content: ""
-		position: absolute
-		top: 55px
-		left: 228px
-		bottom: 25px
-		width: 1px
-		background: #c5c5c4		
+	position: relative		
 .building__param
-	padding: 0 0 25px 20px
+	margin-bottom: 40px
 	overflow: hidden
 	+box
-	
-	.building__param-price
-		font-size: 26px
-		display: block
-		width: 100%
-		margin: 0
-		margin-bottom: 10px
-		color: #c53b14
 	ul
 		margin: 0
 		margin-bottom: 10px
@@ -579,14 +563,35 @@
 		font-size: 14px
 		font-weight: bold
 	.building__descr
-		margin: 50px 0 0
+		margin: 0
 		padding: 0 18px
-		font: 12px Arial, sans-serif
-		color: #464b54  
+		font: 14px Arial, sans-serif
+		color: #7c7a73  
 		p
-			line-height: 2
+			line-height: 1.8
+.sale-price
+	padding: 20px
+	+box
+	background: #008fcf
+	+font
+.sale-price__title
+	font-weight: bold
+	font-size: 12px
+	color: #b9fbff
+.sale-price__price
+	font-weight: bold
+	color: #fff
+	font-size: 26px
+	margin: 0
+.montly
+	position: relative
+	margin-bottom: 20px
+	text-align: center
+	line-height: 40px
+	cursor: pointer		 			
 .building__infrastructure
-	padding-top: 20px
+	padding: 3px
+	background: #e3e5e8 
 	.sidebar__title
 		padding-left: 20px			
 .building__map
@@ -619,7 +624,7 @@
 		position: absolute
 		@include sized-sprite($icons, input_ico)
 		left: 0
-		top: 2px
+		top: 5px
 		line-height: 16px
 	.building__icons
 		margin-top: -5px
@@ -646,7 +651,7 @@
 		+s(ico_airports)
 	.checkbox
 		display: inline-block
-		color: #3a3c3e
+		color: #b8bcbf
 		font-size: 14px
 		cursor: pointer
 		position: relative
