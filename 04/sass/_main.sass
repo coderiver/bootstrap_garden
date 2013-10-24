@@ -609,52 +609,69 @@
 		width: 160px
 	li
 		list-style: none
+.checkbox
+	display: inline-block
+	min-height: 40px
+	color: #b8bcbf
+	font-size: 14px
+	cursor: pointer
+	position: relative		
 	input
+		position: relative
 		width: 15px
 		height: 15px
-		opacity: 0
-		position: relative
+		+opacity(0)
 		z-index: 2
 		cursor: pointer
-	input:checked + i.icon-ckeckbox-arrow
-		@include sized-sprite($icons, input_checked_ico)
+	span
+		position: relative
+		top: 3px
+		margin-left: 20px
+		padding-left: 13px
+		&:after
+			content: ""
+			position: absolute
+			top: -3px
+			left: -20px
+			+s(ico_school)
+		&:before
+			content: ""
+			position: absolute
+			+s(input_ico)
+			left: -39px
+			top: 5px
+			line-height: 16px	
+	input:checked + span
+		color: #3a3c3e
+		&:before
+			content: ""
+			+s(input_checked_ico)
 	input:checked
 		color: #ccc
-	.icon-ckeckbox-arrow
-		position: absolute
-		@include sized-sprite($icons, input_ico)
-		left: 0
-		top: 5px
-		line-height: 16px
-	.building__icons
-		margin-top: -5px
-		margin-right: 5px
-		display: inline-block
-		vertical-align: middle
-	.g-icon-school
-		+s(ico_school)
-	.g-icon-hschool 
-		+s(ico_hschool)
-	.g-icon-hospital 
-		+s(ico_hospital)
-	.g-icon-police
-		+s(ico_police)
-	.g-icon-fire 
-		+s(ico_fire)
-	.g-icon-shops 
-		+s(ico_shops)
-	.g-icon-restoraunt 
-		+s(ico_restoraunt)
-	.g-icon-market 
-		+s(ico_market)
-	.g-icon-airports 
-		+s(ico_airports)
-	.checkbox
-		display: inline-block
-		color: #b8bcbf
-		font-size: 14px
-		cursor: pointer
-		position: relative
+	span.g-icon-hschool
+		&:after 
+			+s(ico_hschool)
+	span.g-icon-hospital
+		&:after
+			+s(ico_hospital)
+	span.g-icon-police
+		&:after
+			+s(ico_police)
+	span.g-icon-fire 
+		&:after	
+			+s(ico_fire)
+	span.g-icon-shops 
+		&:after	
+			+s(ico_shops)
+	span.g-icon-restoraunt 
+		&:after
+			+s(ico_restoraunt)
+	span.g-icon-market 
+		&:after	
+			+s(ico_market)
+	span.g-icon-airports
+		&:after
+			+s(ico_airports)
 		
 // refine
 .refine__btn

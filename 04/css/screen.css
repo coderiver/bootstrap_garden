@@ -334,21 +334,23 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 .building__labels:after { clear: both; }
 .building__labels ul { margin: 0; margin-right: 20px; float: left; width: 160px; }
 .building__labels li { list-style: none; }
-.building__labels input { width: 15px; height: 15px; opacity: 0; position: relative; z-index: 2; cursor: pointer; }
-.building__labels input:checked + i.icon-ckeckbox-arrow { background: url('../img/icons-sda6b5b7056.png') 0 -945px no-repeat; width: 9px; height: 7px; }
-.building__labels input:checked { color: #cccccc; }
-.building__labels .icon-ckeckbox-arrow { position: absolute; background: url('../img/icons-sda6b5b7056.png') 0 -902px no-repeat; width: 9px; height: 7px; left: 0; top: 5px; line-height: 16px; }
-.building__labels .building__icons { margin-top: -5px; margin-right: 5px; display: inline-block; vertical-align: middle; }
-.building__labels .g-icon-school { background: url('../img/icons-sda6b5b7056.png') 0 -458px no-repeat; width: 24px; height: 24px; }
-.building__labels .g-icon-hschool { background: url('../img/icons-sda6b5b7056.png') 0 -180px no-repeat; width: 24px; height: 24px; }
-.building__labels .g-icon-hospital { background: url('../img/icons-sda6b5b7056.png') 0 -594px no-repeat; width: 24px; height: 24px; }
-.building__labels .g-icon-police { background: url('../img/icons-sda6b5b7056.png') 0 -526px no-repeat; width: 24px; height: 24px; }
-.building__labels .g-icon-fire { background: url('../img/icons-sda6b5b7056.png') 0 -316px no-repeat; width: 24px; height: 24px; }
-.building__labels .g-icon-shops { background: url('../img/icons-sda6b5b7056.png') 0 -560px no-repeat; width: 24px; height: 24px; }
-.building__labels .g-icon-restoraunt { background: url('../img/icons-sda6b5b7056.png') 0 -106px no-repeat; width: 24px; height: 24px; }
-.building__labels .g-icon-market { background: url('../img/icons-sda6b5b7056.png') 0 -350px no-repeat; width: 24px; height: 24px; }
-.building__labels .g-icon-airports { background: url('../img/icons-sda6b5b7056.png') 0 -214px no-repeat; width: 24px; height: 24px; }
-.building__labels .checkbox { display: inline-block; color: #b8bcbf; font-size: 14px; cursor: pointer; position: relative; }
+
+.checkbox { display: inline-block; min-height: 40px; color: #b8bcbf; font-size: 14px; cursor: pointer; position: relative; }
+.checkbox input { position: relative; width: 15px; height: 15px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; z-index: 2; cursor: pointer; }
+.checkbox span { position: relative; top: 3px; margin-left: 20px; padding-left: 13px; }
+.checkbox span:after { content: ""; position: absolute; top: -3px; left: -20px; background: url('../img/icons-sda6b5b7056.png') 0 -458px no-repeat; width: 24px; height: 24px; }
+.checkbox span:before { content: ""; position: absolute; background: url('../img/icons-sda6b5b7056.png') 0 -902px no-repeat; width: 9px; height: 7px; left: -39px; top: 5px; line-height: 16px; }
+.checkbox input:checked + span { color: #3a3c3e; }
+.checkbox input:checked + span:before { content: ""; background: url('../img/icons-sda6b5b7056.png') 0 -945px no-repeat; width: 9px; height: 7px; }
+.checkbox input:checked { color: #cccccc; }
+.checkbox span.g-icon-hschool:after { background: url('../img/icons-sda6b5b7056.png') 0 -180px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-hospital:after { background: url('../img/icons-sda6b5b7056.png') 0 -594px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-police:after { background: url('../img/icons-sda6b5b7056.png') 0 -526px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-fire:after { background: url('../img/icons-sda6b5b7056.png') 0 -316px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-shops:after { background: url('../img/icons-sda6b5b7056.png') 0 -560px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-restoraunt:after { background: url('../img/icons-sda6b5b7056.png') 0 -106px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-market:after { background: url('../img/icons-sda6b5b7056.png') 0 -350px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-airports:after { background: url('../img/icons-sda6b5b7056.png') 0 -214px no-repeat; width: 24px; height: 24px; }
 
 .refine__btn { margin-bottom: 30px; }
 
