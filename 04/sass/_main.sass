@@ -1,0 +1,805 @@
+@import base
+
+// Styles
+
+// .span12		1070px
+// .span11		980px
+// .span10		890px
+// .span9		800px
+// .span8		710px
+// .span7		620px
+// .span6		530px
+// .span5		440px
+// .span4		350px
+// .span3		260px
+// .span2		170px
+// .span1		80px
+
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container
+	width: 1180px
+.container_box
+	+box-shadow(0 0 7px #abb0b0)
+
+// carousel
+.carousel
+	margin-bottom: 0
+.carousel_agent
+	.item__img
+		height: 322px
+	.slider-control
+		top: 20%		
+.carousel-indicators
+	position: absolute
+	bottom: 50px
+	top: auto
+	right: 120px
+	left: auto
+	li
+		display: inline-block
+		background: #fff
+		width: 8px
+		height: 8px
+		border-radius: 0px
+	li.active
+		background: #000
+.item__img
+	height: 450px
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%
+.item__block
+	position: absolute
+	bottom: 32px
+	right: 100px
+	width: 440px
+	+box
+	background: #008fcf
+.item__block-topper
+	height: 50px
+	+box
+	+box-shadow(0 0 13px rgba(3,78,125,.3))
+	.h1
+		padding-left: 20px
+		font-size: 18px
+		color: #b9fbff
+		line-height: 50px
+.item__table
+	margin: 10px 20px
+	li
+		min-height: 1px 
+.item__left
+	font-size: 11px
+	color: #a3c7d7
+	min-height: 1px!important  
+.item__right
+	font-size: 12px
+	color: #f0f4f5
+	min-height: 1px!important   	 		 
+.item__bottom
+	+clr
+.item__price
+	text-align: center
+	line-height: 50px	
+	font-size: 24px
+	+font_sb
+	color: #fff
+	background: #21b6f8 
+.slider-control
+	width: 80px
+	height: 80px
+	left: 100px
+	+box
+	border: 2px solid #fff
+	border-radius: 50%
+	background: transparent
+	+transition(background 200ms)
+	+opacity(1) 
+	&:hover
+		background: rgba(0,0,0,.2)
+.slider-control.right
+	left: auto
+	right: 100px
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -15px 0 0 -8px
+		+s(slider-next)
+.slider-control.left
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -15px 0 0 -8px
+		+s(slider-prev)		
+.link
+	position: relative
+	top: 3px
+	text-transform: uppercase
+	font-size: 12px
+	+font_sb
+	color: #fff
+	text-decoration: underline
+	&:hover
+		color: #fff
+		text-decoration: none
+.link_pink
+	color: #bf1f41
+	text-transform: none
+	&:hover
+		color: #bf1f41
+.agent
+	position: relative
+	top: -1px
+	height: 130px
+	background: #eb624a 
+.agent__info
+	padding: 30px 100px 30px 260px
+	+box
+	font: 12px Arial, sans-serif
+	line-height: 1.6
+	p
+		margin: 0
+		color: #fff
+	.link-more
+		position: relative
+		top: -2px
+		margin-left: 15px	 
+.agent__name
+	font-size: 24px
+	+font
+	color: #fff
+	&:hover
+		text-decoration: none
+		color: #fff
+.agent__img
+	position: absolute
+	top: -10px
+	left: 100px
+	width: 130px
+	height: 150px
+	img
+		width: 100%
+		height: 100%    	
+.l-filters
+	padding: 30px 100px
+	+clr
+	background: #fff  
+	.h2
+		position: relative
+		float: left
+		&:after
+			content: ""
+			position: absolute
+			top: 2px
+			right: -20px
+			+s(ico_search)
+	.link
+		float: right
+.filters
+	clear: both
+	+clr
+	margin-top: 36px
+.filter__item
+	float: left
+	width: 120px
+	margin-left: 30px
+	p
+		height: 14px
+		+font
+		margin: 0px 0px 10px
+		font-size: 14px
+		color: #8f9191
+	&:first-child
+		margin-left: 0
+	input
+		width: 196px
+		color: #292b2c
+	.submit
+		padding: 0 20px 0 50px	 	
+.filter__item_long
+	width: 270px
+.filter__item_group
+	margin-left: 10px
+.l-article
+	padding: 30px 100px
+	+box
+	background: #eff0f0
+.article
+	+box
+	padding-right: 20px
+	.h1
+		color: #0f1010
+	p
+		margin: 20px 0 30px
+		font-size: 14px
+		line-height: 1.6
+		color: #7c7a73
+.l-popular
+	margin-top: 14px
+	background: #df5b0b
+	padding: 12px 0px
+	+box
+	a
+		display: block
+		padding: 0 30px
+		line-height: 30px
+		+font_sb
+		font-size: 15px
+		color: #fff
+		&:hover
+			background: #87898c
+			+background-image(linear-gradient(bottom, #d35204 0%, #d15305 95%, #ba4a05 100%))
+			text-decoration: none    
+.popular
+	a
+		font-size: 13px
+		text-decoration: underline
+		color: #424b5a
+		&:hover
+			text-decoration: none		
+.comment_img
+	width: 130px
+	height: 150px
+	margin-right: 20px
+	img
+		width: 100%
+		height: 100%  
+.comment__text
+	width: 169px		  
+.quote
+	font: 12px Arial, sans-serif
+	color: #7c7a73
+	line-height: 1.5
+.page_bg
+	position: relative
+	border-top: 1px solid #d5d4d4
+	background: #ebe9e7
+	&:before
+		content: ""
+		position: absolute
+		top: 1px
+		width: 100%
+		height: 1px
+		background: #fff
+.preoperties__topper
+	padding-bottom: 10px
+	border-bottom: 1px solid #b1b4b9		
+.preoperties__right		   
+	text-align: right
+	a
+		margin-top: 5px
+.l-preoperties
+	padding-left: 10px		
+.preoperties
+	margin-top: 14px
+.preoperties__main
+	margin: 20px 0 0
+	padding-bottom: 8px
+.preoperties__img
+	position: relative
+	display: block						
+.preoperties__adress
+	font-size: 16px
+	+font_sb
+	color: #2d2d2d
+	&:hover
+		color: #2d2d2d
+.preoperties__price
+	font-size: 14px
+	+font_sb
+	color: #bf1f41
+.preoperties__info
+	position: relative
+	padding: 5px 0 0
+	border-top: 1px solid #fff
+	li
+		padding-left: 0
+		p
+			margin: 0
+			line-height: 1.2 
+.preoperties__type
+	min-height: 1px!important 
+	font-size: 11px
+	color: #777979
+.preoperties__value
+	min-height: 1px!important 
+	font-size: 13px
+	color: #0f1010
+	
+// preoperty
+
+.sidebar
+	padding-top: 42px
+	margin-bottom: 50px
+.contact-agent
+	margin: 12px 0 50px
+.contact-agent__img
+	height: 150px
+	img
+		width: 100%
+		height: 100% 
+.contact-agent__text
+	position: relative
+	font-size: 16px
+	color: #fff
+.contact-agent__phone
+	position: relative
+	margin-top: 5px
+	+font
+	font-size: 15px
+	padding-left: 19px
+	&:before
+		content: ""
+		position: absolute
+		top: 3px
+		left: 0px
+		+s(phone-small)	 	
+.agent-link
+	color: #fff
+	+font_sb
+	font-size: 18px
+.contact-agent__reting
+	position: absolute
+	top: 0px
+	right: 0px
+	i
+		display: inline-block
+.contact-agent__form
+	padding: 10px
+	background: #df5b0b
+	.textarea
+		max-width: 218px
+.contact-agent__submit
+	width: 100%
+	background: #1e2020 
+	+background-image(linear-gradient(bottom, #131515 0%, #272929 100%))  		 		
+.contact-agent__input
+	height: 40px!important
+	border: none!important
+	border-radius: 0!important
+	color: #1c1c1c!important
+	+font_sb
+	+placeholder(#1c1c1c)
+.sidebar__similar
+	margin-bottom: 20px
+	.preoperties__img
+		display: block
+		+box
+		padding: 3px
+		img
+			width: 100%
+			height: 100%  
+	.preoperties__main
+		margin: 20px 10px 0
+	.preoperties__info
+		border-top: none
+		margin: 0 10px
+.l-preoperties__info
+	position: relative
+.preoperties__more
+	position: absolute
+	top: 15px
+	right: 10px
+	+box
+	padding-top: 3px
+	+box-shadow(0 1px 0 #fff, inset 0 1px 0 rgba(202,208,210,.28))
+	background: #d9dee0
+	font: 11px Arial, sans-serif
+	color: #2f3339 
+	z-index: 2
+	&:hover
+		color: #2f3339
+.preoperties__more_orange
+	background: #c53b14
+	color: #fff
+	&:hover
+		color: #fff 		
+.l-sidebar__similar
+	margin-top: 20px
+	background: #eff0f0
+	.preoperties__price
+		padding: 0 10px
+.similar__more
+	a
+		display: block
+		line-height: 40px
+		text-align: center
+		&:hover
+			color: #fff
+			text-decoration: none
+.content
+	padding: 32px 0 0 10px
+	margin-bottom: 50px
+	.h1
+		margin-bottom: 15px
+.content__tabs
+	position: relative
+	clear: both
+.payment
+	position: absolute
+	top: 11px
+	left: 20px
+	+s(ico_payment)				
+.tabs
+	margin-bottom: 0
+	border-bottom: none
+	border-top: 1px solid #b1b4b9 
+	li
+		margin-right: 1px
+		min-width: 96px
+		text-align: center
+		background: #b1b4b9
+		a
+			padding: 11px 12px
+			border: none
+			border-radius: 0
+			margin-right: 0
+			font: bold 11px Arial, sans-serif
+			color: #2f3339
+			text-transform: uppercase
+			&:hover
+				background: #b1b4b9
+	li.active
+		a
+			background: #008fcf
+			border: none
+			&:hover
+				border: none
+				background: #008fcf
+				 		
+//slider
+.building__gallery
+	margin-bottom: 20px
+.building__photo
+	+clr
+	.building__media
+		text-align: center
+		height: 506px
+		line-height: 270px
+		img
+			vertical-align: middle
+			text-align: center
+			width: 100%
+			height: 100%
+			display: block
+.building__thumbs
+	position: relative
+	+clr
+	+box
+	padding: 10px
+	background: #000  
+	.caro
+		width: 508px
+		height: 70px
+		float: left
+		margin: 7px 13px
+		overflow: hidden
+		position: relative
+	ul
+		margin: 0
+		position: absolute
+		width: 20000em
+		list-style: none
+		li
+			width: 100px
+			height: 70px
+			float: left
+			margin: 0 2px 0 0
+			cursor: pointer
+			@include opacity(.55)
+			&:hover, &.active
+				border-color: #ff9900
+				background-color: #ff9900
+				@include opacity(1)
+			img
+				width: 100%
+				height: 100%
+				vertical-align: middle
+.slide__arrow-prev
+	position: relative
+	float: left
+	width: 82px
+	height: 82px
+	+box
+	border: 2px solid #fff
+	+opacity(1)
+	border-radius: 50%
+	cursor: pointer
+	+no-sel
+	i
+		position: absolute
+		top: 22px
+		left: 30px
+		+s(slide-prev)
+	&.disabled
+		+opacity(.2)
+.slide__arrow-next
+	position: relative
+	float: left
+	width: 82px
+	height: 82px
+	border: 2px solid #fff
+	+opacity(1)
+	border-radius: 50%
+	cursor: pointer
+	+no-sel
+	i
+		position: absolute
+		top: 22px
+		left: 35px
+		+s(slide-next)
+	&.disabled
+		+opacity(.2)
+.l-building__param
+	position: relative		
+.building__param
+	margin-bottom: 40px
+	overflow: hidden
+	+box
+	ul
+		margin: 0
+		margin-bottom: 10px
+	li
+		list-style: none
+	dl
+		+clr
+		margin: 0
+	dt
+		float: left
+		width: 75px
+		color: #818587
+		font-size: 12px
+		font-weight: normal
+	dd
+		overflow: hidden
+		color: #393d3d
+		font-size: 14px
+		font-weight: bold
+	.building__descr
+		margin: 0
+		padding: 0 18px
+		font: 14px Arial, sans-serif
+		color: #7c7a73  
+		p
+			line-height: 1.8
+.sale-price
+	padding: 20px
+	+box
+	background: #008fcf
+	+font
+.sale-price__title
+	font-weight: bold
+	font-size: 12px
+	color: #b9fbff
+.sale-price__price
+	font-weight: bold
+	color: #fff
+	font-size: 26px
+	margin: 0
+.montly
+	position: relative
+	margin-bottom: 20px
+	text-align: center
+	line-height: 40px
+	cursor: pointer		 			
+.building__infrastructure
+	padding: 3px
+	background: #e3e5e8 
+	.sidebar__title
+		padding-left: 20px			
+.building__map
+	img
+		width: 100%
+	+border-radius(5px)
+.building__labels
+	margin-top: 20px
+	padding-left: 20px
+	+clr
+	ul
+		margin: 0
+		margin-right: 20px
+		float: left
+		width: 160px
+	li
+		list-style: none
+	input
+		width: 15px
+		height: 15px
+		opacity: 0
+		position: relative
+		z-index: 2
+		cursor: pointer
+	input:checked + i.icon-ckeckbox-arrow
+		@include sized-sprite($icons, input_checked_ico)
+	input:checked
+		color: #ccc
+	.icon-ckeckbox-arrow
+		position: absolute
+		@include sized-sprite($icons, input_ico)
+		left: 0
+		top: 5px
+		line-height: 16px
+	.building__icons
+		margin-top: -5px
+		margin-right: 5px
+		display: inline-block
+		vertical-align: middle
+	.g-icon-school
+		+s(ico_school)
+	.g-icon-hschool 
+		+s(ico_hschool)
+	.g-icon-hospital 
+		+s(ico_hospital)
+	.g-icon-police
+		+s(ico_police)
+	.g-icon-fire 
+		+s(ico_fire)
+	.g-icon-shops 
+		+s(ico_shops)
+	.g-icon-restoraunt 
+		+s(ico_restoraunt)
+	.g-icon-market 
+		+s(ico_market)
+	.g-icon-airports 
+		+s(ico_airports)
+	.checkbox
+		display: inline-block
+		color: #b8bcbf
+		font-size: 14px
+		cursor: pointer
+		position: relative
+		
+// refine
+.refine__btn
+	margin-bottom: 30px
+.refine__item
+	margin-bottom: 20px
+.refine__title
+	margin-bottom: 8px
+	font-size: 16px
+	color: #292b2c
+	i.plus
+		display: inline-block
+		margin-right: 5px
+		vertical-align: middle
+		+s(plus)
+	i.minus
+		display: inline-block
+		margin-right: 5px
+		vertical-align: middle
+		+s(minus)
+.filter__input_short
+	width: 100px
+	
+// list
+.tab-list
+	padding-bottom: 130px
+.list
+	.h1
+		float: left
+		color: #393d3e
+.list-item
+	margin-bottom: 30px
+.list-item__img
+	position: relative
+.sold
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background: rgba(255,255,255,.5)
+.sold__inner
+	position: absolute
+	top: 0
+	right: 0
+	width: 64px
+	height: 64px
+	background: #bf1f41
+	p
+		width: 64px
+		height: 64px
+		line-height: 64px
+		text-align: center
+		+font
+		font-size: 16px
+		color: #fff     
+.l-list__details
+	float: right
+	p
+		margin-top: 7px
+		display: inline-block
+.list__details-left
+	margin-right: 24px
+	font-size: 14px
+	span
+		color: #b3433d
+.list__details-right
+	color: #828587
+	span
+		color: #393d3e
+.select_list
+	position: absolute
+	top: 0px
+	right: 0px
+	width: 230px
+.list-item__content
+	.preoperties__main
+		position: relative
+		margin: 0 0 16px
+		.preoperties__more
+			right: 0
+		.preoperties__more_orange
+			right: 90px		 		
+.list-item__detail
+	float: left
+	width: 180px
+	.left-col
+		float: left
+		width: 60px
+		font-size: 11px
+		color: #979694
+	.right-col
+		float: right
+		width: 120px
+		font-size: 13px
+		color: #424b5a
+.list-pagination
+	position: absolute
+	bottom: 50px
+	left: 50%
+	margin-left: -217px
+	width: 435px 
+	height: 30px
+.pagination
+	margin: 0
+	li
+		float: left
+		width: 30px
+		height: 30px
+		margin-left: 9px
+		border-radius: 3px
+		a
+			display: block
+			width: 30px
+			height: 30px
+			line-height: 30px
+			border-radius: 3px
+			text-align: center
+			font-size: 16px
+			color: #424b5a 
+			&:hover
+				background: #0284c7
+				color: #fff
+				text-decoration: none 
+		a.current
+			background: #0284c7
+			color: #fff
+.pagination-prev
+	position: absolute
+	top: 8px
+	left: -144px
+	+s(prev)
+.pagination-next
+	position: absolute
+	top: 8px
+	right: -143px
+	+s(next)	
+
+
+
+
+
+	
+	
+
+
+
+
