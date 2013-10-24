@@ -742,15 +742,16 @@
 .list__details-left
 	margin-right: 24px
 	font-size: 14px
-	span
-		color: #b3433d
+	+font_sb
+	color: #008fcf
 .list__details-right
 	color: #828587
+	+font_sb
 	span
-		color: #393d3e
+		color: #008fcf
 .select_list
 	position: absolute
-	top: 0px
+	top: 10px
 	right: 0px
 	width: 230px
 .list-item__content
@@ -785,35 +786,30 @@
 	margin: 0
 	li
 		float: left
-		width: 30px
+		width: 25px
 		height: 30px
 		margin-left: 9px
-		border-radius: 3px
 		a
 			display: block
-			width: 30px
-			height: 30px
+			width: 25px 
 			line-height: 30px
-			border-radius: 3px
 			text-align: center
-			font-size: 16px
-			color: #424b5a 
+			font-size: 18px
+			color: #9b9e9e 
 			&:hover
-				background: #0284c7
-				color: #fff
+				color: #008ccb
 				text-decoration: none 
 		a.current
-			background: #0284c7
-			color: #fff
+			color: #008ccb
 .pagination-prev
 	position: absolute
 	top: 8px
-	left: -144px
+	left: -80px
 	+s(prev)
 .pagination-next
 	position: absolute
 	top: 8px
-	right: -143px
+	right: -80px
 	+s(next)	
 
 
