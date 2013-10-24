@@ -212,7 +212,7 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 .preoperties__adress { font-size: 16px; font-family: "MyriadProSemibold", sans-serif; color: #2d2d2d; }
 .preoperties__adress:hover { color: #2d2d2d; }
 
-.preoperties__price { font-size: 14px; font-family: "MyriadProSemibold", sans-serif; color: #bf1f41; }
+.preoperties__price { display: inline-block; margin: 20px 10px 0 0; font-size: 14px; font-family: "MyriadProSemibold", sans-serif; color: #bf1f41; }
 
 .preoperties__info { position: relative; padding: 5px 0 0; border-top: 1px solid white; }
 .preoperties__info li { padding-left: 0; }
@@ -330,6 +330,8 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
 .building__infrastructure { padding: 3px; background: #e3e5e8; }
 .building__infrastructure .sidebar__title { padding-left: 20px; }
+
+.tab-content .building__infrastructure { margin-top: 24px; }
 
 .building__map { -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
 .building__map img { width: 100%; }
