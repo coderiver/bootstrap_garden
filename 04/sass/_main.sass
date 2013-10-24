@@ -676,22 +676,28 @@
 // refine
 .refine__btn
 	margin-bottom: 30px
+	button
+		width: 100%
 .refine__item
 	margin-bottom: 20px
 .refine__title
+	+clr
 	margin-bottom: 8px
 	font-size: 16px
 	color: #292b2c
 	i.plus
-		display: inline-block
+		float: left
 		margin-right: 5px
 		vertical-align: middle
 		+s(plus)
 	i.minus
-		display: inline-block
+		float: left
 		margin-right: 5px
 		vertical-align: middle
 		+s(minus)
+	span
+		float: right
+		+font_sb	
 .filter__input_short
 	width: 100px
 	

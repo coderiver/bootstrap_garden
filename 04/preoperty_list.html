@@ -22,51 +22,41 @@
 
 <!-- header -->
 <div class="l-header">
-	<div class="header__topper">
-		<div class="container">
-			<div class="row clearfix">
-				<div class="span1 pull-right text-right">
-					<div class="header__socials">
-						<ul>
-							<li><a title="Facebook" href="#" class="social social__fb">Facebook</a></li>
-							<li><a title="Twitter" href="#" class="social social__tw">Twitter</a></li>
-							<li><a title="Google+" href="#" class="social social__gp">Google+</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="span3 pull-right text-right">
-					<div class="g-menu header__menu clearfix">
-						<ul>
-							<li><a href="#">Register</a></li>
-							<li><a href="#">Site map</a></li>
-							<li><a href="#">Sign in</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="span4 pull-right text-right">
-					<ul class="phones-list clearfix">
-						<li>416-515-2345</li>
-						<li>416-515-2345</li>
+	<div class="header">
+		<div class="row-fluid clearfix">
+			<div class="span4 pull-left">
+				<h1 class="logo">
+					<a href="#">Your Logo</a>
+				</h1>
+			</div>
+			<div class="span8 pull-right text-right">
+				<div class="g-menu header__menu clearfix">
+					<ul>
+						<li><a href="#">Register</a></li>
+						<li><a href="#">Site map</a></li>
+						<li><a href="#">Sign in</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<h1 class="logo">
-			<a href="#">Your Logo</a>
-		</h1>
-		<span class="slogan">Quality accommodation and high standards</span>
 		<div class="navbar">
-			<div class="navbar-inner">
-				<div class="nav-collapse collapse">
-					<ul class="nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Selling</a></li>
-						<li><a href="#">Buying</a></li>
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Contact us</a></li>
+			<div class="nav-collapse collapse clearfix">
+				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Selling</a></li>
+					<li><a href="#">Buying</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+				<div class="header__socials pull-right">
+					<ul>
+						<li><a title="Facebook" href="#" class="social social__fb">Facebook</a></li>
+						<li><a title="Twitter" href="#" class="social social__tw">Twitter</a></li>
+						<li><a title="Google+" href="#" class="social social__gp">Google+</a></li>
 					</ul>
+				</div>
+				<div class="phones-list pull-right">
+					416-515-5412
 				</div>
 			</div>
 		</div>	
@@ -76,410 +66,8 @@
 
 <!-- page -->
 <div class="page">
-	<div class="container">
-		<div class="row-fluid">
-			<div class="span3 sidebar">
-				<div class="refine">
-					<div class="refine__btn">
-						<a href="#" class="button button_w">Refine search</a>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="minus"></i>Price range</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="minus"></i>City</div>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>Central Austin</span>
-						</label>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>West Austin</span>
-						</label>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>Lake Travis</span>
-						</label>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>Southwest Austin</span>
-						</label>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>South Austin</span>
-						</label>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>Northwest Austin</span>
-						</label>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>North Austin</span>
-						</label>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>East Austin</span>
-						</label>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="minus"></i>Preoperty type</div>
-						<label class="select-radio">
-							<input type="radio" name="type">
-							<i></i>
-							<span>East Austin</span>
-						</label>
-						<label class="select-radio">
-							<input type="radio" name="type">
-							<i></i>
-							<span>Central Austin</span>
-						</label>
-						<label class="select-radio">
-							<input type="radio" name="type">
-							<i></i>
-							<span>West Austin</span>
-						</label>
-						<label class="select-radio">
-							<input type="radio" name="type">
-							<i></i>
-							<span>Lake Travis</span>
-						</label>
-						<label class="select-radio">
-							<input type="radio" name="type">
-							<i></i>
-							<span>Southwest Austin</span>
-						</label>
-					</div>
-					<div class="refine__item clearfix">
-						<div class="refine__title"><i class="minus"></i>Badrooms</div>
-						<div class="filter__input filter__input_short pull-left">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-						<div class="filter__input filter__input_short pull-right">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item clearfix">
-						<div class="refine__title"><i class="minus"></i>Badrooms</div>
-						<div class="filter__input filter__input_short pull-left">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-						<div class="filter__input filter__input_short pull-right">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item clearfix">
-						<div class="refine__title"><i class="minus"></i>Badrooms</div>
-						<div class="filter__input filter__input_short pull-left">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-						<div class="filter__input filter__input_short pull-right">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item clearfix">
-						<div class="refine__title"><i class="minus"></i>Badrooms</div>
-						<div class="filter__input filter__input_short pull-left">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-						<div class="filter__input filter__input_short pull-right">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="minus"></i>City</div>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>Central Austin</span>
-						</label>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>West Austin</span>
-						</label>
-						<label class="select-checkbox">
-							<input type="checkbox" value="">
-							<i></i>
-							<span>Lake Travis</span>
-						</label>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__item">
-						<div class="refine__title"><i class="plus"></i>Location</div>
-						<div class="filter__input">
-							<div class="select">
-								<div class="select__arrow"></div>
-								<div class="select__value">$ 500</div>
-								<select>
-									<option>$ 500</option>
-									<option>$ 550</option>
-									<option>$ 600</option>
-									<option>$ 650</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="refine__btn">
-						<a href="#" class="button button_w">Refine search</a>
-					</div>
-				</div>	
-			</div>
+	<div class="container container_box">
+		<div class="row-fluid box">
 			<div class="span9 content list">
 				<h1 class="h1 h1_up">115 Livingston St, Elizabeth</h1>
 				<div class="l-list__details">
@@ -1887,6 +1475,408 @@
   					</div>
 				</div>
 			</div>
+			<div class="span3 sidebar">
+				<div class="refine">
+					<div class="refine__btn">
+						<button class="submit submit_shadow">Refine search</button>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="minus"></i><span>Price range</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="minus"></i><span>City</span></div>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>Central Austin</span>
+						</label>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>West Austin</span>
+						</label>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>Lake Travis</span>
+						</label>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>Southwest Austin</span>
+						</label>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>South Austin</span>
+						</label>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>Northwest Austin</span>
+						</label>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>North Austin</span>
+						</label>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>East Austin</span>
+						</label>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="minus"></i><span>Preoperty type</span></div>
+						<label class="select-radio">
+							<input type="radio" name="type">
+							<i></i>
+							<span>East Austin</span>
+						</label>
+						<label class="select-radio">
+							<input type="radio" name="type">
+							<i></i>
+							<span>Central Austin</span>
+						</label>
+						<label class="select-radio">
+							<input type="radio" name="type">
+							<i></i>
+							<span>West Austin</span>
+						</label>
+						<label class="select-radio">
+							<input type="radio" name="type">
+							<i></i>
+							<span>Lake Travis</span>
+						</label>
+						<label class="select-radio">
+							<input type="radio" name="type">
+							<i></i>
+							<span>Southwest Austin</span>
+						</label>
+					</div>
+					<div class="refine__item clearfix">
+						<div class="refine__title"><i class="minus"></i><span>Badrooms</span></div>
+						<div class="filter__input filter__input_short pull-left">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+						<div class="filter__input filter__input_short pull-right">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item clearfix">
+						<div class="refine__title"><i class="minus"></i><span>Badrooms</span></div>
+						<div class="filter__input filter__input_short pull-left">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+						<div class="filter__input filter__input_short pull-right">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item clearfix">
+						<div class="refine__title"><i class="minus"></i><span>Badrooms</span></div>
+						<div class="filter__input filter__input_short pull-left">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+						<div class="filter__input filter__input_short pull-right">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item clearfix">
+						<div class="refine__title"><i class="minus"></i><span>Badrooms</span></div>
+						<div class="filter__input filter__input_short pull-left">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+						<div class="filter__input filter__input_short pull-right">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="minus"></i><span>City</span></div>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>Central Austin</span>
+						</label>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>West Austin</span>
+						</label>
+						<label class="select-checkbox">
+							<input type="checkbox" value="">
+							<i></i>
+							<span>Lake Travis</span>
+						</label>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__item">
+						<div class="refine__title"><i class="plus"></i><span>Location</span></div>
+						<div class="filter__input">
+							<div class="select">
+								<div class="select__arrow"></div>
+								<div class="select__value">$ 500</div>
+								<select>
+									<option>$ 500</option>
+									<option>$ 550</option>
+									<option>$ 600</option>
+									<option>$ 650</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="refine__btn">
+						<button class="submit submit_shadow">Refine search</button>
+					</div>
+				</div>	
+			</div>
 		</div>
 	</div>
 </div>
@@ -1897,50 +1887,57 @@
 <!-- /#wrap -->
 
 <!-- footer -->
-<div class="footer">
-	<div class="container footer__inner">
-		<div class="row">
-			<div class="footer__form">
-				<h2 class="h2">Reqest a Quote</h2>
-				<form>
-					<input type="text" placeholder="Your name">
-					<input type="text" placeholder="E-mail">
-					<input type="text" placeholder="Your phone">
-					<a href="#" class="button">send</a>
-				</form>
-			</div>
-			<div class="span3 footer__contact">
-				<h2 class="h2">Contact</h2>
-				<ul class="contact-list">
-					<li class="row-fluid contact">
-						<div class="span3 contact__name">Phone:</div>
-						<div class="span8 contact__value">760-494-9919</div>
-					</li>
-					<li class="row-fluid contact">
-						<div class="span3 contact__name">Fax:</div>
-						<div class="span8 contact__value">760-438-0800</div>
-					</li>
-					<li class="row-fluid contact">
-						<div class="span3 contact__name">E-mail:</div>
-						<div class="span8 contact__value">lundmail@lundteam.com</div>
-					</li>
-					<li class="row-fluid contact">
-						<div class="span3 contact__name">Adress:</div>
-						<div class="span8 contact__value">6114 Innovation Way Carlsbad, CA 92009</div>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__menu pull-right">
+<div class="footer container_box">
+	<div class="footer__inner">
+		<div class="row-fluid">
+			<div class="span9">
 				<div class="g-menu clearfix">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Selling</a></li>
 						<li><a href="#">Buying</a></li>
 						<li><a href="#">About us</a></li>
-						<li><a href="#">Sign in</a></li>
-						<li><a href="#">Register</a></li>
-						<li><a href="#">Site map</a></li>
+						<li><a href="#">Contact</a></li>
 					</ul>
+				</div>
+				<div class="footer__contact">
+					<h2 class="h2">Contact</h2>
+					<ul class="contact-list">
+						<li class="contact">
+							<div class="contact__name">Phone:</div>
+							<div class="contact__value">760-494-9919</div>
+						</li>
+						<li class="contact">
+							<div class="contact__name">Fax:</div>
+							<div class="contact__value">760-438-0800</div>
+						</li>
+						<li class="contact">
+							<div class="contact__name">E-mail:</div>
+							<div class="contact__value">lundmail@lundteam.com</div>
+						</li>
+						<li class="contact">
+							<div class="contact__name">Adress:</div>
+							<div class="contact__value">6114 Innovation Way Carlsbad, CA 92009</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__socials">
+					<ul>
+						<li><a title="Facebook" href="#" class="social social__fb">Facebook</a></li>
+						<li><a title="Twitter" href="#" class="social social__tw">Twitter</a></li>
+						<li><a title="Google+" href="#" class="social social__gp">Google+</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="footer__form">
+					<h2 class="h2">Reqest a Quote</h2>
+					<form>
+						<input type="text" placeholder="Your name">
+						<input type="text" placeholder="E-mail">
+						<input type="text" placeholder="Your phone">
+						<button class="submit">Search</button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -1948,15 +1945,6 @@
 			<div class="span6">
 				<a href="#" class="footer__logo"><img src="img/estatecloud.png" alt="EstateCloud"></a>
 				<span class="copyrights">© Copyright Logo Realty 2011-2012, All Rights Reserved.</span>
-			</div>
-			<div class="span6 test-right">
-				<div class="footer__socials pull-right">
-					<ul>
-						<li><a title="Facebook" href="#" class="social social__fb">Facebook</a></li>
-						<li><a title="Twitter" href="#" class="social social__tw">Twitter</a></li>
-						<li><a title="Google+" href="#" class="social social__gp">Google+</a></li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</div>
