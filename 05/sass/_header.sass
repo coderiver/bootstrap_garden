@@ -1,0 +1,92 @@
+@import "base"
+
+// header
+.l-header
+	background: #fff
+	 
+.header
+	padding: 30px 0
+	+box
+
+.header__logo, .header__logo a
+	font-size: 30px
+	color: #4d2d29
+	text-transform: uppercase
+	font-weight: bold
+	+geo
+	&:hover
+		text-decoration: none
+
+// navbar
+.navbar
+	margin-bottom: 0
+	.navbar-inner
+		min-height: 32px
+		padding-left: 15px
+		padding-right: 15px
+		background-color: #FFF
+		border: none
+		+background-image(linear-gradient(#fff, #fff))
+		+box-shadow(none)
+		.nav
+			li
+				border-left: 1px solid #e5e5e5
+				a
+					padding: 6px 13px
+					color: #2f2f2f
+					font-size: 18px
+					
+			.active
+				a
+					background: #FFF 
+					+box-shadow(none)
+
+.header__socials-wrap
+	float: left
+
+.header__socials
+	ul
+		margin: 0 0 5px 0px
+	li
+		display: inline-block
+		vertical-align: top
+
+.social
+	display: block
+	margin-right: 10px
+	+ht
+
+.social__tw
+	+s(ico_tw)
+.social__fb
+	+s(ico_fb)
+.social__gp
+	+s(ico_gp)
+
+.header__tel
+	font-size: 16px
+	color: #843026
+	font-weight: bold
+
+.header__menu
+	width: 135px
+	float: left
+	ul
+		overflow: hidden
+	li
+		float: left
+		margin-right: 20px
+	.is-active
+		a
+			color: #b01604
+			font-weight: bold
+	a
+		font-family: Tahoma, Geneva, sans-serif
+		font-size: 10px
+		color: #848484
+
+
+
+
+
+
