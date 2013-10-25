@@ -91,32 +91,28 @@ input[type="submit"]::-moz-focus-inner
 .button_w
     width: 100%
 .h1
-    font-size: 26px
-    //+font_sb
+    font-size: 32px
     font-weight: normal
     color: #2d2d2d
     line-height: 1
     margin: 0           
 .h2
-    display: inline-block
-    font-size: 18px
-    color: #0f1010
-    //+font_sb
-    font-weight: normal
+    font-size: 28px
+    color: #fff
+    +fl
     line-height: 1
     margin: 0       
-.h2_pink
-    color: #bf1f41
 .link-more
     display: inline-block
     height: 20px
     line-height: 19px 
     padding: 0 10px
-    background: #df5b0b
-    color: #fff
+    +f_i
+    background: #204a65
+    color: #f6f7f0
     text-decoration: none
     &:hover
-        color: #fff
+        color: #f6f7f0
         text-decoration: none
 .link-more_blue
     background: #008fcf
@@ -165,8 +161,8 @@ input[type="submit"]::-moz-focus-inner
     position: relative
     height: 30px
     +box
+    border-radius: 2px
     background: #fff
-    border: 2px solid #9b9e9e
     select
         position: absolute
         top: 0px
@@ -188,17 +184,12 @@ input[type="submit"]::-moz-focus-inner
             left: 50%
             margin: -4px 0 0 -6px
             +s(select)
-    .select__value
-        line-height: 26px
-        +box
-        //+font_sb
-        font-size: 15px
-        color: #1c1c1c
-        padding: 0 33px 0 12px
-.select_h
-    height: 40px
-    .select__value
-        line-height: 36px         
+.select__value
+    +box
+    font: 13px Arial, sans-serif
+    line-height: 30px
+    color: #a8a9ae
+    padding: 0 33px 0 12px        
 .star-b
     +s(star_b)
 .star-g
