@@ -1,7 +1,7 @@
 @import base
 
 body
-    font-family: Arial, Tahoma, sans-serif
+    +f
     font-size: 13px
     color: #424b5a
     line-height: 1.2
@@ -11,7 +11,8 @@ body
 
 .header
     width: 980px
-    margin: 0 auto     
+    margin: 0 auto
+    padding-bottom: 34px     
 .header__socials, .footer__socials
     ul
         margin: 8px 0
@@ -19,7 +20,9 @@ body
         list-style: none
         display: inline-block
         vertical-align: top
-        margin-left: 5px   
+        margin-left: 5px
+.header__socials
+    margin-top: 10px           
 .social
     +ht
     display: block     
@@ -31,11 +34,12 @@ body
     +s(ico_gp)
 .g-menu
     a
-        font: 10px Tahoma, sans-serif
+        font-size: 10px
         text-decoration: none
-        color: #878a8a
+        color: #5b5c56
         &:hover
-            color: #ffa800
+            color: #e8554e
+            +f_b
     ul
         +clr
         float: right
@@ -43,57 +47,36 @@ body
         list-style: none
     li
         float: left
-        height: 37px
-        line-height: 37px 
+        min-width: 50px
+        height: 46px
+        line-height: 46px 
         margin-left: 20px
 .phones-list
     position: relative
-    margin: 10px 78px 0 0
+    margin: 20px 78px 0 0
     padding-left: 35px
-    +font_sb
-    font-size: 15px
-    color: #008fcf 
-    &:before
-        content: ""
-        position: absolute
-        top: -3px
-        left: 0px
-        +s(phone)  
+    +f_b
+    font-size: 14px
+    color: #085f6e  
 .logo
     display: inline-block
-    margin: 10px 0
+    margin: 0
     a
-        font: bold 30px Arial, sans-serif
-        color: #da395b
+        font-size: 32px
+        color: #e8554e
         &:hover
             text-decoration: none
 .slogan
     font-size: 15px 
     color: #95989c
 .navbar
-    margin: 0
+    margin: 10px 0 0
 .nav
-    li
-        position: relative
-        &:before
-            content: ""
-            position: absolute 
-            top: 12px
-            left: 0px
-            height: 14px
-            width: 1px
-            background: #404040
-        &:first-child
-            &:before
-                content: ""
-                display: none
     a
-        +font_sb
         font-size: 15px
-        color: #fff!important
+        text-transform: uppercase
+        color: #5b5c56!important
         +text-shadow(none!important)
-        &:hover
-            color: #fff!important
 .tabs
     li
         &:before
