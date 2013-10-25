@@ -4,28 +4,17 @@
 
 .footer
     width: 1162px 
-    height: 370px
+    height: 297px
     margin: 0 auto
     background: url(../img/footer-bg.png) repeat
 .footer__inner
-    padding: 27px 100px
-    .g-menu
-        margin-bottom: 30px
-        ul
-            float: left
-        li
-            margin: 0 20px 0 0    
-        a
-            // +font_sb
-            font-size: 13px
-            color: #fff
-            &:hover
-                color: #e04930    
+    padding: 40px 90px
+    +box    
     .h2
-        text-transform: none
-        color: #e04930
-        // +font_sb
-        margin-bottom: 15px
+        display: block
+        text-transform: uppercase
+        color: #d25349
+        margin-bottom: 20px
     input
         width: 230px
         height: 40px
@@ -34,23 +23,40 @@
         background: #fff
         color: #1c1c1c
         border: none
-        // +font_sb
-        +placeholder(#1c1c1c)
+        +placeholder(#a8a9ae)
+    .submit
+        width: 90px   
+.footer__nav
+    position: relative
+    margin-bottom: 30px
+    ul
+        +clr
+    li
+        width: 40%
+        float: left  
+    a
+        font-size: 11px
+        color: #5b5c56
+        text-transform: uppercase
+        &:hover
+            color: #5b5c56      
 .footer__form
     float: left
     width: 230px
 .footer__contact
+    position: relative
     margin-bottom: 25px    
 .contact
-    display: inline-block
     margin-right: 25px
-    // +font                   
+    font: 10px Arial, sans-serif
+    color: #525257
+    margin-bottom: 5px                 
 .contact__name       
-    font-size: 12px
-    color: #7a7c7c
+    font-size: 10px
+    min-height: 1px!important
 .contact__value
-    font-size: 14px
-    color: #c4c6c8
+    font-size: 11px
+    min-height: 1px!important
 .footer__menu
     a
         font-size: 14px
@@ -61,12 +67,16 @@
     border-top: 1px solid #877d7a
     +box
 .footer__logo
-    display: inline-block
-    margin-right: 50px
+    position: absolute
+    top: 189px
+    left: 0px
 .copyrights
-    font-size: 11px
-    color: #5d5f5f
-    vertical-align: bottom
+    position: absolute
+    top: 205px
+    left: 0
+    font: 10px Arial, sans-serif
+    color: #6d6d6f
 .footer__socials
-    ul
-        margin: 6px 0                            
+    position: absolute
+    top: 195px
+    left: 137px                            

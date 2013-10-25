@@ -141,22 +141,25 @@ input[type="submit"]::-moz-focus-inner
 //submit 
 .submit
     position: relative
-    height: 40px
-    padding: 0 20px
+    height: 30px
+    border-radius: 3px
     border: none
-    +background-image(linear-gradient(top, #ee6945 0%, #e55c40 100%))
-    //+font
-    font-size: 17px
+    text-transform: uppercase
+    outline-style: none
+    background: #085f6e
+    +f_b
+    font-size: 14px
     color: #fff
-.submit_shadow
-    +box-shadow(0px 2px 6px 2px #ccc)   
-.submit_search
+    text-align: center
     &:before
         content: ""
         position: absolute
-        top: 15px
-        left: 21px
-        +s(ico_search-white)    
+        top: 3px
+        bottom: 3px
+        right: 3px
+        left: 3px
+        +box
+        border: 1px solid #208698 
 // select            
 .select
     position: relative
