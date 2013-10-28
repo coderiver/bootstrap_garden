@@ -122,8 +122,9 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 .bot-line .bot-line__yellow { float: left; width: 33%; height: 4px; margin-right: 0.5%; background: #f5c53d; }
 .bot-line .bot-line__green { float: left; width: 33%; height: 4px; background: #7fb870; }
 
-.carousel_agent .item__img { height: 322px; }
+.carousel_agent .item__block { margin-left: 0; left: 155px; }
 .carousel_agent .slider-control { top: 20%; }
+.carousel_agent .carousel-indicators { right: 50%; }
 
 .carousel-indicators { position: absolute; bottom: 50px; top: auto; right: 120px; left: auto; }
 .carousel-indicators li { position: relative; display: inline-block; border-radius: 0px; background: url('../img/icons-s2a3f347a44.png') 0 -677px no-repeat; width: 14px; height: 13px; cursor: pointer; }
@@ -156,17 +157,16 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 .link_pink { color: #bf1f41; text-transform: none; }
 .link_pink:hover { color: #bf1f41; }
 
-.agent { position: relative; top: -1px; height: 130px; background: #eb624a; }
+.agent { position: absolute; top: 25px; right: 90px; width: 230px; -moz-box-sizing: border-box; box-sizing: border-box; padding: 20px 10px 20px 20px; background: #1b1b19; color: #f6f7f0; }
+.agent .link-more { vertical-align: bottom; margin-bottom: 20px; background: transparent; color: #7fb870; }
 
-.agent__info { padding: 30px 100px 30px 260px; -moz-box-sizing: border-box; box-sizing: border-box; font: 12px Arial, sans-serif; line-height: 1.6; }
-.agent__info p { margin: 0; color: white; }
+.agent__info { font: 12px Arial, sans-serif; line-height: 1.6; margin: 0; }
 .agent__info .link-more { position: relative; top: -2px; margin-left: 15px; }
 
-.agent__name { font-size: 24px; color: white; }
+.agent__name { display: block; font-size: 18px; color: white; }
 .agent__name:hover { text-decoration: none; color: white; }
 
-.agent__img { position: absolute; top: -10px; left: 100px; width: 130px; height: 150px; }
-.agent__img img { width: 100%; height: 100%; }
+.agent__img { width: 100px; height: 110px; margin: 20px 20px 20px 0; }
 
 .l-filters { padding: 30px 91px; background: #76cddc; }
 .l-filters:before, .l-filters:after { content: ""; display: table; }
