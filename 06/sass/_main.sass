@@ -27,7 +27,42 @@
 
 // carousel
 .carousel
+	position: relative
 	margin-bottom: 0
+.carousel-inner
+	padding-bottom: 4px	
+.top-line
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	height: 4px
+	background: rgba(255,255,255, .5)
+	z-index: 2
+.bot-line
+	position: absolute
+	bottom: 0px
+	left: 90px
+	right: 90px
+	height: 4px
+	z-index: 2
+	.bot-line__blue
+		float: left
+		width: 33%
+		height: 4px 
+		margin-right: 0.5%
+		background: #76cddc
+	.bot-line__yellow
+		float: left
+		width: 33%
+		height: 4px
+		margin-right: 0.5%
+		background: #f5c53d
+	.bot-line__green
+		float: left
+		width: 33%
+		height: 4px
+		background: #7fb870     
 .carousel_agent
 	.item__img
 		height: 322px
@@ -171,52 +206,48 @@
 .l-article
 	padding: 30px 100px
 	+box
-	background: #eff0f0
 .article
 	+box
 	padding-right: 20px
-	.h1
-		color: #0f1010
 	p
 		margin: 20px 0 30px
-		font-size: 14px
-		line-height: 1.6
-		color: #7c7a73
+		font: 13px/1.6 Arial, sans-serif
+		color: #525257
 .l-popular
-	margin-top: 14px
-	background: #df5b0b
-	padding: 12px 0px
+	margin-top: -50px
+	background: #fff
+	padding: 30px
+	+clr
 	+box
-	a
-		display: block
-		padding: 0 30px
-		line-height: 30px
-		//+font_sb
-		font-size: 15px
-		color: #fff
-		&:hover
-			background: #87898c
-			+background-image(linear-gradient(bottom, #d35204 0%, #d15305 95%, #ba4a05 100%))
-			text-decoration: none    
+.popular__title
+	margin: 0
+	+f_b
+	font-size: 12px 
+	color: #7fb870
+	text-transform: uppercase			   
 .popular
+	width: 180px
+	float: left
+	li
+		margin-bottom: 5px
 	a
-		font-size: 13px
-		text-decoration: underline
-		color: #424b5a
+		font-size: 14px
+		color: #77777a
 		&:hover
-			text-decoration: none		
+			text-decoration: underline		
 .comment_img
-	width: 130px
-	height: 150px
-	margin-right: 20px
+	width: 89px
+	height: 89px
+	margin-right: 10px
 	img
 		width: 100%
 		height: 100%  
 .comment__text
-	width: 169px		  
+	width: 215px		  
 .quote
-	font: 12px Arial, sans-serif
-	color: #7c7a73
+	+f_i
+	color: #9d9ea5
+	font-size: 13px 
 	line-height: 1.5
 .page_bg
 	position: relative
@@ -229,9 +260,6 @@
 		width: 100%
 		height: 1px
 		background: #fff
-.preoperties__topper
-	padding-bottom: 10px
-	border-bottom: 1px solid #b1b4b9		
 .preoperties__right		   
 	text-align: right
 	a
@@ -239,29 +267,46 @@
 .l-preoperties
 	padding-left: 10px		
 .preoperties
-	margin-top: 14px
+	margin-top: 45px
+.preoperties__nav
+	margin: 14px 0 20px	
+.preoperties__prev
+	display: inline-block
+	position: relative
+	+s(prev)
+.preoperties__next
+	display: inline-block
+	position: relative
+	+s(next)		
 .preoperties__main
 	margin: 20px 0 0
 	padding-bottom: 8px
 .preoperties__img
 	position: relative
-	display: block						
+	display: block
+	height: 163px
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 4px
+		background: #d25349   						
 .preoperties__adress
-	font-size: 16px
-	//+font_sb
-	color: #2d2d2d
+	font-size: 18px
+	color: #525257
 	&:hover
-		color: #2d2d2d
+		color: #525257
 .preoperties__price
 	display: inline-block
 	margin: 20px 10px 0 0
-	font-size: 14px
-	//+font_sb
-	color: #bf1f41
+	+f_b
+	font-size: 14px 
+	color: #76cddc
 .preoperties__info
 	position: relative
 	padding: 5px 0 0
-	border-top: 1px solid #fff
 	li
 		padding-left: 0
 		p
@@ -269,12 +314,12 @@
 			line-height: 1.2 
 .preoperties__type
 	min-height: 1px!important 
-	font-size: 11px
-	color: #777979
+	font: italic 10px Arial, sans-serif
+	color: #a4a5a4
 .preoperties__value
 	min-height: 1px!important 
-	font-size: 13px
-	color: #0f1010
+	font: 13px Arial, sans-serif
+	color: #525257
 	
 // preoperty
 

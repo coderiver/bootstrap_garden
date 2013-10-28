@@ -62,6 +62,7 @@ input[type="submit"]::-moz-focus-inner
 .page
     position: relative
     z-index: 1
+    background: #f6f7f0
 .wrap
     margin-bottom: 20px
     +box
@@ -93,15 +94,18 @@ input[type="submit"]::-moz-focus-inner
 .h1
     font-size: 32px
     font-weight: normal
-    color: #2d2d2d
+    +fl
+    color: #525257
     line-height: 1
     margin: 0           
-.h2
+.h2, .h3
     font-size: 28px
     color: #fff
     +fl
     line-height: 1
-    margin: 0       
+    margin: 0
+.h3
+    font-size: 12px                
 .link-more
     display: inline-block
     height: 20px
@@ -109,31 +113,47 @@ input[type="submit"]::-moz-focus-inner
     padding: 0 10px
     +f_i
     background: #204a65
-    color: #f6f7f0
+    color: #9d9ea5
     text-decoration: none
     &:hover
-        color: #f6f7f0
+        color: #9d9ea5
         text-decoration: none
-.link-more_blue
-    background: #008fcf
-.link-more_grey
-    background: #e2e4e4
-    color: #0f1010
-    &:hover
-        color: #0f1010             
+.link-more_trans
+    background: transparent             
 .box
     padding: 50px 100px
-    +box
-    background: #fff         
+    +box         
 .box__inner
     margin-top: 20px
 .img-box
-    +box
-    padding: 2px
-    background-color: #e2e4e4
     img
         width: 100%
         height: 100%
+.topper
+    position: relative
+    text-align: center
+    &:before
+        content: ""
+        position: absolute
+        top: 15px
+        left: 0
+        right: 0
+        height: 1px
+        background: #a4a5a4
+    &:after
+        content: ""
+        position: absolute
+        top: 19px
+        left: 0
+        right: 0
+        height: 1px
+        background: #d5d6d6      
+    .h1
+        position: relative
+        display: inline-block
+        padding: 0 26px
+        background: #f6f7f0
+        z-index: 2        
 //submit 
 .submit
     position: relative
