@@ -327,57 +327,51 @@
 // preoperty
 
 .sidebar
-	padding-top: 42px
+	padding-top: 33px
 	margin-bottom: 50px
 .contact-agent
-	margin: 12px 0 50px
+	position: relative
+	margin: 0px 0 50px
+	padding: 10px 20px 20px
+	+box
+	background: #fff
+	@include box-shadow(0 0 3px #a3aeae)
 .contact-agent__img
-	height: 150px
+	width: 100px 
+	height: 110px
 	img
 		width: 100%
 		height: 100% 
 .contact-agent__text
-	position: relative
-	font-size: 16px
-	color: #fff
+	a
+		color: #e8554e
+		font-size: 18px
 .contact-agent__phone
 	position: relative
-	margin-top: 5px
-	//+font
-	font-size: 15px
-	padding-left: 19px
-	&:before
-		content: ""
-		position: absolute
-		top: 3px
-		left: 0px
-		+s(phone-small)	 	
+	color: #525257
+	font-size: 18px	 	
 .agent-link
-	color: #fff
-	//+font_sb
+	display: inline-block
 	font-size: 18px
+	margin-bottom: 10px 
 .contact-agent__reting
-	position: absolute
-	top: 0px
-	right: 0px
+	margin-bottom: 10px 
 	i
 		display: inline-block
 .contact-agent__form
-	padding: 10px
-	background: #df5b0b
+	padding: 10px 0 0
 	.textarea
-		max-width: 218px
+		max-width: 190px
 .contact-agent__submit
-	width: 100%
-	background: #1e2020 
-	+background-image(linear-gradient(bottom, #131515 0%, #272929 100%))  		 		
+	padding: 0 30px	
 .contact-agent__input
-	height: 40px!important
-	border: none!important
-	border-radius: 0!important
+	width: 190px!important
+	height: 30px!important
+	border: 1px solid #d9dfd9
+	+border-radius(3px)
 	color: #1c1c1c!important
-	//+font_sb
-	+placeholder(#1c1c1c)
+	background: #fff
+	+placeholder(#a8a9ae)
 .sidebar__similar
 	margin-bottom: 20px
 	.preoperties__img
@@ -420,9 +414,19 @@
 		&:hover
 			color: #fff
 			text-decoration: none
-.content
+.inside-top
+	+clr
+	padding: 40px 90px
+	background: #7fb870
+	.h1
+		float: left
+		+fh
+		color: #fff  			
+.content 
 	padding: 32px 0 0 10px
 	margin-bottom: 50px
+	margin-left: 0px!important
+	+box
 	.h1
 		margin-bottom: 15px
 .content__tabs
@@ -432,34 +436,24 @@
 	position: absolute
 	top: 11px
 	left: 20px
-	+s(ico_payment)				
+	+s(ico_payment)
+.l-tabs
+	float: right
+	padding-top: 8px					
 .tabs
-	margin-bottom: 0
-	border-bottom: none
-	border-top: 1px solid #b1b4b9 
+	+clr
 	li
-		margin-right: 1px
-		min-width: 96px
-		text-align: center
-		background: #b1b4b9
+		float: left
+		margin-left: 30px
 		a
-			padding: 11px 12px
-			border: none
-			border-radius: 0
-			margin-right: 0
-			font: bold 11px Arial, sans-serif
-			color: #2f3339
-			text-transform: uppercase
+			font-size: 24px
+			color: #fff
 			&:hover
-				background: #b1b4b9
-	li.active
-		a
-			background: #008fcf
-			border: none
-			&:hover
-				border: none
-				background: #008fcf
-				 		
+				color: #1c6a08
+				text-decoration: none	
+		a.active
+			color: #1c6a08
+			text-decoration: none
 //slider
 .building__gallery
 	margin-bottom: 20px
@@ -468,7 +462,6 @@
 	.building__media
 		text-align: center
 		height: 506px
-		line-height: 270px
 		img
 			vertical-align: middle
 			text-align: center
@@ -590,11 +583,21 @@
 	font-size: 26px
 	margin: 0
 .montly
-	position: relative
-	margin-bottom: 20px
-	text-align: center
-	line-height: 40px
-	cursor: pointer		 			
+	position: absolute
+	top: 28px
+	right: 90px
+	+f_b
+	color: #e8554e
+	text-transform: uppercase
+	&:hover
+		color: #e8554e
+	&:before
+		content: ""
+		position: absolute
+		top: 0px
+		left: -20px
+		+s(ico_payment)
+
 .building__infrastructure
 	padding: 3px
 	background: #e3e5e8 
