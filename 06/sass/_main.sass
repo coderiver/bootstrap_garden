@@ -282,7 +282,6 @@
 	position: relative
 	+s(next)		
 .preoperties__main
-	margin: 20px 0 0
 	padding-bottom: 8px
 .preoperties__img
 	position: relative
@@ -743,6 +742,7 @@
 	
 // list
 .tab-list
+	position: relative
 	padding-bottom: 130px
 .list
 	.h1
@@ -760,6 +760,15 @@
 		font-size: 20px
 .list-item__img
 	position: relative
+	height: 165px 
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 4px
+		background: #d25349
 .sold
 	position: absolute
 	top: 0
@@ -783,39 +792,39 @@
 		font-size: 16px
 		color: #fff     
 .l-list__details
-	float: right
 	p
 		margin-top: 7px
 		display: inline-block
+		color: #085f6e
+		font: 11px Arial, sans-serif
 .list__details-left
 	margin-right: 24px
-	font-size: 14px
-	//+font_sb
 	color: #008fcf
 .list__details-right
 	color: #828587
-	//+font_sb
 	span
 		color: #008fcf
 .select_list
 	position: absolute
-	top: 10px
-	right: 0px
-	width: 230px
-.list-item__content
-	.preoperties__main
-		position: relative
-		margin: 0 0 16px
-		.preoperties__more
-			right: 0
-			background: #008fcf
-			color: #fff 
-		.preoperties__more-left
-			right: 48px
-			background: #df5b0b 		 		
+	top: 68px
+	right: 100px
+	background: transparent
+	border: none
+	.select__value
+		color: #e8554e
+		+f
+	.select__arrow
+		&:after
+			+s(select_orange)	
+.preoperties__link-more
+	float: right
+	color: #9d9ea5
+	text-decoration: underline
+	&:hover
+		color: #9d9ea5		 		
 .list-item__detail
-	float: left
 	width: 180px
+	+clr
 	.left-col
 		float: left
 		width: 60px
@@ -830,38 +839,46 @@
 	position: absolute
 	bottom: 50px
 	left: 50%
-	margin-left: -217px
-	width: 435px 
+	margin-left: -264px
+	width: 528px 
 	height: 30px
 .pagination
 	margin: 0
 	li
 		float: left
-		width: 25px
-		height: 30px
-		margin-left: 9px
+		width: 48px
+		height: 48px
 		a
 			display: block
-			width: 25px 
-			line-height: 30px
+			width: 48px
+			height: 48px
+			border-radius: 50%  
+			line-height: 48px
 			text-align: center
 			font-size: 18px
-			color: #9b9e9e 
+			color: #8c8d89 
 			&:hover
-				color: #008ccb
+				color: #3b3c3a
 				text-decoration: none 
+				background: #f5c53d 
 		a.current
-			color: #008ccb
+			color: #3b3c3a
+			text-decoration: none 
+			background: #f5c53d
 .pagination-prev
 	position: absolute
-	top: 8px
+	top: 16px
 	left: -80px
 	+s(prev)
+	&:hover
+		+s(prev-gold)
 .pagination-next
 	position: absolute
-	top: 8px
+	top: 16px
 	right: -80px
-	+s(next)	
+	+s(next)
+	&:hover
+		+s(next-gold)	
 
 
 
