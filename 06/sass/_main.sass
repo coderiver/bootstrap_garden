@@ -327,7 +327,7 @@
 // preoperty
 
 .sidebar
-	padding-top: 33px
+	padding-top: 17px
 	margin-bottom: 50px
 .contact-agent
 	position: relative
@@ -372,20 +372,39 @@
 	color: #1c1c1c!important
 	background: #fff
 	+placeholder(#a8a9ae)
+.l-sidebar__similar
+	ul
+		margin-top: 28px	
 .sidebar__similar
 	margin-bottom: 20px
-	.preoperties__img
-		display: block
-		+box
-		padding: 3px
-		img
-			width: 100%
-			height: 100%  
-	.preoperties__main
-		margin: 20px 10px 0
+	padding-bottom: 10px
+	border-bottom: 4px solid #d5d6d6  
 	.preoperties__info
 		border-top: none
 		margin: 0 10px
+	.preoperties__adress
+		float: right
+		width: 50% 
+		font-size: 14px
+	.preoperties__price
+		float: right
+		width: 50%
+		font-size: 14px
+		color: #76cddc
+		+f_b
+		margin: 20px 0 0 		
+.similar__img
+	float: left
+	width: 115px
+	height: 80px  
+	&:before
+		display: none
+	img
+		width: 100%
+		height: 100% 		
+.preoperties__main
+	+clr
+	color: #525257		
 .l-preoperties__info
 	position: relative
 .preoperties__more
@@ -409,11 +428,14 @@
 .similar__more
 	a
 		display: block
-		line-height: 40px
+		line-height: 30px
 		text-align: center
+		background: #7fb870 
 		&:hover
 			color: #fff
 			text-decoration: none
+		&:before
+			border: 1px solid #98ca8b	
 .inside-top
 	+clr
 	padding: 40px 90px
@@ -423,8 +445,8 @@
 		+fh
 		color: #fff  			
 .content 
-	padding: 32px 0 0 10px
-	margin-bottom: 50px
+	padding: 17px 0 0 10px
+	margin-bottom: 10px
 	margin-left: 0px!important
 	+box
 	.h1
@@ -456,12 +478,15 @@
 			text-decoration: none
 //slider
 .building__gallery
-	margin-bottom: 20px
+	margin-bottom: 45px
+	position: relative
+	background: #fff
+	+box-shadow(0 0 3px #a3aeae)
 .building__photo
 	+clr
 	.building__media
 		text-align: center
-		height: 506px
+		height: 450px
 		img
 			vertical-align: middle
 			text-align: center
@@ -472,11 +497,10 @@
 	position: relative
 	+clr
 	+box
-	padding: 10px
-	background: #000  
+	padding: 10px 
 	.caro
-		width: 508px
-		height: 70px
+		width: 578px
+		height: 46px
 		float: left
 		margin: 7px 13px
 		overflow: hidden
@@ -487,16 +511,16 @@
 		width: 20000em
 		list-style: none
 		li
-			width: 100px
-			height: 70px
+			width: 74px
+			height: 46px
 			float: left
-			margin: 0 2px 0 0
+			margin: 0 10px 0 0
 			cursor: pointer
-			+opacity(.55)
+			+opacity(1)
 			&:hover, &.active
 				border-color: #ff9900
 				background-color: #ff9900
-				@include opacity(1)
+				@include opacity(.55)
 			img
 				width: 100%
 				height: 100%
@@ -504,42 +528,36 @@
 .slide__arrow-prev
 	position: relative
 	float: left
-	width: 82px
-	height: 82px
+	width: 50px
+	height: 60px
 	+box
-	border: 2px solid #fff
-	+opacity(1)
-	border-radius: 50%
 	cursor: pointer
 	+no-sel
 	i
 		position: absolute
-		top: 22px
-		left: 30px
+		top: 24px
+		left: 26px
 		+s(slide-prev)
 	&.disabled
-		+opacity(.2)
+		+opacity(.5)
 .slide__arrow-next
 	position: relative
 	float: left
-	width: 82px
-	height: 82px
-	border: 2px solid #fff
-	+opacity(1)
-	border-radius: 50%
+	width: 50px
+	height: 60px
 	cursor: pointer
 	+no-sel
 	i
 		position: absolute
-		top: 22px
-		left: 35px
+		top: 24px
+		left: 21px
 		+s(slide-next)
 	&.disabled
-		+opacity(.2)
+		+opacity(.5)
 .l-building__param
-	position: relative		
+	position: relative
+	padding: 30px 30px 40px		
 .building__param
-	margin-bottom: 40px
 	overflow: hidden
 	+box
 	ul
@@ -553,35 +571,31 @@
 	dt
 		float: left
 		width: 75px
-		color: #818587
-		font-size: 12px
+		color: #b9bab7
+		font-size: 11px
+		font-style: italic
 		font-weight: normal
 	dd
 		overflow: hidden
-		color: #393d3d
-		font-size: 14px
-		font-weight: bold
+		color: #565656
+		font-size: 12px
 	.building__descr
 		margin: 0
 		padding: 0 18px
-		font: 14px Arial, sans-serif
-		color: #7c7a73  
+		font: 13px Arial, sans-serif
+		color: #525257  
 		p
 			line-height: 1.8
 .sale-price
+	position: absolute
+	top: 0px
+	right: 0px
 	padding: 20px
 	+box
-	background: #008fcf
-	//+font
-.sale-price__title
-	font-weight: bold
-	font-size: 12px
-	color: #b9fbff
-.sale-price__price
-	font-weight: bold
+	background: #76cddc
+	+fh
 	color: #fff
 	font-size: 26px
-	margin: 0
 .montly
 	position: absolute
 	top: 28px
@@ -600,7 +614,8 @@
 
 .building__infrastructure
 	padding: 3px
-	background: #e3e5e8 
+	background: #fff
+	@include box-shadow(0 0 3px #a3aeae)
 	.sidebar__title
 		padding-left: 20px
 .tab-content
