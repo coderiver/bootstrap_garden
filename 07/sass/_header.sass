@@ -10,7 +10,31 @@ body
 // Header
 
 .l-header
+    position: relative
     background: #e1ddd6
+.header__line
+    position: absolute
+    bottom: -5px
+    left: 0
+    right: 0
+    height: 1px
+    background: #fff
+    &:before
+        content: ""
+        position: absolute
+        top: 2px
+        left: 0
+        right: 0
+        height: 1px
+        background: #fff
+    &:after
+        content: ""
+        position: absolute
+        bottom: 2px
+        left: 0
+        right: 0
+        height: 1px
+        background: #fff      
 .header
     width: 1000px
     height: 150px
@@ -64,7 +88,7 @@ body
                 background: #37939b
 .header__info
     padding-top: 7px                 
-.header__socials
+.socials
     padding-top: 8px
     li
         display: inline-block
