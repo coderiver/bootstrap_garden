@@ -31,6 +31,8 @@ a:hover { text-decoration: none; }
 
 .button { width: 100px; height: 30px; font-family: "MetaBoldCRegular", sans-serif; font-weight: normal; color: white; font-size: 20px; border: none; outline: none; background: #0e7de5; -webkit-box-shadow: 0 1px 1px #17191e; -moz-box-shadow: 0 1px 1px #17191e; box-shadow: 0 1px 1px #17191e; }
 
+.link-more { font-family: "MetaMediumCItalic", sans-serif; font-weight: normal; }
+
 @font-face { font-family: "MetaBlackCRegular"; src: url("../fonts/metablackc.eot"); src: url("../fonts/metablackc.eot") format("embedded-opentype"), url("../fonts/metablackc.woff") format("woff"), url("../fonts/metablackc.ttf") format("truetype"), url("../fonts/metablackc.svg#MetaBlackCRegular") format("svg"); }
 
 @font-face { font-family: "MetaBoldCRegular"; src: url("../fonts/metaboldc.eot"); src: url("../fonts/metaboldc.eot") format("embedded-opentype"), url("../fonts/metaboldc.woff") format("woff"), url("../fonts/metaboldc.ttf") format("truetype"), url("../fonts/metaboldc.svg#MetaBoldCRegular") format("svg"); }
@@ -61,6 +63,16 @@ a:hover { text-decoration: none; }
 @font-face { font-family: "MetaNormalCRegular"; src: url("../fonts/metanormalc.eot"); src: url("../fonts/metanormalc.eot") format("embedded-opentype"), url("../fonts/metanormalc.woff") format("woff"), url("../fonts/metanormalc.ttf") format("truetype"), url("../fonts/metanormalc.svg#MetaNormalCRegular") format("svg"); }
 
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 980px; padding: 0 10px; margin: 0 auto; }
+
+.item { position: relative; }
+
+.item__block { position: absolute; width: 670px; height: 70px; bottom: 0; left: 0; }
+
+.item__block-left { width: 390px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; background: #37939b; line-height: 70px; font-family: "MetaMediumCRegular", sans-serif; font-weight: normal; text-align: center; font-size: 33px; color: white; }
+
+.item__price { width: 170px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90); opacity: 0.9; text-align: center; font: bold 24px/70px Arial, sans-serif; color: #ffb025; background: #00464d; }
+
+.item__more { width: 110px; text-align: center; background: black; line-height: 21px; }
 
 @font-face { font-family: "MetaBlackCRegular"; src: url("../fonts/metablackc.eot"); src: url("../fonts/metablackc.eot") format("embedded-opentype"), url("../fonts/metablackc.woff") format("woff"), url("../fonts/metablackc.ttf") format("truetype"), url("../fonts/metablackc.svg#MetaBlackCRegular") format("svg"); }
 
