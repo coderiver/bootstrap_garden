@@ -1,0 +1,137 @@
+@font-face { font-family: "MetaBlackCRegular"; src: url("../fonts/metablackc.eot"); src: url("../fonts/metablackc.eot") format("embedded-opentype"), url("../fonts/metablackc.woff") format("woff"), url("../fonts/metablackc.ttf") format("truetype"), url("../fonts/metablackc.svg#MetaBlackCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBoldCRegular"; src: url("../fonts/metaboldc.eot"); src: url("../fonts/metaboldc.eot") format("embedded-opentype"), url("../fonts/metaboldc.woff") format("woff"), url("../fonts/metaboldc.ttf") format("truetype"), url("../fonts/metaboldc.svg#MetaBoldCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBookCRegular"; src: url("../fonts/metabookc.eot"); src: url("../fonts/metabookc.eot") format("embedded-opentype"), url("../fonts/metabookc.woff") format("woff"), url("../fonts/metabookc.ttf") format("truetype"), url("../fonts/metabookc.svg#MetaBookCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCRegular"; src: url("../fonts/metamediumc.eot"); src: url("../fonts/metamediumc.eot") format("embedded-opentype"), url("../fonts/metamediumc.woff") format("woff"), url("../fonts/metamediumc.ttf") format("truetype"), url("../fonts/metamediumc.svg#MetaMediumCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCItalic"; src: url("../fonts/metamediumc-italic.eot"); src: url("../fonts/metamediumc-italic.eot") format("embedded-opentype"), url("../fonts/metamediumc-italic.woff") format("woff"), url("../fonts/metamediumc-italic.ttf") format("truetype"), url("../fonts/metamediumc-italic.svg#MetaMediumCItalic") format("svg"); }
+
+@font-face { font-family: "MetaNormalCItalic"; src: url("../fonts/metanormalc-italic.eot"); src: url("../fonts/metanormalc-italic.eot") format("embedded-opentype"), url("../fonts/metanormalc-italic.woff") format("woff"), url("../fonts/metanormalc-italic.ttf") format("truetype"), url("../fonts/metanormalc-italic.svg#MetaNormalCItalic") format("svg"); }
+
+* { margin: 0; padding: 0; }
+
+ul, ol { list-style: none; margin: 0; }
+
+form { margin: 0; }
+
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; line-height: 1.2; }
+
+p { margin: 0; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+@font-face { font-family: "MetaBlackCRegular"; src: url("../fonts/metablackc.eot"); src: url("../fonts/metablackc.eot") format("embedded-opentype"), url("../fonts/metablackc.woff") format("woff"), url("../fonts/metablackc.ttf") format("truetype"), url("../fonts/metablackc.svg#MetaBlackCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBoldCRegular"; src: url("../fonts/metaboldc.eot"); src: url("../fonts/metaboldc.eot") format("embedded-opentype"), url("../fonts/metaboldc.woff") format("woff"), url("../fonts/metaboldc.ttf") format("truetype"), url("../fonts/metaboldc.svg#MetaBoldCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBookCRegular"; src: url("../fonts/metabookc.eot"); src: url("../fonts/metabookc.eot") format("embedded-opentype"), url("../fonts/metabookc.woff") format("woff"), url("../fonts/metabookc.ttf") format("truetype"), url("../fonts/metabookc.svg#MetaBookCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCRegular"; src: url("../fonts/metamediumc.eot"); src: url("../fonts/metamediumc.eot") format("embedded-opentype"), url("../fonts/metamediumc.woff") format("woff"), url("../fonts/metamediumc.ttf") format("truetype"), url("../fonts/metamediumc.svg#MetaMediumCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCItalic"; src: url("../fonts/metamediumc-italic.eot"); src: url("../fonts/metamediumc-italic.eot") format("embedded-opentype"), url("../fonts/metamediumc-italic.woff") format("woff"), url("../fonts/metamediumc-italic.ttf") format("truetype"), url("../fonts/metamediumc-italic.svg#MetaMediumCItalic") format("svg"); }
+
+@font-face { font-family: "MetaNormalCItalic"; src: url("../fonts/metanormalc-italic.eot"); src: url("../fonts/metanormalc-italic.eot") format("embedded-opentype"), url("../fonts/metanormalc-italic.woff") format("woff"), url("../fonts/metanormalc-italic.ttf") format("truetype"), url("../fonts/metanormalc-italic.svg#MetaNormalCItalic") format("svg"); }
+
+/* default layout */
+@font-face { font-family: "MetaBlackCRegular"; src: url("../fonts/metablackc.eot"); src: url("../fonts/metablackc.eot") format("embedded-opentype"), url("../fonts/metablackc.woff") format("woff"), url("../fonts/metablackc.ttf") format("truetype"), url("../fonts/metablackc.svg#MetaBlackCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBoldCRegular"; src: url("../fonts/metaboldc.eot"); src: url("../fonts/metaboldc.eot") format("embedded-opentype"), url("../fonts/metaboldc.woff") format("woff"), url("../fonts/metaboldc.ttf") format("truetype"), url("../fonts/metaboldc.svg#MetaBoldCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBookCRegular"; src: url("../fonts/metabookc.eot"); src: url("../fonts/metabookc.eot") format("embedded-opentype"), url("../fonts/metabookc.woff") format("woff"), url("../fonts/metabookc.ttf") format("truetype"), url("../fonts/metabookc.svg#MetaBookCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCRegular"; src: url("../fonts/metamediumc.eot"); src: url("../fonts/metamediumc.eot") format("embedded-opentype"), url("../fonts/metamediumc.woff") format("woff"), url("../fonts/metamediumc.ttf") format("truetype"), url("../fonts/metamediumc.svg#MetaMediumCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCItalic"; src: url("../fonts/metamediumc-italic.eot"); src: url("../fonts/metamediumc-italic.eot") format("embedded-opentype"), url("../fonts/metamediumc-italic.woff") format("woff"), url("../fonts/metamediumc-italic.ttf") format("truetype"), url("../fonts/metamediumc-italic.svg#MetaMediumCItalic") format("svg"); }
+
+@font-face { font-family: "MetaNormalCItalic"; src: url("../fonts/metanormalc-italic.eot"); src: url("../fonts/metanormalc-italic.eot") format("embedded-opentype"), url("../fonts/metanormalc-italic.woff") format("woff"), url("../fonts/metanormalc-italic.ttf") format("truetype"), url("../fonts/metanormalc-italic.svg#MetaNormalCItalic") format("svg"); }
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 1000px; }
+
+@font-face { font-family: "MetaBlackCRegular"; src: url("../fonts/metablackc.eot"); src: url("../fonts/metablackc.eot") format("embedded-opentype"), url("../fonts/metablackc.woff") format("woff"), url("../fonts/metablackc.ttf") format("truetype"), url("../fonts/metablackc.svg#MetaBlackCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBoldCRegular"; src: url("../fonts/metaboldc.eot"); src: url("../fonts/metaboldc.eot") format("embedded-opentype"), url("../fonts/metaboldc.woff") format("woff"), url("../fonts/metaboldc.ttf") format("truetype"), url("../fonts/metaboldc.svg#MetaBoldCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBookCRegular"; src: url("../fonts/metabookc.eot"); src: url("../fonts/metabookc.eot") format("embedded-opentype"), url("../fonts/metabookc.woff") format("woff"), url("../fonts/metabookc.ttf") format("truetype"), url("../fonts/metabookc.svg#MetaBookCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCRegular"; src: url("../fonts/metamediumc.eot"); src: url("../fonts/metamediumc.eot") format("embedded-opentype"), url("../fonts/metamediumc.woff") format("woff"), url("../fonts/metamediumc.ttf") format("truetype"), url("../fonts/metamediumc.svg#MetaMediumCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCItalic"; src: url("../fonts/metamediumc-italic.eot"); src: url("../fonts/metamediumc-italic.eot") format("embedded-opentype"), url("../fonts/metamediumc-italic.woff") format("woff"), url("../fonts/metamediumc-italic.ttf") format("truetype"), url("../fonts/metamediumc-italic.svg#MetaMediumCItalic") format("svg"); }
+
+@font-face { font-family: "MetaNormalCItalic"; src: url("../fonts/metanormalc-italic.eot"); src: url("../fonts/metanormalc-italic.eot") format("embedded-opentype"), url("../fonts/metanormalc-italic.woff") format("woff"), url("../fonts/metanormalc-italic.ttf") format("truetype"), url("../fonts/metanormalc-italic.svg#MetaNormalCItalic") format("svg"); }
+
+body { min-width: 1000px; font: 12px Tahoma, Arial, sans-serif; color: #424b5a; line-height: 1.2; background: #f3efe8; }
+
+.l-header { background: #e1ddd6; }
+
+.header { width: 1000px; height: 150px; margin: 0 auto; padding: 27px 10px 22px; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.logo a { display: block; width: 184px; height: 26px; font: 0/0 a; text-shadow: none; color: transparent; background: url(../img/logo.png) 0 0 no-repeat; }
+.logo p { margin-top: 5px; font-size: 14px; font-family: "MetaNormalCItalic", sans-serif; font-weight: 300; color: #848a90; }
+
+.g-menu { text-align: right; padding-top: 11px; }
+.g-menu ul { font-size: 0; }
+.g-menu li { display: inline-block; min-width: 58px; }
+.g-menu li a { color: #5b5c56; font-size: 10px; }
+.g-menu li a:hover { text-decoration: none; color: #37939b; font-weight: bold; }
+
+.nav { margin: 30px 0 0; }
+.nav ul:before, .nav ul:after { content: ""; display: table; }
+.nav ul:after { clear: both; }
+.nav li { float: left; margin-right: 10px; }
+.nav li a { display: block; line-height: 20px; padding: 0 10px; font-size: 13px; text-transform: uppercase; font-family: "MetaBoldCRegular", sans-serif; color: #515357; }
+.nav li a:hover { color: white; background: #37939b; }
+
+.header__info { padding-top: 7px; }
+
+.header__socials { padding-top: 8px; }
+.header__socials li { display: inline-block; margin-left: 10px; }
+.header__socials li a { display: block; font: 0/0 a; text-shadow: none; color: transparent; }
+
+.social__fb { background: url('../img/icons-sfca1ad9189.png') 0 -54px no-repeat; width: 8px; height: 17px; }
+
+.social__tw { background: url('../img/icons-sfca1ad9189.png') 0 0 no-repeat; width: 24px; height: 17px; }
+
+.social__gp { background: url('../img/icons-sfca1ad9189.png') 0 -27px no-repeat; width: 10px; height: 17px; }
+
+.phone { margin-right: 45px; }
+
+.phone__title { font-family: "MetaNormalCItalic", sans-serif; font-weight: 300; font-size: 14px; color: #848a90; }
+
+.phone__number { font: 24px Arial, sans-serif; }
+
+@font-face { font-family: "MetaBlackCRegular"; src: url("../fonts/metablackc.eot"); src: url("../fonts/metablackc.eot") format("embedded-opentype"), url("../fonts/metablackc.woff") format("woff"), url("../fonts/metablackc.ttf") format("truetype"), url("../fonts/metablackc.svg#MetaBlackCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBoldCRegular"; src: url("../fonts/metaboldc.eot"); src: url("../fonts/metaboldc.eot") format("embedded-opentype"), url("../fonts/metaboldc.woff") format("woff"), url("../fonts/metaboldc.ttf") format("truetype"), url("../fonts/metaboldc.svg#MetaBoldCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBookCRegular"; src: url("../fonts/metabookc.eot"); src: url("../fonts/metabookc.eot") format("embedded-opentype"), url("../fonts/metabookc.woff") format("woff"), url("../fonts/metabookc.ttf") format("truetype"), url("../fonts/metabookc.svg#MetaBookCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCRegular"; src: url("../fonts/metamediumc.eot"); src: url("../fonts/metamediumc.eot") format("embedded-opentype"), url("../fonts/metamediumc.woff") format("woff"), url("../fonts/metamediumc.ttf") format("truetype"), url("../fonts/metamediumc.svg#MetaMediumCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCItalic"; src: url("../fonts/metamediumc-italic.eot"); src: url("../fonts/metamediumc-italic.eot") format("embedded-opentype"), url("../fonts/metamediumc-italic.woff") format("woff"), url("../fonts/metamediumc-italic.ttf") format("truetype"), url("../fonts/metamediumc-italic.svg#MetaMediumCItalic") format("svg"); }
+
+@font-face { font-family: "MetaNormalCItalic"; src: url("../fonts/metanormalc-italic.eot"); src: url("../fonts/metanormalc-italic.eot") format("embedded-opentype"), url("../fonts/metanormalc-italic.woff") format("woff"), url("../fonts/metanormalc-italic.ttf") format("truetype"), url("../fonts/metanormalc-italic.svg#MetaNormalCItalic") format("svg"); }
+
+@font-face { font-family: "MetaBlackCRegular"; src: url("../fonts/metablackc.eot"); src: url("../fonts/metablackc.eot") format("embedded-opentype"), url("../fonts/metablackc.woff") format("woff"), url("../fonts/metablackc.ttf") format("truetype"), url("../fonts/metablackc.svg#MetaBlackCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBoldCRegular"; src: url("../fonts/metaboldc.eot"); src: url("../fonts/metaboldc.eot") format("embedded-opentype"), url("../fonts/metaboldc.woff") format("woff"), url("../fonts/metaboldc.ttf") format("truetype"), url("../fonts/metaboldc.svg#MetaBoldCRegular") format("svg"); }
+
+@font-face { font-family: "MetaBookCRegular"; src: url("../fonts/metabookc.eot"); src: url("../fonts/metabookc.eot") format("embedded-opentype"), url("../fonts/metabookc.woff") format("woff"), url("../fonts/metabookc.ttf") format("truetype"), url("../fonts/metabookc.svg#MetaBookCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCRegular"; src: url("../fonts/metamediumc.eot"); src: url("../fonts/metamediumc.eot") format("embedded-opentype"), url("../fonts/metamediumc.woff") format("woff"), url("../fonts/metamediumc.ttf") format("truetype"), url("../fonts/metamediumc.svg#MetaMediumCRegular") format("svg"); }
+
+@font-face { font-family: "MetaMediumCItalic"; src: url("../fonts/metamediumc-italic.eot"); src: url("../fonts/metamediumc-italic.eot") format("embedded-opentype"), url("../fonts/metamediumc-italic.woff") format("woff"), url("../fonts/metamediumc-italic.ttf") format("truetype"), url("../fonts/metamediumc-italic.svg#MetaMediumCItalic") format("svg"); }
+
+@font-face { font-family: "MetaNormalCItalic"; src: url("../fonts/metanormalc-italic.eot"); src: url("../fonts/metanormalc-italic.eot") format("embedded-opentype"), url("../fonts/metanormalc-italic.woff") format("woff"), url("../fonts/metanormalc-italic.ttf") format("truetype"), url("../fonts/metanormalc-italic.svg#MetaNormalCItalic") format("svg"); }
+
+html, body { height: 100%; }
+
+#push { height: 297px; }
+
+#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -297px; }
