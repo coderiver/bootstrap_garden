@@ -28,6 +28,8 @@ a
     text-decoration: none
     &:hover
         text-decoration: none
+.page
+    position: relative        
 .button
     width: 100px 
     height: 30px
@@ -38,7 +40,91 @@ a
     outline: none 
     background: #0e7de5
     @include box-shadow(0 1px 1px #17191e)
-.link-more
-    +mm_i    
-
+.link-more 
+    +mm_i
+.more
+    display: inline-block
+    height: 20px
+    line-height: 20px 
+    padding: 0 12px    
+    +mm_i
+    color: #37939b
+    background: #e5e1d9
+    +box-shadow(0 1px 3px rgba(155,149,139,.75), inset 0 1px 0 #fbf9f8)    
+.h2
+    margin:  0 0 30px
+    +mm
+    font-size: 26px
+    color: #525441
+.h2_blue
+    color: #37939b    
+.divide
+    height: 6px
+    margin: 26px 0
+    border-top: 1px solid #d1ccc4
+    border-bottom: 1px solid #fff
+    background: #e5e1da
+.divide-thin
+    position: relative
+    margin-bottom: 11px
+    height: 1px
+    background: #e5e1da
+    &:before
+        content: ""
+        position: absolute
+        bottom: -1px
+        left: 0
+        right: 0
+        height: 1px 
+        background: #fff 
+.popular
+    display: inline-block
+    margin: 0 10px 10px 0
+    a
+        display: block
+        height: 20px
+        line-height: 20px
+        padding: 0 10px
+        +mn_i
+        color: #525441
+        background: #fff 
+        &:hover
+            background: #d5d1ca
+// select
+.select
+    position: relative
+    width: 110px 
+    height: 30px
+    +box
+    background: #fff
+    border: 1px solid #c1c1bf
+    border-radius: 0
+    +box-shadow(inset 0 0 2px rgba(0,0,0,.35))
+    select
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 110px
+        +opacity(0)
+        color: #292b2c
+        z-index: 2
+.select__arrow
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    width: 28px
+    &:after
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        margin: -4px 0 0 -6px
+        +s(select)
+.select__value
+    +box
+    font: 11px Arial, sans-serif
+    line-height: 30px
+    color: #515357
+    padding: 0 33px 0 12px
 
