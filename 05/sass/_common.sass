@@ -51,12 +51,20 @@ table
 .container
 	width: 1070px
 	margin: 0 auto
-	
+
+.page_inner
+	background: #E2E4E4
+
 // h
 .h2
 	font-weight: bold
 	color: #2d2d2d 
 	+geo
+
+.h3
+	margin: 45px 0 20px
+	font-size: 26px
+	+geo	
 
 // search
 .l-search
@@ -130,6 +138,60 @@ table
 .select_short
 	width: 48%
 	margin-right: 1%
+.select_mod2
+	width: auto
+	height: 30px
+	line-height: 30px
+	@include box-shadow(0 1px 0 #d5d6d6)
+	select
+		left: 1px
+		right: 1px
+		padding: 0 9px
+	.select__value
+		color: #757575
+	.select__arrow
+		+s(sel-arr3)
+		margin-top: -3px
+		
+.select_short
+	width: 48%
+	margin-right: 1%
+// select-radio
+.select-radio
+	position: relative
+	display: inline-block
+	min-width: 51%
+	span
+		display: inline-block
+		margin-left: 6px
+	input
+		+opacity(0)
+		position: relative
+	input + span
+		font-size: 13px
+		color: #757575
+		&:before
+			content: ""
+			position: absolute
+			top: 3px
+			left: 0px
+			width: 15px
+			height: 15px
+			+box
+			border-radius: 50%
+			background: #fff
+			opacity: 1 
+	input:checked + span
+		color: #7E2647
+		&:after
+			content: ""
+			position: absolute
+			top: 7px
+			left: 4px
+			width: 7px
+			height: 7px
+			border-radius: 50%
+			background: #7e2647
 
 .b-search
 	width: 120px
@@ -290,6 +352,15 @@ table
 		color: #FFF
 		font-size: 24px
 
+.price-mod
+	height: 40px
+	line-height: 40px
+	background: #CFCCC9
+	span
+		color: #7E2647
+		font-size: 18px
+		font-weight: bold		
+
 // info
 .l-info
 	min-height: 280px
@@ -350,6 +421,7 @@ a.more
 .properties__item
 	margin-right: -10px
 	margin-bottom: 30px
+	font-size: 0
 	.h1
 		line-height: 1
 		font-size: 15px
@@ -393,6 +465,10 @@ a.more
 	font-size: 26px
 	color: #fff
 	+geo
+
+// properties_mod
+.properties_mod
+
 
 // popular
 .l-popular
@@ -499,6 +575,187 @@ a.more
 	color: #FFF
 	line-height: 1.6 
 	+box
+
+// refine
+.refine
+	background: #dbd9d8
+	padding: 0 10px
+
+.refine__title
+	height: 40px
+	line-height: 40px
+	margin: 0 -10px
+	background: #b52514
+	text-align: center
+	.g-btn
+		background: transparent
+		font-size: 18px
+		color: #FFF
+		+geo
+
+.refine__btn
+	&:hover
+		background: #a1382c
+		cursor: pointer
+	&:active
+		+transition(all 0s)
+		@include box-shadow(inset 0 2px 10px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05))
+		
+.refine__bottom
+	margin: 30px -10px 0 
+.refine__item
+	.h1
+		margin-top: 20px
+		padding-left: 20px
+		font-size: 16px
+		line-height: 1
+		color: #343434
+		font-weight: normal
+		position: relative
+		+geo
+		+no-sel
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -7px
+			+s(sel-arr2)
+
+.map
+	height: 20px
+	line-height: 20px
+	padding: 0 10px
+	background: #B52514
+	display: inline-block
+	vertical-align: top
+	font-size: 11px
+	color: #e2e4e4 
+	&:hover
+		background: #A1382C
+		color: #e2e4e4
+		text-decoration: none
+
+// tabs
+.nav-tabs
+	border-bottom: none
+	li
+		a
+			font-size: 18px
+			color: #1E1E1E
+			font-weight: normal
+			&:hover
+				background: transparent
+				border: 1px solid transparent
+	.active
+		a
+			background: transparent
+			border: none
+			color: #B52514
+			position: relative
+			&:after
+				content: ""
+				+s(tab-active)
+				position: absolute
+				bottom: -4px
+				left: 50%
+				margin-left: -18px
+			&:hover
+				border: none
+				background-color: transparent
+				color: #B52514
+
+.building__infrastructure
+	margin-bottom: 30px
+	padding: 3px
+	background: #fff
+	.sidebar__title
+		padding-left: 20px
+.tab-content
+	.building__infrastructure
+		margin-top: 24px					
+.building__map
+	img
+		width: 100%
+	+border-radius(5px)
+.building__labels
+	margin-top: 20px
+	padding-left: 20px
+	+clr
+	ul
+		margin: 0
+		margin-right: 20px
+		float: left
+		width: 160px
+	li
+		list-style: none
+.checkbox
+	display: inline-block
+	min-height: 40px
+	color: #b8bcbf
+	font-size: 14px
+	cursor: pointer
+	position: relative		
+	input
+		position: relative
+		width: 15px
+		height: 15px
+		+opacity(0)
+		z-index: 2
+		cursor: pointer
+	span
+		position: relative
+		top: 3px
+		margin-left: 20px
+		padding-left: 13px
+		&:after
+			content: ""
+			position: absolute 
+			top: -3px
+			left: -20px
+			+s(ico_school)
+		&:before
+			content: ""
+			position: absolute
+			+s(input_ico)
+			left: -39px
+			top: 5px
+			line-height: 16px	
+	input:checked + span
+		color: #3a3c3e
+		&:before
+			content: ""
+			+s(input_checked_ico)
+	input:checked
+		color: #ccc
+	span.g-icon-hschool
+		&:after 
+			+s(ico_hschool)
+	span.g-icon-hospital
+		&:after
+			+s(ico_hospital)
+	span.g-icon-police
+		&:after
+			+s(ico_police)
+	span.g-icon-fire 
+		&:after	
+			+s(ico_fire)
+	span.g-icon-shops 
+		&:after	
+			+s(ico_shops)
+	span.g-icon-restoraunt 
+		&:after
+			+s(ico_restoraunt)
+	span.g-icon-market 
+		&:after	
+			+s(ico_market)
+	span.g-icon-airports
+		&:after
+			+s(ico_airports)
+						
+
+
+
 
 
 	
