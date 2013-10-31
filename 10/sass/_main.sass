@@ -1,0 +1,299 @@
+html,body
+	height: 100%
+
+body
+	margin: 0
+	color: #333333
+	background-color: #f6f7f8
+	line-height: 20px
+	min-width: 980px
+	font:
+		family: Arial,sans-serif
+		weight: normal
+		size: 14px
+
+// sticky footer 
+.out
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto
+
+//header
+.header
+	text-align: center
+	padding: 30px 0
+	background-color: #4d9fc0
+	color: #f5f7f7
+	background-image: url(../img/bg.jpg)
+	+background-size(cover)
+	background-position: center center
+	a
+		color: inherit
+		text-decoration: none
+	.header-i
+		position: relative
+	.header__logo
+		margin: 0
+	.header__logo-title
+		margin: 0
+		font-weight: normal
+		line-height: 1.2
+	.header__logo-description
+		margin: 0 0 40px
+		font-family: Arial
+		font-size: 11px
+		font-style: italic
+		font-weight: normal
+		line-height: 1.2
+	.header__contact
+		position: absolute
+		right: 0
+		top: 0
+		text-align: right
+	.header__tel
+		margin-bottom: 30px
+		color: #fff
+		font-size: 24px
+//nav
+.nav
+	position: relative
+	text-transform: uppercase
+	margin: 0
+	padding-bottom: 55px
+	&:after
+		position: absolute
+		bottom: 0
+		left: 50%
+		margin-left: -88px
+		width: 176px
+		height: 1px
+		background-color: #3385ac
+		+box-shadow(0 1px 1px #6ab4d2)
+		content: ""
+	ul
+		margin-bottom: 0
+	li
+		display: inline-block
+		margin: 0 20px
+		&.is-active, &:hover
+			a
+				color: #191919
+				+text-shadow(0 0 0)
+	a
+		text-decoration: none
+		+text-shadow(0 1px 0 #5b816b)
+.nav_secondary
+	margin-bottom: 17px
+	ul
+		+clr
+	li
+		float: left
+		display: inline-block
+		margin-left: 20px
+		a
+			color: #ffcac3
+			&:hover
+				color: #f5d7af
+//social acc
+.social-accounts
+	text-align: right
+	.social-accounts__item
+		display: inline-block
+		vertical-align: top
+		margin-left: 15px
+		+ht
+		a
+			display: block
+			height: 100%
+		&.social-accounts__item_tw
+			+s(tw)
+		&.social-accounts__item_fb
+			+s(fb)
+		&.social-accounts__item_gp
+			+s(gp)
+	&.social-accounts_footer
+		.social-accounts__item
+			&.social-accounts__item_tw
+				+s(tw-r)
+			&.social-accounts__item_fb
+				+s(fb-r)
+			&.social-accounts__item_gp
+				+s(gp-r)
+
+//footer
+.footer
+	font-size: 12px
+	.footer__top
+		border-top: 3px solid #dee0e1
+		background-color: #fff
+		+box-shadow(0 1px 1px #c8cdcf)
+		padding: 30px 0 45px
+	.footer__address
+		ul
+			margin-left: -35px
+		.footer__address-item
+			display: inline-block
+			margin-left: 35px
+			color: #191919
+			a
+				color: inherit
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+		em
+			display: block
+			font-weight: normal
+			font-style: normal
+			font-size: 11px
+			color: #999
+	.footer-i
+		padding: 25px 0 20px
+	.footer__nav
+		position: relative
+		text-transform: none
+		text-align: right
+		padding: 0
+		&:after
+			content: none
+		li
+			margin: 0 0 0 20px
+			&:first-child
+				margin-left: 0
+			a
+				color: #999
+				text-decoration: none
+				+text-shadow(0 0 0)
+				&:hover
+					text-decoration: underline
+	.footer__logo
+		margin-top: -6px
+		text-align: right
+		+ht
+		a
+			display: inline-block
+			vertical-align: top
+			+s(ec)
+
+//search toolbar
+.search-toolbar
+	position: relative
+	color: #77878d
+	background-color: #fff
+	+box-shadow(0 1px 1px #c8cdcf)
+	+background-image(linear-gradient(bottom, #e5f1f5 0%, #fff 100%))
+	&:after
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		height: 160px
+		z-index: -1
+		content: ""
+		+background-image(linear-gradient(bottom, #f6f7f8 0%, #d8dee3 100%))
+	.search-toolbar-i
+		padding: 17px 0 20px
+
+
+
+// hero
+.hero
+	margin-bottom: 35px
+	ul
+		margin-bottom: 0
+	p
+		margin-bottom: 25px
+
+//popular links
+.popular-links
+	background-color: #d99f51
+	padding: 20px
+	margin-top: 35px
+	margin-bottom: 50px
+	font-size: 13px
+	.popular-links__title
+		display: inline-block
+		vertical-align: top
+		color: #fff
+		font-size: 42px
+		font-weight: normal
+		float: left
+		margin: 0
+		margin-right: 65px
+	.popular-links__list
+		display: inline-block
+		vertical-align: top
+		+clr
+		margin-left: 0
+		margin-bottom: 0
+		font-size: 0
+		li
+			font-size: 13px
+			display: inline-block
+			vertical-align: top
+			width: 25%
+			color: #191919
+			padding-right: 5px
+			a
+				color: inherit
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+	.popular-linls__all
+		display: inline-block
+		vertical-align: top
+		color: #fff
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+// catalog
+.catalog
+	margin-bottom: 50px
+	.catalog__list
+		margin-bottom: 0
+		margin-left: 0
+		.catalog__item
+			background-color: #1a1a1a
+		.catalog__image
+			height: 210px
+			overflow: hidden
+			img
+				display: block
+				max-width: 100%
+				margin-right: auto
+				margin-left: auto
+				min-height: 210px
+				max-width: 100%
+		.catalog__caption
+			padding: 20px 10px
+			color: #f5f7f7
+			font-size: 12px
+		.catalog__caption-title
+			font-size: 16px
+			a
+				color: inherit
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+		.catalog__caption-price
+			color: #65a7bf
+			font-weight: bold
+			font-size: 14px
+		.catalog__caption-params
+			table
+				td
+					padding-left: 5px
+					font-size: 12px
+					&:first-child
+						width: 46%
+						padding: 0
+						color: #999
+
+
+
+
+
+
+
+
