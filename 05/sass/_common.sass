@@ -156,6 +156,7 @@ table
 .select_short
 	width: 48%
 	margin-right: 1%
+	
 // select-radio
 .select-radio
 	position: relative
@@ -212,6 +213,42 @@ table
 		+geo
 		&:hover
 			text-decoration: none
+
+// select-checkbox
+.select-checkbox
+	position: relative
+	display: inline-block
+	min-width: 51%
+	color: #f0f4f5
+	font-size: 12px
+
+	span
+		display: inline-block
+		margin-left: 6px
+		font-size: 13px
+		color: #757575
+		+no-sel
+	input
+		+opacity(0)
+	input + span
+		&:before
+			content: ""
+			position: absolute
+			top: 3px
+			left: 0px
+			width: 15px
+			height: 15px
+			background: #FFF 
+			+box
+			+border-radius(2px)
+			background: #fff
+	input:checked + span
+		&:after
+			content: ""
+			position: absolute
+			top: 7px
+			left: 3px
+			+sized-sprite($icons, checked)
 
 // slider
 .l-slider
@@ -400,10 +437,6 @@ a.more
 		text-decoration: none
 
 // properties
-.l-properties
-
-.properties
-
 .properties__topper
 	margin: 25px 0
 	line-height: 1
@@ -418,10 +451,50 @@ a.more
 		color: #2d2d2d
 		font-weight: normal
 
+.properties__top-right
+	.select_mod2
+		width: 210px
+		margin-bottom: 20px
+		float: right
+	.properties__top-right-descr
+		margin: 20px 0 30px
+		clear: both
+		color: #343434
+		font-size: 12px
+
 .properties__item
 	margin-right: -10px
 	margin-bottom: 30px
 	font-size: 0
+	position: relative
+	&:hover
+		.properties__image
+			&:after
+				content: "detail"
+				position: absolute
+				top: 50%
+				left: 50%
+				width: 62px
+				height: 40px
+				line-height: 40px
+				margin-left: -31px
+				margin-top: -20px
+				background: #fff
+				text-align: center
+				color: #2d2d2d
+				font-size: 11px
+				cursor: pointer
+	&.is-disabled, &:hover
+		.properties__label-sold
+			z-index: 100
+		.properties__image
+			width: 270px
+			height: 215px
+			background: #000
+			position: relative
+			z-index: 1234
+			img
+				opacity: 0.5
 	.h1
 		line-height: 1
 		font-size: 15px
@@ -664,6 +737,9 @@ a.more
 				border: none
 				background-color: transparent
 				color: #B52514
+				
+.tab-content
+	overflow: hidden
 
 .building__infrastructure
 	margin-bottom: 30px
@@ -752,6 +828,54 @@ a.more
 	span.g-icon-airports
 		&:after
 			+s(ico_airports)
+
+.pagination
+	margin: 50px 0
+	position: relative
+	ul
+		+box-shadow(none)
+		li
+			a, span
+				width: 35px
+				height: 35px
+				line-height: 35px
+				+border-radius(50%)
+				padding: 0
+				color: #919898
+				font-size: 18px
+				background: transparent
+				border: 2px solid transparent
+			a
+				&:hover
+					background: transparent
+					border: 2px solid #919898
+
+		li
+			&:first-child
+				border-width: 0 
+				a
+					+s(ico_pag-prew)
+					border: 0
+					position: absolute
+					top: 13px
+					left: 155px
+					color: #B52514 
+			&:last-child
+				a
+					+s(ico_pag-next)
+					border: 0
+					position: absolute
+					top: 13px
+					right: 155px
+		.active
+			a
+				background: transparent 
+				border: 2px solid #b52514
+				color: #b52514 
+				font-weight: bold
+				&:hover
+					border: 2px solid #b52514	
+
 						
 
 
