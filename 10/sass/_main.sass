@@ -12,12 +12,68 @@ body
 		weight: normal
 		size: 14px
 
+.select
+	position: relative
+	height: 30px
+	line-height: 30px
+	color: #54595a
+	font-size: 12px
+	background-color: #fff
+	+box-shadow(0 -1px 0 #fff, inset 0 1px 1px #b4bcbf)
+	+unselectable
+	&.select_mod
+		float: left
+		width: 50%
+	&:hover
+		cursor: pointer
+	span
+		display: block
+		padding: 0px 32px 0 10px
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		em
+			font-style: normal
+		i
+			position: absolute
+			right: 8px
+			top: 50%
+			margin-top: -8px
+			content: ""
+			+s(arrow)
+	&.is-open
+		span
+			i
+				+transform(rotate(180deg))
+		.select__drop
+			display: block
+	.select__drop
+		display: none
+		position: absolute
+		top: 100%
+		z-index: 10
+		left: 0
+		width: 100%
+		background-color: #fff
+		+box-shadow(inset 0 0px 1px #b4bcbf)
+		ul
+			margin: 0
+			padding: 5px 0
+		li
+			padding: 2px 10px
+			&:hover
+				background-color: #cedee5
+				cursor: pointer
+			span
+				padding: 0
+
 // sticky footer 
 .out
 	min-height: 100%
 	height: auto !important
 	height: 100%
 	margin: 0 auto
+	// +background-image(linear-gradient(bottom, #fff 40%, #d8dee3 45%))
 
 //header
 .header
@@ -35,12 +91,14 @@ body
 		position: relative
 	.header__logo
 		margin: 0
+		display: inline-block
+		margin: 0 0 40px
 	.header__logo-title
 		margin: 0
 		font-weight: normal
 		line-height: 1.2
 	.header__logo-description
-		margin: 0 0 40px
+		margin: 0
 		font-family: Arial
 		font-size: 11px
 		font-style: italic
@@ -55,6 +113,11 @@ body
 		margin-bottom: 30px
 		color: #fff
 		font-size: 24px
+	.search-title
+		text-transform: uppercase
+		font-weight: normal
+		margin-top: 15px
+		font-size: 14px
 //nav
 .nav
 	position: relative
@@ -174,7 +237,9 @@ body
 			display: inline-block
 			vertical-align: top
 			+s(ec)
-
+	.footer__request
+		input
+			margin-bottom: 0
 //search toolbar
 .search-toolbar
 	position: relative
@@ -182,19 +247,101 @@ body
 	background-color: #fff
 	+box-shadow(0 1px 1px #c8cdcf)
 	+background-image(linear-gradient(bottom, #e5f1f5 0%, #fff 100%))
-	&:after
-		position: absolute
-		top: 100%
-		left: 0
-		width: 100%
-		height: 160px
-		z-index: -1
-		content: ""
-		+background-image(linear-gradient(bottom, #f6f7f8 0%, #d8dee3 100%))
+	z-index: 100
 	.search-toolbar-i
 		padding: 17px 0 20px
+	.search-toolbar__title
+		color: #6e7f85
+		font-size: 12px
+	.search-toolbar__btn
+		position: relative
+		.btn
+			margin-top: 20px
 
-
+//carousel
+.carousel
+	position: relative
+	z-index: 12
+	overflow: hidden
+	padding-bottom: 36px
+	.carousel-inner
+		overflow: visible
+		.item
+			.carousel__pic
+				height: 420px
+				overflow: hidden
+				img
+					max-width: 100%
+					min-height: 100%
+					display: block
+					margin: 0 auto
+	.carousel-indicators
+		position: absolute
+		bottom: 15px
+		width: 100%
+		text-align: center
+		li
+			float: none
+			display: inline-block
+			width: 10px
+			height: 10px
+			margin: 0 2px
+			text-indent: -999px
+			background: none
+			+border-radius(5px)
+			border: 1px solid #939393
+			&.active
+				background-color: #fff
+				border: 1px solid transparent
+			&:hover
+				cursor: pointer
+	.carousel-caption
+		position: absolute
+		left: 50%
+		margin-left: -160px
+		bottom: -36px
+		height: 320px
+		width: 320px
+		padding: 50px 10px
+		+border-radius(50%)
+		background: #333333
+		background: rgba(#191919, 0.9)
+		text-align: center
+		font-family: "Times New Roman"
+	.carousel-caption__params
+		margin-bottom: 25px
+		font-family: Arial
+		font-size: 12px
+		table
+			width: 100%
+			td
+				padding-left: 10px
+				color: #f0f4f5
+				text-align: left
+				padding-bottom: 10px
+				vertical-align: top
+				&:first-child
+					width: 46%
+					padding: 0
+					color: #a3a5a6
+					text-align: right
+	.carousel-caption__title
+		font-weight: normal
+		color: #fff
+		font-size: 22px
+		margin-bottom: 15px
+	.carousel-caption__price
+		color: #64a7bf
+		font-size: 32px
+		margin-bottom: 20px
+	.carousel-caption__btn
+		color: #e65c49
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 14px
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 
 // hero
 .hero
@@ -247,6 +394,25 @@ body
 		&:hover
 			text-decoration: none
 
+.sale
+	display: none
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-left: -42px
+	margin-top: -42px
+	width: 84px
+	height: 84px
+	line-height: 84px
+	text-align: center
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: bold
+	color: #f5f7f7
+	opacity: 0.9
+	+border-radius(50%)
+	background-color: #e55d4b
+
 // catalog
 .catalog
 	margin-bottom: 50px
@@ -255,16 +421,43 @@ body
 		margin-left: 0
 		.catalog__item
 			background-color: #1a1a1a
+			position: relative
+			&.is-sale
+				.sale
+					z-index: 11
+					display: block
+				.catalog__image
+					opacity: 0.5
+				&.catalog__item
+					overflow: hidden
+					&:before
+						position: absolute
+						left: -50%
+						top: 50%
+						width: 200%
+						z-index: 10
+						// margin-top: -3px
+						background: #d35b49
+						height: 3px
+						content: ""
+						+transform(rotate(-45deg))
+				&:hover
+					.sale
+						display: none
+					.catalog__image
+						opacity: 1
+					&.catalog__item
+						overflow: hidden
+						&:before
+							content: none
 		.catalog__image
 			height: 210px
 			overflow: hidden
 			img
 				display: block
-				max-width: 100%
+				min-width: 100%
 				margin-right: auto
 				margin-left: auto
-				min-height: 210px
-				max-width: 100%
 		.catalog__caption
 			padding: 20px 10px
 			color: #f5f7f7

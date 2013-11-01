@@ -29,6 +29,7 @@
 						<li><a href="#">Contact</a></li>
 					</ul>
 				</nav>
+				<div class="search-title"><strong>Search</strong> your real estate</div>
 				<div class="header__contact">
 					<nav class="nav_secondary">
 						<ul>
@@ -51,31 +52,215 @@
 		<div class="search-toolbar">
 			<div class="search-toolbar-i container">
 				<div class="row">
-					<div class="span3">Location</div>
-					<div class="span3">Price range</div>
-					<div class="span3">Rooms</div>
-					<div class="span3"><button type="submit" class="btn btn-danger btn-block">Search</button></div>
+					<div class="span3">
+						<div class="search-toolbar__title">Location</div>
+						<div class="select js-select">
+							<span><em class="js-select-text">NY City</em><i></i></span>
+							<input type="hidden" val="" class="js-select-input" value="2">
+							<div class="select__drop js-select-drop">
+								<ul>
+									<li data-id="1" class="is-selected"><span>NY City</span></li>
+									<li data-id="2"><span>Blah-blah-blah</span></li>
+									<li data-id="3"><span>Blah-blah-blah</span></li>
+									<li data-id="4"><span>Blah-blah-blah</span></li>
+									<li data-id="5"><span>Blah-blah-blah</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="search-toolbar__title">Price range</div>
+						<div class="select select_mod js-select">
+							<span><em class="js-select-text">500</em><i></i></span>
+							<input type="hidden" val="" class="js-select-input" value="2">
+							<div class="select__drop js-select-drop">
+								<ul>
+									<li data-id="1" class="is-selected"><span>500</span></li>
+									<li data-id="2"><span>400</span></li>
+									<li data-id="3"><span>300</span></li>
+									<li data-id="4"><span>200</span></li>
+									<li data-id="5"><span>100</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="select select_mod js-select">
+							<span><em class="js-select-text">1000</em><i></i></span>
+							<input type="hidden" val="" class="js-select-input" value="2">
+							<div class="select__drop js-select-drop">
+								<ul>
+									<li data-id="1" class="is-selected"><span>1000</span></li>
+									<li data-id="2"><span>5000</span></li>
+									<li data-id="3"><span>10000</span></li>
+									<li data-id="4"><span>15000</span></li>
+									<li data-id="5"><span>20000</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="search-toolbar__title">Rooms</div>
+						<div class="select select_mod js-select">
+							<span><em class="js-select-text">Badrooms</em><i></i></span>
+							<input type="hidden" val="" class="js-select-input" value="2">
+							<div class="select__drop js-select-drop">
+								<ul>
+									<li data-id="1" class="is-selected"><span>Badrooms</span></li>
+									<li data-id="2"><span>Badrooms</span></li>
+									<li data-id="3"><span>Badrooms</span></li>
+									<li data-id="4"><span>Badrooms</span></li>
+									<li data-id="5"><span>Badrooms</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="select select_mod js-select">
+							<span><em class="js-select-text">Bathrooms</em><i></i></span>
+							<input type="hidden" val="" class="js-select-input" value="2">
+							<div class="select__drop js-select-drop">
+								<ul>
+									<li data-id="1" class="is-selected"><span>Bathrooms</span></li>
+									<li data-id="2"><span>Bathrooms</span></li>
+									<li data-id="3"><span>Bathrooms</span></li>
+									<li data-id="4"><span>Bathrooms</span></li>
+									<li data-id="5"><span>Bathrooms</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="span3 search-toolbar__btn"><button type="submit" class="btn btn-danger btn-block">Search</button></div>
 				</div>
 			</div>
 		</div>
 		<!-- END .search-toolbar -->
+		<!-- BEGIN .carousel -->
+		<div id="myCarousel" class="carousel container slide">
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="carousel__pic">
+						<img src="img/pic-1.jpg" alt="img">
+					</div>
+					<div class="carousel-caption">
+						<div class="carousel-caption__params">
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h4 class="carousel-caption__title">85, Livingstone St, NY City</h4>
+						<p class="carousel-caption__price">$ 1 458 000</p>
+						<a href="#" class="carousel-caption__btn">Detail</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel__pic">
+						<img src="img/pic-1.jpg" alt="img">
+					</div>
+					<div class="carousel-caption">
+						<div class="carousel-caption__params">
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h4 class="carousel-caption__title">85, Livingstone St, NY City</h4>
+						<p class="carousel-caption__price">$ 1 458 000</p>
+						<a href="#" class="carousel-caption__btn">Detail</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel__pic">
+						<img src="img/pic-1.jpg" alt="img">
+					</div>
+					<div class="carousel-caption">
+						<div class="carousel-caption__params">
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h4 class="carousel-caption__title">85, Livingstone St, NY City</h4>
+						<p class="carousel-caption__price">$ 1 458 000</p>
+						<a href="#" class="carousel-caption__btn">Detail</a>
+					</div>
+				</div>
+			</div>
+			<!-- BEGIN .carousel-control -->
+			<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a> -->
+			<!-- END .carousel-control -->
+			<!-- BEGIN .carousel-indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+			</ol>
+			<!-- END .carousel-indicators -->
+		</div>
+		<!-- END .carousel-->
 		<!-- BEGIN .hero -->
 		<section class="hero container">
 			<ul class="row">
 				<li class="hero__welcome span4">
 					<h2>Welcome</h2>
 					<p>Create your own customised property searches and short lists based on your preferences. Access simple to use tools that connect you with our agents and offices for personalized assistance and advice.</p>
-					<a href="#" class="btn btn-warning">More</a>
+					<a href="#" class="btn btn-mini btn-warning">More</a>
 				</li>
 				<li class="hero__about span4">
 					<h2>About</h2>
 					<p>Create your own customised property searches and short lists based on your preferences. Access simple to use tools that connect you with our agents and offices for personalized assistance and advice.</p>
-					<a href="#" class="btn btn-warning">More</a>
+					<a href="#" class="btn btn-mini btn-warning">More</a>
 				</li>
 				<li class="hero__testimonials span4">
 					<h2>Testiomonials</h2>
 					<p>“ Create your own customised property searches and short lists based on your preferences. Access simple to use tools that connect you with our agents and offices for personalized assistance and advice. ”</p>
-					<a href="#" class="btn btn-warning">More</a>
+					<a href="#" class="btn btn-mini btn-warning">More</a>
 				</li>
 			</ul>
 		</section>
@@ -99,11 +284,11 @@
 		<section class="catalog container">
 			<div class="row">
 				<h2 class="span9">Preoperty listing</h2>
-				<a href="#" class="btn btn-danger pull-right">All preoperties</a>
+				<a href="#" class="btn btn-mini btn-danger pull-right">All preoperties</a>
 			</div>
 			<ul class="catalog__list row-fluid">
 				<li class="catalog__item span3">
-					<div class="catalog__image"><a href="#"><img src="http://placehold.it/400x365" alt="img"></a></div>
+					<div class="catalog__image"><a href="#"><img src="img/pic-2.jpg" alt="img"></a></div>
 					<div class="catalog__caption">
 						<div class="catalog__caption-title"><a href="#">85, Livingstone St, NY City</a></div>
 						<div class="catalog__caption-price">$ 1 326 500</div>
@@ -131,8 +316,8 @@
 						</div>
 					</div>
 				</li>
-				<li class="catalog__item span3">
-					<div class="catalog__image"><a href="#"><img src="http://placehold.it/400x365" alt="img"></a></div>
+				<li class="catalog__item span3 is-sale">
+					<div class="catalog__image"><a href="#"><img src="img/pic-3.jpg" alt="img"></a></div>
 					<div class="catalog__caption">
 						<div class="catalog__caption-title"><a href="#">85, Livingstone St, NY City</a></div>
 						<div class="catalog__caption-price">$ 1 800 000</div>
@@ -159,9 +344,10 @@
 							</table>
 						</div>
 					</div>
+					<div class="sale">Sale</div>
 				</li>
 				<li class="catalog__item span3">
-					<div class="catalog__image"><a href="#"><img src="http://placehold.it/400x365" alt="img"></a></div>
+					<div class="catalog__image"><a href="#"><img src="img/pic-4.jpg" alt="img"></a></div>
 					<div class="catalog__caption">
 						<div class="catalog__caption-title"><a href="#">85, Livingstone St, NY City</a></div>
 						<div class="catalog__caption-price">$ 900 000</div>
@@ -190,7 +376,7 @@
 					</div>
 				</li>
 				<li class="catalog__item span3">
-					<div class="catalog__image"><a href="#"><img src="http://placehold.it/400x365" alt="img"></a></div>
+					<div class="catalog__image"><a href="#"><img src="img/pic-5.jpg" alt="img"></a></div>
 					<div class="catalog__caption">
 						<div class="catalog__caption-title"><a href="#">85, Livingstone St, NY City</a></div>
 						<div class="catalog__caption-price">$ 750 000</div>
