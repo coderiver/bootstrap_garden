@@ -29,7 +29,9 @@ a
     &:hover
         text-decoration: none
 .page
-    position: relative        
+    position: relative
+.content
+    padding: 35px 0            
 .button
     width: 100px 
     height: 30px
@@ -80,7 +82,19 @@ a
         left: 0
         right: 0
         height: 1px 
-        background: #fff 
+        background: #fff
+.title
+    position: relative
+    padding-left: 35px
+    +mn_i
+    font-size: 36px
+    color: #e33c09
+    &:before
+        content: ""
+        position: absolute
+        bottom: 9px
+        left: 0
+        +s(house)         
 .popular
     display: inline-block
     margin: 0 10px 10px 0
