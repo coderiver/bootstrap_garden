@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body { font-family: Cambria, Colibri, Arial, Tahoma, sans-serif; font-weight: normal; font-size: 14px; line-height: 1.2; }
+
+a img, fieldset { border: none; }
+
+a { color: #2c2c2c; text-decoration: none; }
+
+p { line-height: 1.2; }
+
+li { list-style: none; }
+
+textarea, button, select, input { border: none; outline: none; font-family: Cambria, Colibri, Arial, Tahoma, sans-serif; }
+
+button { line-height: 1; cursor: pointer; }
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+table { border-spacing: 0; border-collapse: collapse; }
+
+.wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -225px; }
+
+.wrap__in { position: relative; width: 1175px; margin: 0 auto; background: white; z-index: 10; }
+
+.push { height: 225px; clear: both; }
+
+.header { text-align: center; padding: 30px 0; background-color: #e4dbcf; color: #414345; }
+.header a { color: inherit; text-decoration: none; }
+.header .header-i { position: relative; }
+.header .header__logo { margin: 0; display: inline-block; }
+.header .header__logo-title { margin: 0; font-weight: normal; line-height: 1.2; color: #3a8911; text-transform: uppercase; }
+.header .header__logo-description { margin: 0 0 40px; font-family: Arial; font-size: 13px; font-style: italic; font-weight: normal; line-height: 1.2; color: #a5937a; }
+.header .header__contact { position: absolute; right: 0; top: 2px; text-align: right; }
+.header .header__tel { margin-bottom: 15px; color: #414345; font-size: 24px; }
+
+.nav_secondary li { float: left; margin-left: 15px; }
