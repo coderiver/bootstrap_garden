@@ -8,9 +8,21 @@ body
 	line-height: 20px
 	min-width: 980px
 	font:
-		family: Arial,sans-serif
+		family: "Times New Roman", "Times CY", "Nimbus Roman No9 L", serif
 		weight: normal
 		size: 14px
+
+.title
+	+seg_l
+	font-size: 42px
+	margin-top: 0
+	margin-bottom: .5em
+.title-2
+	+seg_l
+	font-size: 32px
+
+.btn
+	+seg_b
 
 .select
 	position: relative
@@ -20,7 +32,7 @@ body
 	font-size: 12px
 	background-color: #fff
 	+box-shadow(0 -1px 0 #fff, inset 0 1px 1px #b4bcbf)
-	+unselectable
+	+seg_r
 	&.select_mod
 		float: left
 		width: 50%
@@ -97,13 +109,14 @@ body
 		margin: 0
 		font-weight: normal
 		line-height: 1.2
+		+seg_l
 	.header__logo-description
 		margin: 0
-		font-family: Arial
 		font-size: 11px
 		font-style: italic
 		font-weight: normal
 		line-height: 1.2
+		font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif
 	.header__contact
 		position: absolute
 		right: 0
@@ -113,17 +126,23 @@ body
 		margin-bottom: 30px
 		color: #fff
 		font-size: 24px
+		+seg_l
 	.search-title
 		text-transform: uppercase
 		font-weight: normal
 		margin-top: 15px
+		+seg_r
 		font-size: 14px
-//nav
-.nav
+		strong
+			+seg_b
+//menu
+.menu
 	position: relative
 	text-transform: uppercase
 	margin: 0
 	padding-bottom: 55px
+	+seg_b
+	font-size: 13px
 	&:after
 		position: absolute
 		bottom: 0
@@ -146,7 +165,7 @@ body
 	a
 		text-decoration: none
 		+text-shadow(0 1px 0 #5b816b)
-.nav_secondary
+.menu_secondary
 	margin-bottom: 17px
 	ul
 		+clr
@@ -154,10 +173,13 @@ body
 		float: left
 		display: inline-block
 		margin-left: 20px
+		+seg_r
+		font-size: 10px
 		a
 			color: #ffcac3
 			&:hover
 				color: #f5d7af
+				+seg_b
 //social acc
 .social-accounts
 	text-align: right
@@ -192,6 +214,7 @@ body
 		background-color: #fff
 		+box-shadow(0 1px 1px #c8cdcf)
 		padding: 30px 0 45px
+		+seg_r
 	.footer__address
 		ul
 			margin-left: -35px
@@ -212,11 +235,12 @@ body
 			color: #999
 	.footer-i
 		padding: 25px 0 20px
-	.footer__nav
+	.footer__menu
 		position: relative
 		text-transform: none
 		text-align: right
 		padding: 0
+		+seg_r
 		&:after
 			content: none
 		li
@@ -240,6 +264,7 @@ body
 	.footer__request
 		input
 			margin-bottom: 0
+
 //search toolbar
 .search-toolbar
 	position: relative
@@ -253,10 +278,27 @@ body
 	.search-toolbar__title
 		color: #6e7f85
 		font-size: 12px
+		+seg_sb
 	.search-toolbar__btn
 		position: relative
 		.btn
 			margin-top: 20px
+
+.sort
+	margin-bottom: 20px
+	.sort__title
+		display: inline-block
+		vertical-align: top
+		color: #6e7f85
+		font-size: 12px
+		+seg_sb
+		line-height: 30px
+		height: 30px
+		margin-right: 10px
+	.select
+		display: inline-block
+		vertical-align: top
+		width: 230px
 
 //carousel
 .carousel
@@ -295,6 +337,45 @@ body
 				border: 1px solid transparent
 			&:hover
 				cursor: pointer
+	&.carousel_mod
+		.carousel-caption
+			left: 50px
+			margin-left: 0
+		.carousel-indicators
+			position: absolute
+			bottom: 15px
+			left: 140px
+			width: 140px
+		.carousel__agent
+			display: block
+			position: absolute
+			right: 0
+			top: 0
+			bottom: 36px
+			background-color: #1a1a1a
+			color: #f5f7f7
+			font-size: 14px
+			text-align: center
+			padding-top: 20px
+			padding-bottom: 5px
+	.carousel__agent
+		display: none
+		.carousel__agent-title
+			color: #d89f51
+			font-size: 20px
+			margin-bottom: 20px
+			+seg_b
+		.carousel__agent-pic
+			margin-bottom: 15px
+			height: 140px
+			overflow: hidden
+			img
+				min-width: 100%
+				min-height: 140px
+		.carousel__agent-text
+			margin-bottom: 25px
+			padding: 0 18px
+			line-height: 1.4
 	.carousel-caption
 		position: absolute
 		left: 50%
@@ -307,7 +388,6 @@ body
 		background: #333333
 		background: rgba(#191919, 0.9)
 		text-align: center
-		font-family: "Times New Roman"
 	.carousel-caption__params
 		margin-bottom: 25px
 		font-family: Arial
@@ -358,6 +438,7 @@ body
 	margin-top: 35px
 	margin-bottom: 50px
 	font-size: 13px
+	+seg_r
 	.popular-links__title
 		display: inline-block
 		vertical-align: top
@@ -367,6 +448,7 @@ body
 		float: left
 		margin: 0
 		margin-right: 65px
+		+seg_l
 	.popular-links__list
 		display: inline-block
 		vertical-align: top
@@ -412,22 +494,80 @@ body
 	opacity: 0.9
 	+border-radius(50%)
 	background-color: #e55d4b
+	+seg_b
 
 // catalog
 .catalog
 	margin-bottom: 50px
+	&.catalog_mod
+		.catalog__list
+			.catalog__item
+				margin-left: 0
+				.sale
+					display: none
+					position: absolute
+					top: 50%
+					left: 50%
+					margin-left: -42px
+					margin-top: -42px
+				&.is-sale
+					.sale
+						z-index: 11
+						display: block
+					&.catalog__item
+						&:before
+							display: none
+						.catalog__image
+							&:before
+								position: absolute
+								left: -50%
+								top: 50%
+								width: 200%
+								z-index: 10
+								// margin-top: -3px
+								background: #d35b49
+								height: 3px
+								content: ""
+								+transform(rotate(-45deg))
+						&:hover
+							.sale
+								display: none
+							.catalog__image
+								opacity: 1
+								&:before
+									display: none
+							&.catalog__item
+								overflow: hidden
+								&:before
+									content: none
+			.catalog__caption-title
+				font-size: 24px
+				+seg_r
+			.catalog__image
+				position: relative
+				float: left
+				width: 230px
+				overflow: hidden
+				img
+					max-width: 230px
+			.catalog__caption
+				overflow: hidden
+				padding: 20px 10px 20px 40px
 	.catalog__list
 		margin-bottom: 0
 		margin-left: 0
 		.catalog__item
 			background-color: #1a1a1a
 			position: relative
+			margin-bottom: 20px
 			&.is-sale
 				.sale
 					z-index: 11
 					display: block
+					opacity: 1
 				.catalog__image
-					opacity: 0.5
+					img
+						opacity: 0.5
 				&.catalog__item
 					overflow: hidden
 					&:before
@@ -445,7 +585,8 @@ body
 					.sale
 						display: none
 					.catalog__image
-						opacity: 1
+						img
+							opacity: 1
 					&.catalog__item
 						overflow: hidden
 						&:before
@@ -459,11 +600,13 @@ body
 				margin-right: auto
 				margin-left: auto
 		.catalog__caption
+			+seg_b
 			padding: 20px 10px
 			color: #f5f7f7
 			font-size: 12px
 		.catalog__caption-title
 			font-size: 16px
+			margin-bottom: .3em
 			a
 				color: inherit
 				text-decoration: none
@@ -473,7 +616,9 @@ body
 			color: #65a7bf
 			font-weight: bold
 			font-size: 14px
+			margin-bottom: .2em
 		.catalog__caption-params
+			+seg_r
 			table
 				td
 					padding-left: 5px
@@ -482,6 +627,189 @@ body
 						width: 46%
 						padding: 0
 						color: #999
+		.catalog__caption-buttons
+			margin-top: 1em
+			.btn
+				margin-left: 8px
+				&:first-child
+					margin-left: 0
+
+//topper
+.topper
+	margin-bottom: 25px
+	.topper-i
+		position: relative
+		.page-info
+			position: absolute
+			bottom: -33px
+			right: 0
+
+	.title
+		margin-top: 1em
+		margin-bottom: 0.5em
+.page-info
+	color: #191919
+	+seg_b
+	font-size: 11px
+	+clr
+	div
+		display: inline-block
+		margin-left: 15px
+		&:first-child
+			margin-left: 0
+
+// tabs
+.tabs
+	border-bottom: 3px solid #e55d4b
+	margin-top: 0.5em
+	.nav-tabs
+		margin-bottom: 0
+		li
+			margin-bottom: 0
+			line-height: 30px
+			// margin-right: 10px
+			margin-left: 10px
+			text-align: center
+			&:first-child
+				margin-left: 0
+			&.active
+				a
+					background-color: #e55d4b
+					color: #f5f7f7
+					&:hover
+						border: none
+			a
+				padding: 0 20px
+				line-height: 30px
+				min-width: 130px
+				border: 1px solid transparent
+				+border-radius(0)
+				text-transform: uppercase
+				+seg_b
+				font-size: 12px
+				color: #81878b
+				background-color: #dbe1e5
+				border: none
+				margin-right: 0
+
+
+// search
+.search
+	margin-top: 49px
+
+
+// map
+.map
+	background-color: #fff
+	+box-shadow(0 1px 1px #c8cdcf)
+	padding: 5px
+	margin-bottom: 20px
+	.map__picture
+		img
+			width: 100%
+	.map__labels
+		margin-top: 20px
+		padding-left: 20px
+		+seg_b
+		font-size: 14px
+		+clr
+		ul
+			margin: 0
+			margin-right: 20px
+			float: left
+			width: 160px
+		li
+			list-style: none
+	.checkbox
+		display: inline-block
+		min-height: 40px
+		color: #b8bcbf
+		font-size: 14px
+		cursor: pointer
+		position: relative
+		input
+			position: relative
+			width: 15px
+			height: 15px
+			+opacity(0)
+			z-index: 2
+			cursor: pointer
+		span
+			position: relative
+			top: 3px
+			margin-left: 20px
+			padding-left: 13px
+			&:after
+				content: ""
+				position: absolute
+				top: -3px
+				left: -20px
+				+s(ico_school)
+			&:before
+				content: ""
+				position: absolute
+				+s(input_ico)
+				left: -39px
+				top: 5px
+				line-height: 16px
+		input:checked + span
+			color: #3a3c3e
+			&:before
+				content: ""
+				+s(input_checked_ico)
+		input:checked
+			color: #ccc
+		span.g-icon-hschool
+			&:after
+				+s(ico_hschool)
+		span.g-icon-hospital
+			&:after
+				+s(ico_hospital)
+		span.g-icon-police
+			&:after
+				+s(ico_police)
+		span.g-icon-fire
+			&:after
+				+s(ico_fire)
+		span.g-icon-shops
+			&:after
+				+s(ico_shops)
+		span.g-icon-restoraunt
+			&:after
+				+s(ico_restoraunt)
+		span.g-icon-market
+			&:after
+				+s(ico_market)
+		span.g-icon-airports
+			&:after
+				+s(ico_airports)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
