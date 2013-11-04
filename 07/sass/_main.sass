@@ -221,12 +221,14 @@
 	
 // preoperties_inside
 .sidebar
-	padding: 90px 0
+	padding: 45px 0 90px
 	.h2
 		text-align: center
 		margin-bottom: 5px
 	.divide
-		margin: 5px 0 20px 	
+		margin: 5px 0 20px
+.sidebar_inside
+	padding-top: 90px
 .contact-agent
 	width: 200px
 	margin: 0 auto 30px
@@ -267,9 +269,11 @@
 	background: #fff
 	border-radius: 0!important
 	+box-shadow(inset 0 0 2px rgba(0,0,0,.35))
-.l-similar
+.sidebar
 	button
-		width: 100%	
+		width: 100%
+	.select
+		width: 100% 		
 .similar	
 	position: relative
 	overflow: hidden
@@ -542,7 +546,31 @@
 			+s(ico_market)
 	span.g-icon-airports
 		&:after
-			+s(ico_airports)			
+			+s(ico_airports)
+
+// refine
+.refine
+	margin: 25px 0
+.refine__title
+	text-align: center
+	margin-bottom: 10px
+	+clr
+	+mb
+	font-size: 14px
+	color: #515357
+	span
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			top: 8px
+			right: -15px
+			+s(arr-down)
+.refine__item
+	margin-bottom: 20px
+.filter__input_short
+	width: 48% 			 	
+							
 
 
 
