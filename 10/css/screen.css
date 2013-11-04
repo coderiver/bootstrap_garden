@@ -2221,7 +2221,7 @@ body { margin: 0; color: #333333; background-color: #f6f7f8; line-height: 20px; 
 
 .map { background-color: white; -webkit-box-shadow: 0 1px 1px #c8cdcf; -moz-box-shadow: 0 1px 1px #c8cdcf; box-shadow: 0 1px 1px #c8cdcf; padding: 5px; margin-bottom: 20px; }
 .map .map__picture img { width: 100%; }
-.map .map__labels { margin-top: 20px; padding-left: 20px; font-family: "SegoeUIBold", Arial, sans-serif; font-size: 14px; *zoom: 1; }
+.map .map__labels { margin-top: 20px; padding-left: 20px; font-family: "SegoeUISemibold", Arial, sans-serif; font-size: 14px; *zoom: 1; }
 .map .map__labels:before, .map .map__labels:after { content: ""; display: table; }
 .map .map__labels:after { clear: both; }
 .map .map__labels ul { margin: 0; margin-right: 20px; float: left; width: 160px; }

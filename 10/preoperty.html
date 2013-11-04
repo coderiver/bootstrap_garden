@@ -60,9 +60,9 @@
 				<div class="tabs">
 					<div class="tabs-i container">
 						<ul class="nav nav-tabs" id="myTab">
-							<li><a href="#thumbnails">Thumbnails</a></li>
+							<li class="active"><a href="#thumbnails">Thumbnails</a></li>
 							<li><a href="#list">List</a></li>
-							<li class="active"><a href="#map">Map</a></li>
+							<li><a href="#map">Map</a></li>
 						</ul>
 					</div>
 				</div>
@@ -70,26 +70,26 @@
 			<div class="layout-i container">
 				<div class="row">
 					<div class="l-main span9">
+						<div class="sort">
+							<div class="sort__title">Sort by</div>
+							<div class="select js-select">
+								<span><em class="js-select-text">Price</em><i></i></span>
+								<input type="hidden" val="" class="js-select-input" value="2">
+								<div class="select__drop js-select-drop">
+									<ul>
+										<li data-id="1" class="is-selected"><span>Price</span></li>
+										<li data-id="2"><span>Blah-blah-blah</span></li>
+										<li data-id="3"><span>Blah-blah-blah</span></li>
+										<li data-id="4"><span>Blah-blah-blah</span></li>
+										<li data-id="5"><span>Blah-blah-blah</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 						<div class="tab-content">
-							<div class="tab-pane" id="thumbnails">
+							<div class="tab-pane active" id="thumbnails">
 								<!-- BEGIN .catalog -->
 								<section class="catalog">
-									<div class="catalog__sort sort">
-										<div class="sort__title">Sort by</div>
-										<div class="select js-select">
-											<span><em class="js-select-text">Price</em><i></i></span>
-											<input type="hidden" val="" class="js-select-input" value="2">
-											<div class="select__drop js-select-drop">
-												<ul>
-													<li data-id="1" class="is-selected"><span>Price</span></li>
-													<li data-id="2"><span>Blah-blah-blah</span></li>
-													<li data-id="3"><span>Blah-blah-blah</span></li>
-													<li data-id="4"><span>Blah-blah-blah</span></li>
-													<li data-id="5"><span>Blah-blah-blah</span></li>
-												</ul>
-											</div>
-										</div>
-									</div>
 									<ul class="catalog__list row-fluid">
 										<li class="catalog__item span4">
 											<div class="catalog__image"><a href="#"><img src="img/pic-2.jpg" alt="img"></a></div>
@@ -502,22 +502,6 @@
 							<div class="tab-pane" id="list">
 								<!-- BEGIN .catalog -->
 								<section class="catalog catalog_mod">
-									<div class="catalog__sort sort">
-										<div class="sort__title">Sort by</div>
-										<div class="select js-select">
-											<span><em class="js-select-text">Price</em><i></i></span>
-											<input type="hidden" val="" class="js-select-input" value="2">
-											<div class="select__drop js-select-drop">
-												<ul>
-													<li data-id="1" class="is-selected"><span>Price</span></li>
-													<li data-id="2"><span>Blah-blah-blah</span></li>
-													<li data-id="3"><span>Blah-blah-blah</span></li>
-													<li data-id="4"><span>Blah-blah-blah</span></li>
-													<li data-id="5"><span>Blah-blah-blah</span></li>
-												</ul>
-											</div>
-										</div>
-									</div>
 									<ul class="catalog__list row-fluid">
 										<li class="catalog__item span12">
 											<div class="catalog__image"><a href="#"><img src="img/pic-2.jpg" alt="img"></a></div>
@@ -724,23 +708,7 @@
 								</section>
 								<!-- END .catalog -->
 							</div>
-							<div class="tab-pane active" id="map">
-								<div class="sort">
-									<div class="sort__title">Sort by</div>
-									<div class="select js-select">
-										<span><em class="js-select-text">Price</em><i></i></span>
-										<input type="hidden" val="" class="js-select-input" value="2">
-										<div class="select__drop js-select-drop">
-											<ul>
-												<li data-id="1" class="is-selected"><span>Price</span></li>
-												<li data-id="2"><span>Blah-blah-blah</span></li>
-												<li data-id="3"><span>Blah-blah-blah</span></li>
-												<li data-id="4"><span>Blah-blah-blah</span></li>
-												<li data-id="5"><span>Blah-blah-blah</span></li>
-											</ul>
-										</div>
-									</div>
-								</div>
+							<div class="tab-pane" id="map">
 								<!-- BEGIN .map -->
 								<div class="map">
 									  <div class="building__infrastructure">
