@@ -348,6 +348,15 @@
 	top: 2px
 	left: 2px
 	+s(ico_payment)
+.sale-price
+	display: inline-block
+	padding: 15px 42px
+	margin-bottom: 9px
+	background: #17575b
+	+box-shadow(0 1px 1px #17191e)
+	font: bold 22px Arial, sans-serif
+	color: #ffb024	
+
 //slider
 .building__gallery
 	position: relative
@@ -421,7 +430,119 @@
 		color: #525441
 		text-decoration: none 
 	&.disabled
-		+opacity(.5)	
+		+opacity(.5)
+.building__about
+	margin-bottom: 30px		
+.building__descr
+	font: 12px/1.6 Arial, sans-serif
+	color: #8c8984
+.building__param
+	+mbook
+	ul
+		margin-bottom: 17px
+	dl
+		+clr
+		margin-bottom: 0 
+		dt
+			float: left
+			font-size: 11px
+			font-weight: normal
+			color: #a1a09b
+		.subline
+			overflow: hidden
+			height: 15px 
+			border-bottom: 1px solid #e5e1da
+		.building__param-value
+			width: 115px 
+			float: right
+			font-size: 12px
+			color: #575653 
+			text-align: left
+
+// map
+.building__infrastructure
+	padding: 10px
+	background: #fff
+	.sidebar__title
+		padding-left: 20px					
+.building__map
+	img
+		width: 100%
+	+border-radius(5px)
+.building__labels
+	margin-top: 20px
+	padding-left: 20px
+	+clr
+	ul
+		margin: 0
+		margin-right: 20px
+		float: left
+		width: 160px
+	li
+		list-style: none
+.checkbox
+	display: inline-block
+	min-height: 40px
+	color: #b8bcbf
+	font-size: 14px
+	cursor: pointer
+	position: relative		
+	input
+		position: relative
+		width: 15px
+		height: 15px
+		+opacity(0)
+		z-index: 2
+		cursor: pointer
+	span
+		position: relative
+		top: 3px
+		margin-left: 20px
+		padding-left: 13px
+		&:after
+			content: ""
+			position: absolute
+			top: -3px
+			left: -20px
+			+s(ico_school)
+		&:before
+			content: ""
+			position: absolute
+			+s(input_ico)
+			left: -39px
+			top: 5px
+			line-height: 16px	
+	input:checked + span
+		color: #3a3c3e
+		&:before
+			content: ""
+			+s(input_checked_ico)
+	input:checked
+		color: #ccc
+	span.g-icon-hschool
+		&:after 
+			+s(ico_hschool)
+	span.g-icon-hospital
+		&:after
+			+s(ico_hospital)
+	span.g-icon-police
+		&:after
+			+s(ico_police)
+	span.g-icon-fire 
+		&:after	
+			+s(ico_fire)
+	span.g-icon-shops 
+		&:after	
+			+s(ico_shops)
+	span.g-icon-restoraunt 
+		&:after
+			+s(ico_restoraunt)
+	span.g-icon-market 
+		&:after	
+			+s(ico_market)
+	span.g-icon-airports
+		&:after
+			+s(ico_airports)			
 
 
 
