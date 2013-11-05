@@ -1,0 +1,74 @@
+@import base
+
+// Footer
+
+#footer
+  height: 280px
+  background: url("../img/icons/some-bg.png") 0 0 repeat
+.footer__inner
+  padding: 25px 0 0
+  +box
+  .h2
+    text-transform: none
+    font-size: 26px
+    line-height: 1
+    font-weight: normal
+    color: #a2473d
+    margin-bottom: 35px
+    +geo
+  input
+    @include border-radius(0px) 
+    background: #614b43
+    color: #fff
+    border: none
+    font-size: 14px
+    +placeholder(#fff)
+    +arial
+.contact-list
+  margin: 0 0 10px 0 
+.footer__form
+  float: left
+  width: 230px
+  margin-right: 18px  
+  form
+    margin: 0 0 10px 0             
+.contact__name       
+  font-size: 12px
+  color: #c2ada4
+  +geo
+.contact__value
+  color: #fff
+  font-size: 13px
+.footer__menu
+  a
+    font-size: 16px
+    text-decoration: none
+    color: #fff
+    font-weight: normal
+    +geo
+.footer__form-bottom
+  width: 230px
+  margin-left: -10px
+  .button
+    float: left
+.footer__logo
+  display: inline-block
+  margin-right: 50px
+.copyrights
+  font-size: 12px
+  color: #73645e
+  line-height: 40px
+  +geo
+.footer__form-social
+  margin-right: 5px
+  ul
+    margin: 6px 0
+  li
+    float: left 
+  .social__fb
+    +s(ico_fb-alt)
+  .social__tw
+    +s(ico_tw-alt)
+  .social__gp
+    +s(ico_gp-alt)
+
