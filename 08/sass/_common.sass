@@ -48,10 +48,178 @@ table
 	width: 1175px
 	margin: 0 auto
 	background: #FFF 
-	z-index: 10 
+	z-index: 10
+.l-info, .page
+	background: #E4DBCF
 .push
 	height: 225px
 	clear: both
-//header
-.header
 
+// some style for btn
+.g-btn
+	&:focus
+		outline: none
+.g-btn_w100
+	width: 100%
+.g-btn_green
+	background-color: #398911
+	background: #398911
+	&:hover
+		background-color: #368111
+		background: #368111
+	&:focus
+		background-color: #368111
+		background: #368111	
+.g-btn_blue
+	background-color: #005aad
+	background: #005aad
+	&:hover, &:focus
+		background-color: #0c5aa1
+		background: #0c5aa1		
+.g-btn_radius
+	+border-radius(10px)
+.g-btn_col-white
+	color: #FFF 
+	&:hover, &:focus
+		color: #FFF
+.g-btn_ub-bold
+	+ub
+.g-btn_tt-u
+	text-transform: uppercase
+// select
+.select
+	position: relative
+	height: 30px
+	line-height: 30px
+	color: #54595a
+	font-size: 12px
+	background-color: #fff
+	+box-shadow(0 -1px 0 #c7c6bd, inset 0 1px 1px #ecece9)
+	border-radius: 10px
+	// +seg_r
+	&.select_mod
+		float: left
+		width: 48%
+		&.pull-right
+			float: right
+	&:hover
+		cursor: pointer
+	span
+		display: block
+		padding: 0px 32px 0 10px
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		em
+			font-style: normal
+		i
+			position: absolute
+			right: 8px
+			top: 50%
+			margin-top: -8px
+			content: ""
+			+s(arrow)
+	&.is-open
+		border-radius: 10px 10px 0 0
+		span
+			i
+				+transform(rotate(180deg))
+		.select__drop
+			display: block
+	.select__drop
+		display: none
+		position: absolute
+		top: 100%
+		z-index: 10
+		left: 0
+		width: 100%
+		background-color: #fff
+		+box-shadow(inset 0 0px 1px #b4bcbf)
+		ul
+			margin: 0
+			padding: 5px 0
+		li
+			padding: 2px 10px
+			&:hover
+				background-color: #cedee5
+				cursor: pointer
+			span
+				padding: 0
+
+
+// carousel
+.carousel
+	.carousel-inner
+		.item
+			.header__promo-image
+				width: 770px
+				height: 330px
+				overflow: hidden
+				img
+					max-width: 100% 
+			.header__promo-text
+				background: #FFF
+				padding: 20px 20px 15px 20px
+				+box
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				text-align: left
+			.btn
+				display: block
+			.h1, .header__promo-price
+				display: inline-block
+			.h1
+				margin: 0 50px 15px 0
+				font-size: 24px
+				line-height: 1
+				color: #322F2E
+			.header__promo-price
+				font-size: 24px
+				color: #3A8911
+
+	.carousel-indicators
+		top: initial
+		bottom: 20px
+		right: 20px
+		.active
+			background: #322F2E
+		li
+			margin-right: 3px
+			background: #fff
+			+box-shadow(0 0 0 1px #322f2e)
+			
+// header__filter
+.header__filter
+	text-align: left
+	.header__filter-top
+		.h1
+			margin: 0
+			line-height: 1
+			color: #DB4637
+			font-size: 20px
+	.header__filter-item-heading
+		margin: 18px 0 6px 10px
+		line-height: 1
+		font-size: 12px
+		font-weight: normal
+		color: #322F2E 
+		+um
+	.header__filter-add
+		margin-top: 30px
+		position: relative
+		.g-btn
+
+			&:after
+				content: ""
+				position: absolute
+				top: 8px
+				right: 12px
+				+s(lupa)
+
+// l-info
+.l-info
+
+
+			
