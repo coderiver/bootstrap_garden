@@ -884,7 +884,51 @@ body
 
 
 
-
+.paginator
+	ul
+		margin: 0 10px
+		padding: 0 20px
+		text-align: center
+		position: relative
+	li
+		display: inline-block
+		+seg_l
+		font-size: 24px
+		color: #191919
+		+text-shadow(0 1px 0 #fff)
+		width: 45px
+		height: 45px
+		text-align: center
+		&.is-active,&:hover
+			a
+				border: 1px solid #81878b
+				+border-radius(22px)
+		a
+			display: block
+			width: 100%
+			height: 100%
+			line-height: 43px
+			color: #191919
+			text-decoration: none
+			border: 1px solid transparent
+			&:hover
+				text-decoration: none
+			&.paginator__nav
+				display: inline-block
+				vertical-align: top
+				border: 0
+				position: absolute
+				top: 50%
+				margin-top: -8px
+				&:hover
+					border: 0
+				+ht
+				&.paginator__left
+					left: 0
+					+s(arr-left_pag)
+				&.paginator__right
+					right: 0
+					+s(arr-right_pag)
 
 
 
