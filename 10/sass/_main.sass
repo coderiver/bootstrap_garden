@@ -693,10 +693,6 @@ body
 				margin-right: 0
 
 
-// search
-.search
-	margin-top: 49px
-
 
 // map
 .map
@@ -785,8 +781,105 @@ body
 				+s(ico_airports)
 
 
+// search
+.search
+	margin-top: 49px
+	.search__btn
+		margin-bottom: 24px
+	.search__row
+		margin-bottom: 24px
+		border-bottom: 1px solid #616161
+		+clr
+		&.is-last
+			border-bottom: 0
+		.search__label
+			display: block
+			position: relative
+			line-height: 1
+			+seg_b
+			font-size: 12px
+			color: #e55d4b
+			text-align: right
+			text-transform: uppercase
+			margin-bottom: 9px
+			margin-top: 2px
+			&:before
+				position: absolute
+				top: 50%
+				margin-top: -8px
+				left: 0
+				content: ""
+				+s(arr)
+		.search__select
+			+box-shadow(0 0 0 #fff, inset 0 0 0 #b4bcbf)
+			border: 0
+			&.select_mod
+				width: 48%
+				&:last-child
+					float: right
+			span
+				i
+					position: absolute
+					right: 8px
+					top: 50%
+					margin-top: -3px
+					content: ""
+					+s(arr_select)
+			&.is-open
+				span
+					i
+						+transform(rotate(180deg))
 
-
+	.search__radio
+		position: relative
+		+seg_sb
+		font-size: 12px
+		color: #757779
+		line-height: 16px
+		margin-bottom: 10px
+		input
+			position: absolute
+			top: 0
+			left: 0
+			margin: 0
+			z-index: 1
+			opacity: 0
+		span
+			padding-left: 24px
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				content: ""
+				+s(radio)
+		input:checked + span
+			&:before
+				+s(radio-checked)
+	.search__checkbox
+		position: relative
+		+seg_sb
+		font-size: 12px
+		color: #757779
+		line-height: 16px
+		margin-bottom: 10px
+		input
+			position: absolute
+			top: 0
+			left: 0
+			margin: 0
+			z-index: 1
+			opacity: 0
+		span
+			padding-left: 24px
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				content: ""
+				+s(checkbox)
+		input:checked + span
+			&:before
+				+s(checkbox-checked)
 
 
 
