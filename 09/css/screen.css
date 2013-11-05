@@ -60,6 +60,13 @@ a:hover { text-decoration: none; }
 
 @font-face { font-family: "UbuntuItalic"; src: url("../fonts/ubuntu-italic.eot"); src: url("../fonts/ubuntu-italic.eot") format("embedded-opentype"), url("../fonts/ubuntu-italic.woff") format("woff"), url("../fonts/ubuntu-italic.ttf") format("truetype"), url("../fonts/ubuntu-italic.svg#UbuntuItalic") format("svg"); }
 
+.filters { position: relative; background: #1e1e1e; margin-right: -15px; }
+.filters:before { content: ""; position: absolute; right: 100%; top: 0; width: 2000em; height: 100%; background: #1e1e1e; }
+
+.item__img img { width: 100%; }
+
+.slide { margin-left: -15px; }
+
 @font-face { font-family: "UbuntuBold"; src: url("../fonts/ubuntu-bold.eot"); src: url("../fonts/ubuntu-bold.eot") format("embedded-opentype"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype"), url("../fonts/ubuntu-bold.svg#UbuntuBold") format("svg"); }
 
 @font-face { font-family: "UbuntuRegular"; src: url("../fonts/ubuntu-regular.eot"); src: url("../fonts/ubuntu-regular.eot") format("embedded-opentype"), url("../fonts/ubuntu-regular.woff") format("woff"), url("../fonts/ubuntu-regular.ttf") format("truetype"), url("../fonts/ubuntu-regular.svg#UbuntuRegular") format("svg"); }
