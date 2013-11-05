@@ -1,0 +1,104 @@
+@import base
+
+body
+    font-family: Arial, Tahoma, sans-serif
+    font-size: 13px
+    color: #424b5a
+    line-height: 1.2 
+
+// Header
+
+.l-header
+    position: relative
+    background: #0f1010
+    z-index: 2
+.header
+    width: 980px
+    margin: 0 auto     
+.header__socials, .footer__socials
+    ul
+        margin: 8px 0
+    li
+        list-style: none
+        display: inline-block
+        vertical-align: top
+        margin-left: 5px   
+.social
+    +ht
+    display: block     
+.social__fb
+    +s(ico_fb)
+.social__tw
+    +s(ico_tw)
+.social__gp
+    +s(ico_gp)
+.g-menu
+    a
+        font: 10px Tahoma, sans-serif
+        text-decoration: none
+        color: #878a8a
+        &:hover
+            color: #ffa800
+    ul
+        +clr
+        float: right
+        margin: 0
+        list-style: none
+    li
+        float: left
+        height: 37px
+        line-height: 37px 
+        margin-left: 20px
+.phones-list
+    position: relative
+    margin: 10px 78px 0 0
+    padding-left: 35px
+    +font_sb
+    font-size: 15px
+    color: #008fcf 
+    &:before
+        content: ""
+        position: absolute
+        top: -3px
+        left: 0px
+        +s(phone)  
+.logo
+    display: inline-block
+    margin: 10px 0
+    a
+        font: bold 30px Arial, sans-serif
+        color: #da395b
+        &:hover
+            text-decoration: none
+.slogan
+    font-size: 15px 
+    color: #95989c
+.navbar
+    margin: 0
+.nav
+    li
+        position: relative
+        &:before
+            content: ""
+            position: absolute 
+            top: 12px
+            left: 0px
+            height: 14px
+            width: 1px
+            background: #404040
+        &:first-child
+            &:before
+                content: ""
+                display: none
+    a
+        +font_sb
+        font-size: 15px
+        color: #fff!important
+        +text-shadow(none!important)
+        &:hover
+            color: #fff!important
+.tabs
+    li
+        &:before
+            content: ""
+            display: none                                      
