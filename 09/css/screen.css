@@ -8,7 +8,11 @@
 
 @font-face { font-family: "UbuntuMediumItalic"; src: url("../fonts/ubuntu-mediumitalic.eot"); src: url("../fonts/ubuntu-mediumitalic.eot") format("embedded-opentype"), url("../fonts/ubuntu-mediumitalic.woff") format("woff"), url("../fonts/ubuntu-mediumitalic.ttf") format("truetype"), url("../fonts/ubuntu-mediumitalic.svg#UbuntuMediumItalic") format("svg"); }
 
+@font-face { font-family: "UbuntuItalic"; src: url("../fonts/ubuntu-italic.eot"); src: url("../fonts/ubuntu-italic.eot") format("embedded-opentype"), url("../fonts/ubuntu-italic.woff") format("woff"), url("../fonts/ubuntu-italic.ttf") format("truetype"), url("../fonts/ubuntu-italic.svg#UbuntuItalic") format("svg"); }
+
 * { margin: 0; padding: 0; }
+
+body { min-width: 980px !important; font-size: 12px; font-family: "UbuntuRegular", sans-serif; font-weight: normal; color: #424b5a; line-height: 1.2; }
 
 ul, ol { list-style: none; margin: 0; }
 
@@ -27,6 +31,10 @@ a:hover { text-decoration: none; }
 
 .page { position: relative; }
 
+.h2 { font-size: 20px; color: #353230; }
+
+.button { height: 25px; padding: 0 10px; border: none; outline: none; border-radius: 10px; background: #2f95c7; font-family: "UbuntuBold", sans-serif; font-weight: normal; text-transform: uppercase; color: white; }
+
 @font-face { font-family: "UbuntuBold"; src: url("../fonts/ubuntu-bold.eot"); src: url("../fonts/ubuntu-bold.eot") format("embedded-opentype"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype"), url("../fonts/ubuntu-bold.svg#UbuntuBold") format("svg"); }
 
 @font-face { font-family: "UbuntuRegular"; src: url("../fonts/ubuntu-regular.eot"); src: url("../fonts/ubuntu-regular.eot") format("embedded-opentype"), url("../fonts/ubuntu-regular.woff") format("woff"), url("../fonts/ubuntu-regular.ttf") format("truetype"), url("../fonts/ubuntu-regular.svg#UbuntuRegular") format("svg"); }
@@ -36,6 +44,8 @@ a:hover { text-decoration: none; }
 @font-face { font-family: "UbuntuLight"; src: url("../fonts/ubuntu-light.eot"); src: url("../fonts/ubuntu-light.eot") format("embedded-opentype"), url("../fonts/ubuntu-light.woff") format("woff"), url("../fonts/ubuntu-light.ttf") format("truetype"), url("../fonts/ubuntu-light.svg#UbuntuLight") format("svg"); }
 
 @font-face { font-family: "UbuntuMediumItalic"; src: url("../fonts/ubuntu-mediumitalic.eot"); src: url("../fonts/ubuntu-mediumitalic.eot") format("embedded-opentype"), url("../fonts/ubuntu-mediumitalic.woff") format("woff"), url("../fonts/ubuntu-mediumitalic.ttf") format("truetype"), url("../fonts/ubuntu-mediumitalic.svg#UbuntuMediumItalic") format("svg"); }
+
+@font-face { font-family: "UbuntuItalic"; src: url("../fonts/ubuntu-italic.eot"); src: url("../fonts/ubuntu-italic.eot") format("embedded-opentype"), url("../fonts/ubuntu-italic.woff") format("woff"), url("../fonts/ubuntu-italic.ttf") format("truetype"), url("../fonts/ubuntu-italic.svg#UbuntuItalic") format("svg"); }
 
 /* default layout */
 @font-face { font-family: "UbuntuBold"; src: url("../fonts/ubuntu-bold.eot"); src: url("../fonts/ubuntu-bold.eot") format("embedded-opentype"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype"), url("../fonts/ubuntu-bold.svg#UbuntuBold") format("svg"); }
@@ -48,7 +58,7 @@ a:hover { text-decoration: none; }
 
 @font-face { font-family: "UbuntuMediumItalic"; src: url("../fonts/ubuntu-mediumitalic.eot"); src: url("../fonts/ubuntu-mediumitalic.eot") format("embedded-opentype"), url("../fonts/ubuntu-mediumitalic.woff") format("woff"), url("../fonts/ubuntu-mediumitalic.ttf") format("truetype"), url("../fonts/ubuntu-mediumitalic.svg#UbuntuMediumItalic") format("svg"); }
 
-h1 { font-family: "UbuntuMediumItalic", sans-serif; font-weight: normal; }
+@font-face { font-family: "UbuntuItalic"; src: url("../fonts/ubuntu-italic.eot"); src: url("../fonts/ubuntu-italic.eot") format("embedded-opentype"), url("../fonts/ubuntu-italic.woff") format("woff"), url("../fonts/ubuntu-italic.ttf") format("truetype"), url("../fonts/ubuntu-italic.svg#UbuntuItalic") format("svg"); }
 
 @font-face { font-family: "UbuntuBold"; src: url("../fonts/ubuntu-bold.eot"); src: url("../fonts/ubuntu-bold.eot") format("embedded-opentype"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype"), url("../fonts/ubuntu-bold.svg#UbuntuBold") format("svg"); }
 
@@ -60,9 +70,43 @@ h1 { font-family: "UbuntuMediumItalic", sans-serif; font-weight: normal; }
 
 @font-face { font-family: "UbuntuMediumItalic"; src: url("../fonts/ubuntu-mediumitalic.eot"); src: url("../fonts/ubuntu-mediumitalic.eot") format("embedded-opentype"), url("../fonts/ubuntu-mediumitalic.woff") format("woff"), url("../fonts/ubuntu-mediumitalic.ttf") format("truetype"), url("../fonts/ubuntu-mediumitalic.svg#UbuntuMediumItalic") format("svg"); }
 
-body { min-width: 980px !important; font: 12px Tahoma, Arial, sans-serif; color: #424b5a; line-height: 1.2; background: #f3efe8; }
+@font-face { font-family: "UbuntuItalic"; src: url("../fonts/ubuntu-italic.eot"); src: url("../fonts/ubuntu-italic.eot") format("embedded-opentype"), url("../fonts/ubuntu-italic.woff") format("woff"), url("../fonts/ubuntu-italic.ttf") format("truetype"), url("../fonts/ubuntu-italic.svg#UbuntuItalic") format("svg"); }
 
-.l-header { position: relative; }
+.l-header { position: relative; overflow: hidden; }
+
+.l-logo { position: relative; }
+.l-logo:before { content: ""; position: absolute; right: -14px; top: 0; height: 4px; width: 2000em; background: #83a7b9; }
+
+.header__content { position: relative; }
+.header__content:after { content: ""; position: absolute; top: 0; left: -14px; height: 4px; width: 2000em; background: #a7b983; }
+
+.logo a { line-height: 80px; font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 32px; color: #1e1e1e; }
+
+.nav ul { margin-top: 37px; }
+.nav ul:before, .nav ul:after { content: ""; display: table; }
+.nav ul:after { clear: both; }
+.nav li { float: left; margin-right: 28px; }
+.nav li a { font-family: "UbuntuLight", sans-serif; font-weight: normal; font-size: 14px; color: #1e1e1e; text-transform: uppercase; }
+.nav li a:hover { color: #2f95c8; }
+.nav li a.current { color: #2f95c8; }
+
+.g-menu { margin-top: 10px; }
+.g-menu:before, .g-menu:after { content: ""; display: table; }
+.g-menu:after { clear: both; }
+.g-menu li { float: right; margin-left: 18px; }
+.g-menu li a { font-size: 10px; color: #322f2e; }
+.g-menu li a:hover { color: #db4637; }
+
+.socials li { display: inline-block; margin-left: 20px; font: 0/0 a; text-shadow: none; color: transparent; }
+.socials li a { display: block; }
+
+.social__fb { background: url('../img/icons-s24f44574e0.png') 0 -359px no-repeat; width: 9px; height: 16px; }
+
+.social__tw { background: url('../img/icons-s24f44574e0.png') 0 -306px no-repeat; width: 20px; height: 17px; }
+
+.social__gp { background: url('../img/icons-s24f44574e0.png') 0 -333px no-repeat; width: 10px; height: 16px; }
+
+.header__phone { margin: 7px 0 0 5px; font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 18px; color: #353230; }
 
 @font-face { font-family: "UbuntuBold"; src: url("../fonts/ubuntu-bold.eot"); src: url("../fonts/ubuntu-bold.eot") format("embedded-opentype"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype"), url("../fonts/ubuntu-bold.svg#UbuntuBold") format("svg"); }
 
@@ -74,7 +118,31 @@ body { min-width: 980px !important; font: 12px Tahoma, Arial, sans-serif; color:
 
 @font-face { font-family: "UbuntuMediumItalic"; src: url("../fonts/ubuntu-mediumitalic.eot"); src: url("../fonts/ubuntu-mediumitalic.eot") format("embedded-opentype"), url("../fonts/ubuntu-mediumitalic.woff") format("woff"), url("../fonts/ubuntu-mediumitalic.ttf") format("truetype"), url("../fonts/ubuntu-mediumitalic.svg#UbuntuMediumItalic") format("svg"); }
 
-.l-footer { position: relative; height: 397px; }
+@font-face { font-family: "UbuntuItalic"; src: url("../fonts/ubuntu-italic.eot"); src: url("../fonts/ubuntu-italic.eot") format("embedded-opentype"), url("../fonts/ubuntu-italic.woff") format("woff"), url("../fonts/ubuntu-italic.ttf") format("truetype"), url("../fonts/ubuntu-italic.svg#UbuntuItalic") format("svg"); }
+
+.l-footer { position: relative; height: 296px; -moz-box-sizing: border-box; box-sizing: border-box; border-top: 1px solid #e6e6e6; }
+
+.footer__nav li { display: inline-block; margin-right: 20px; }
+.footer__nav a { color: #a7b983; line-height: 29px; }
+.footer__nav a:hover { text-decoration: underline; }
+
+.footer { height: 265px; padding-top: 30px; -moz-box-sizing: border-box; box-sizing: border-box; border-top: 1px solid #e6e6e6; background: #f0efef; }
+
+.copyrights { padding-top: 6px; margin-bottom: 37px; font-size: 10px; font-family: "UbuntuItalic", sans-serif; font-weight: normal; color: #c5c2c0; }
+.copyrights p { margin-bottom: 10px; }
+
+.contacts { margin-top: 10px; }
+.contacts li { margin-bottom: 8px; color: #353230; }
+.contacts li a { color: #353230; }
+.contacts li a:hover { text-decoration: underline; }
+
+.contacts__title { color: #a2a09f; font-size: 10px; }
+
+.footer__form { margin-top: 16px; }
+.footer__form input[type="text"] { width: 100%; margin-bottom: 15px; border-radius: 10px; background: white; font-family: "UbuntuMedium", sans-serif; font-weight: normal; color: #353230; }
+.footer__form input[type="text"].placeholder { color: #353230; }
+.footer__form input[type="text"]:-moz-placeholder { color: #353230; }
+.footer__form input[type="text"]::-webkit-input-placeholder { color: #353230; }
 
 @font-face { font-family: "UbuntuBold"; src: url("../fonts/ubuntu-bold.eot"); src: url("../fonts/ubuntu-bold.eot") format("embedded-opentype"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype"), url("../fonts/ubuntu-bold.svg#UbuntuBold") format("svg"); }
 
@@ -85,9 +153,11 @@ body { min-width: 980px !important; font: 12px Tahoma, Arial, sans-serif; color:
 @font-face { font-family: "UbuntuLight"; src: url("../fonts/ubuntu-light.eot"); src: url("../fonts/ubuntu-light.eot") format("embedded-opentype"), url("../fonts/ubuntu-light.woff") format("woff"), url("../fonts/ubuntu-light.ttf") format("truetype"), url("../fonts/ubuntu-light.svg#UbuntuLight") format("svg"); }
 
 @font-face { font-family: "UbuntuMediumItalic"; src: url("../fonts/ubuntu-mediumitalic.eot"); src: url("../fonts/ubuntu-mediumitalic.eot") format("embedded-opentype"), url("../fonts/ubuntu-mediumitalic.woff") format("woff"), url("../fonts/ubuntu-mediumitalic.ttf") format("truetype"), url("../fonts/ubuntu-mediumitalic.svg#UbuntuMediumItalic") format("svg"); }
+
+@font-face { font-family: "UbuntuItalic"; src: url("../fonts/ubuntu-italic.eot"); src: url("../fonts/ubuntu-italic.eot") format("embedded-opentype"), url("../fonts/ubuntu-italic.woff") format("woff"), url("../fonts/ubuntu-italic.ttf") format("truetype"), url("../fonts/ubuntu-italic.svg#UbuntuItalic") format("svg"); }
 
 html, body { height: 100%; }
 
-#push { height: 397px; }
+#push { height: 296px; }
 
-#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -397px; }
+#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -296px; }

@@ -3,7 +3,12 @@
 *
     margin: 0
     padding: 0
-  
+body
+    min-width: 980px !important
+    font-size: 12px
+    +u
+    color: #424b5a
+    line-height: 1.2  
 ul,ol
     list-style: none
     margin: 0
@@ -29,5 +34,22 @@ a
     &:hover
         text-decoration: none
 .page
-    position: relative                
+    position: relative
+.h2
+    font-size: 20px
+    color: #353230
+
+// button
+.button
+    height: 25px 
+    padding: 0 10px
+    border: none
+    outline: none
+    border-radius: 10px
+    background: #2f95c7
+    +ub
+    text-transform: uppercase 
+    color: #fff
+
+                  
 
