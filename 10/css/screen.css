@@ -2089,6 +2089,7 @@ body { margin: 0; color: #333333; background-color: #f6f7f8; line-height: 20px; 
 .social-accounts.social-accounts_footer .social-accounts__item.social-accounts__item_gp { background: url('../img/icons-s11c08cec69.png') 0 -502px no-repeat; width: 10px; height: 17px; }
 
 .footer { font-size: 12px; }
+.footer input { border: 1px solid #c7cccf; background-color: white; }
 .footer .footer__top { border-top: 3px solid #dee0e1; background-color: white; -webkit-box-shadow: 0 1px 1px #c8cdcf; -moz-box-shadow: 0 1px 1px #c8cdcf; box-shadow: 0 1px 1px #c8cdcf; padding: 30px 0 45px; font-family: "SegoeUIRegular", Arial, sans-serif; }
 .footer .footer__address ul { margin-left: -35px; }
 .footer .footer__address .footer__address-item { display: inline-block; margin-left: 35px; color: #191919; }
