@@ -10,7 +10,7 @@
 <link rel="stylesheet" media="screen" href="css/screen.css">
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
 <![endif]-->
 </head>
 <body>
@@ -69,7 +69,7 @@
 			    	   	  <div class="header__promo-text">
 										<h1 class="h1">85, Livingstone St, NY City</h1>
 										<div class="header__promo-price">$ 2 890 000</div>
-										<button class="btn g-btn g-btn_green g-btn_radius g-btn_col-white" type="button">view details</button>
+										<button class="btn g-btn btn-success" type="button">view details</button>
 			    	   	  </div>
 						    </div>
 						    <div class="item">
@@ -79,7 +79,7 @@
 			    	   	  <div class="header__promo-text">
 										<h1 class="h1">85, Livingstone St, NY City</h1>
 										<div class="header__promo-price">$ 2 890 000</div>
-										<button class="btn g-btn g-btn_green g-btn_radius g-btn_col-white" type="button">view details</button>
+										<button class="btn g-btn btn-success" type="button">view details</button>
 			    	   	  </div>
 						    </div>
 						    <div class="item">
@@ -89,7 +89,7 @@
 			    	   	  <div class="header__promo-text">
 										<h1 class="h1">85, Livingstone St, NY City</h1>
 										<div class="header__promo-price">$ 2 890 000</div>
-										<button class="btn g-btn g-btn_green g-btn_radius g-btn_col-white" type="button">view details</button>
+										<button class="btn g-btn btn-success" type="button">view details</button>
 			    	   	  </div>
 						    </div>
 				      </div>
@@ -182,7 +182,7 @@
 						</div>
 						<div class="header__filter-add">
 							<div class="header__filter-btn">
-								<button class="btn g-btn g-btn_w100 g-btn_blue g-btn_radius g-btn_ub-bold g-btn_tt-u g-btn_col-white" type="button">Search</button>
+								<button class="btn btn-block btn-primary g-btn" type="button">Search</button>
 							</div>
 						</div>
 					</div>
@@ -198,7 +198,7 @@
 		<div class="info container">
 			<div class="row">
 				<div class="span3">
-					<div class="info__in">
+					<div class="info__in info__in_red">
 						<h1 class="h1">Welcome</h1>
 						<p>Create your own customised property searches and short lists based on your preferences. <br>
 						Access simple to use tools that connect you with our agents and offices for personalized assistance and advice.</p>
@@ -206,7 +206,7 @@
 					</div>
 				</div>
 				<div class="span3">
-					<div class="info__in">
+					<div class="info__in info__in_orange">
 						<h1 class="h1">About</h1>
 						<p>Create your own customised property searches and short lists based on your preferences. <br>
 						Access simple to use tools that connect you with our agents and offices for personalized assistance and advice.</p>
@@ -214,10 +214,9 @@
 					</div>
 				</div>
 				<div class="span3">
-					<div class="info__in is-lighted">
+					<div class="info__in info__in_yellow">
 						<h1 class="h1">Testimonials</h1>
 						<div class="info__image">
-							<img src="http://placekitten.com/130/150">
 						</div>
 						<p>Create your own customised property searches and short lists based on your preferences. <br>
 						Access simple to use tools that connect you with our agents and offices for personalized assistance and advice.</p>
@@ -225,11 +224,20 @@
 					</div>
 				</div>
 				<div class="span3">
-					<div class="info__in">
-						<h1 class="h1">About</h1>
-						<p>Create your own customised property searches and short lists based on your preferences. <br>
-						Access simple to use tools that connect you with our agents and offices for personalized assistance and advice.</p>
-						<p><a href="#" class="more">more</a></p>
+					<div class="info__in info__in_olive">
+						<h1 class="h1">Popular pages</h1>
+						<ul>
+							<li><a href="#">Sale homes</a></li>
+							<li><a href="#">Buy home</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Sign in</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Site map</a></li>
+							<li><a href="#">Register</a></li>
+							<li><a href="#">Buy homes</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -237,8 +245,259 @@
 	</div>
 	<!-- /.info -->
 	<!-- page -->
-	<div class="page">
-		
+	<div class="l-page">
+		<div class="page container">
+			<div class="row">
+				<div class="span12">
+					<div class="page__title">
+						<h2><span>Featured preoperties</span></h2>
+					</div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="span12">
+					<div class="g-label"><span>all preoperties</span></div>					
+				</div>
+			</div>
+			<div class="properties">
+				<div class="row">
+					<div class="span3">
+						<div class="properties__item">
+							<div class="properties__image">
+								<a href="#"><img src="http://placehold.it/230x190" alt="img"></a>
+							</div>							
+							<h1 class="h1"><a href="#">115 Livingston St, Elizabeth</a></h1>
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="properties__price">$ 20, 000, 000</div>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="properties__item">
+							<div class="properties__image">
+								<a href="#"><img src="http://placehold.it/230x190" alt="img"></a>
+							</div>							
+							<h1 class="h1"><a href="#">115 Livingston St, Elizabeth</a></h1>
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="properties__price">$ 20, 000, 000</div>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="properties__item">
+							<div class="properties__image">
+								<a href="#"><img src="http://placehold.it/230x190" alt="img"></a>
+							</div>							
+							<h1 class="h1"><a href="#">115 Livingston St, Elizabeth</a></h1>
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="properties__price">$ 20, 000, 000</div>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="properties__item">
+							<div class="properties__image">
+								<a href="#"><img src="http://placehold.it/230x190" alt="img"></a>
+							</div>							
+							<h1 class="h1"><a href="#">115 Livingston St, Elizabeth</a></h1>
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="properties__price">$ 20, 000, 000</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span3">
+						<div class="properties__item">
+							<div class="properties__image">
+								<a href="#"><img src="http://placehold.it/230x190" alt="img"></a>
+							</div>							
+							<h1 class="h1"><a href="#">115 Livingston St, Elizabeth</a></h1>
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="properties__price">$ 20, 000, 000</div>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="properties__item">
+							<div class="properties__image">
+								<a href="#"><img src="http://placehold.it/230x190" alt="img"></a>
+							</div>							
+							<h1 class="h1"><a href="#">115 Livingston St, Elizabeth</a></h1>
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="properties__price">$ 20, 000, 000</div>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="properties__item">
+							<div class="properties__image">
+								<a href="#"><img src="http://placehold.it/230x190" alt="img"></a>
+							</div>							
+							<h1 class="h1"><a href="#">115 Livingston St, Elizabeth</a></h1>
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="properties__price">$ 20, 000, 000</div>
+						</div>
+					</div>
+					<div class="span3">
+						<div class="properties__item">
+							<div class="properties__image">
+								<a href="#"><img src="http://placehold.it/230x190" alt="img"></a>
+							</div>							
+							<h1 class="h1"><a href="#">115 Livingston St, Elizabeth</a></h1>
+							<table>
+								<tbody>
+									<tr>
+										<td>City:</td>
+										<td>Miami</td>
+									</tr>
+									<tr>
+										<td>Type:</td>
+										<td>Semi detached</td>
+									</tr>
+									<tr>
+										<td>Bedrooms:</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Bathrooms:</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="properties__price">$ 20, 000, 000</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
 	</div>
 	<!-- /.page -->
 
@@ -247,12 +506,73 @@
 </div>
 <!-- /#wrap -->
 
-
-
 <!-- #footer -->
-<div id="footer">
-	
-</div>
+<footer class="footer">
+	<div class="footer__top">
+		<div class="footer__top-i container">
+			<div class="footer__contact">
+				<h2 class="title title-2">Contact</h2>
+				<div class="row">
+					<address class="footer__address span9">
+						<ul>
+							<li class="footer__address-item">
+								<em>Phone:</em>
+								760-438-0800
+							</li>
+							<li class="footer__address-item">
+								<em>Fax:</em>
+								760-494-9919
+							</li>
+							<li class="footer__address-item">
+								<em>E-mail:</em>
+								<a href="#">lundmail@lundteam.com</a>
+							</li>
+							<li class="footer__address-item">
+								<em>Adress:</em>
+								6114 Innovation Way Carlsbad, CA 92009
+							</li>
+						</ul>
+					</address>
+					<ul class="social-accounts social-accounts_footer span2 pull-right">
+						<li class="social-accounts__item social-accounts__item_tw"><a href="#">Twitter</a></li>
+						<li class="social-accounts__item social-accounts__item_fb"><a href="#">Facebook</a></li>
+						<li class="social-accounts__item social-accounts__item_gp"><a href="#">Google+</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__request">
+				<h2 class="title title-2">Request a quote</h2>
+				<div class="row">
+					<div class="span3"><input type="text" placeholder="Your name"></div>
+					<div class="span3"><input type="email" placeholder="E-mail"></div>
+					<div class="span3"><input type="tel" placeholder="Phone"></div>
+					<div class="span3"><button type="submit" class="btn btn-warning btn-block">Send</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="l-footer-i">
+		<div class="footer-i container">
+			<div class="row">
+				<div class="span9">
+					<div class="row-fluid">
+						<div class="footer__copyright span6">© Copyright Logo Realty 2011-2012, All Rights Reserved.</div>
+						<nav class="footer__menu menu span6">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Selling</a></li>
+								<li><a href="#">Buying</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="footer__logo span3 pull-right"><a href="#">Estate Cloud</a></div>
+			</div>
+		</div>		
+	</div>
+</footer>
 <!-- /#footer -->
 
 <script src="js/jquery.js"></script>

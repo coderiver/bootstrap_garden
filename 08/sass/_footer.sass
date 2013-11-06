@@ -1,2 +1,60 @@
 @import "base"
 // footer
+.footer
+	font-size: 12px
+	.footer__top
+		border-top: 3px solid #dee0e1
+		background-color: #fff
+		+box-shadow(0 1px 1px #c8cdcf)
+		padding: 30px 0 45px
+	.footer__address
+		ul
+			margin-left: -35px
+		.footer__address-item
+			display: inline-block
+			margin-left: 35px
+			color: #191919
+			a
+				color: inherit
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+		em
+			display: block
+			font-weight: normal
+			font-style: normal
+			font-size: 11px
+			color: #999
+	.l-footer-i
+		background-color: #3a8911 		
+	.footer-i
+		padding: 25px 0 20px
+	.footer__menu
+		position: relative
+		text-transform: none
+		text-align: right
+		padding: 0
+		&:after
+			content: none
+		li
+			float: left
+			margin: 0 0 0 20px
+			&:first-child
+				margin-left: 0
+			a
+				color: #999
+				text-decoration: none
+				+text-shadow(0 0 0)
+				&:hover
+					text-decoration: underline
+	.footer__logo
+		margin-top: -6px
+		text-align: right
+		+ht
+		a
+			display: inline-block
+			vertical-align: top
+			+s(ec)
+	.footer__request
+		input
+			margin-bottom: 0
