@@ -18,9 +18,11 @@ body
 	font-size: 42px
 	margin-top: 0
 	margin-bottom: .5em
+	+text-shadow(0 1px 0 #fff)
 .title-2
 	+seg_l
 	font-size: 32px
+	+text-shadow(0 1px 0 #fff)
 
 .btn
 	+seg_b
@@ -938,14 +940,109 @@ body
 
 
 
+// sidebar
+.sidebar
+	.catalog
+		margin-bottom: 0
 
 
 
+// contact-agent
+.contact-agent
+	color: #191919
+	font-size: 16px
+	margin-bottom: 40px
+	.contact-agent__title
+		margin-top: -3px
+		line-height: 1
+		margin-bottom: 33px
+	.contact-agent__name
+		+seg_b
+		font-size: 20px
+		margin-bottom: 8px
+	.contact-agent__tel
+		+seg_sb
+		margin-bottom: 8px
+		color: inherit
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	.contact-agent__rating
+		margin-bottom: 8px
+	.contact-agent__userpic
+		height: 140px
+		overflow: hidden
+		margin-bottom: 8px
+		img
+			min-width: 100%
+	.contact-agent__feedback
+		input, textarea
+			width: 100%
+			+seg_r
+			font-size: 12px
+			color: #54595a
+			+placeholder-color(#54595a)
+			&:focus
+				+placeholder-color(#fff)
+		textarea
+			resize: none
+			min-height: 110px
 
+.icon-calc
+	+s(calc)
+	margin-right: 23px
+	margin-top: 2px
 
-
-
-
+.project
+	margin-bottom: 40px
+	.project__mounthly-btn
+		margin-bottom: 20px
+	.project__pic
+		height: 500px
+		overflow: hidden
+		margin-top: 20px
+		margin-bottom: 10px
+		img
+			width: 100%
+	.project__info
+		margin-top: 10px
+		background-color: #282828
+		color: #f5f7f7
+		font-size: 14px
+		+box-shadow(0 1px 1px #c8cdcf)
+		padding: 20px 20px 40px
+	.project__price
+		position: relative
+		text-align: center
+		color: #2cbcf2
+		font-size: 46px
+		padding-bottom: 15px
+		line-height: 1
+		margin-bottom: 15px
+		&:after
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -87px
+			width: 175px
+			height: 2px
+			content: ""
+			background: #484848
+			border-top: 1px solid #000
+	.project__text
+	.project__params
+		table
+			margin-bottom: 15px
+			td
+				padding-left: 5px
+				font-size: 12px
+				color: #d89f51
+				font-size: 12px
+				+seg_r
+				&:first-child
+					width: 46%
+					padding: 0
+					opacity: 0.5
 
 
 
