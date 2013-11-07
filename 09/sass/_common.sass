@@ -39,7 +39,10 @@ a
     margin-bottom: 30px 
     +ub
     font-size: 26px
-    color: #1e1e1e     
+    color: #1e1e1e
+.h1_white
+    color: #fff
+    margin-bottom: 25px          
 .h2
     font-size: 20px
     color: #353230
@@ -51,6 +54,7 @@ a
     &:hover
         color: #fff
         text-decoration: underline
+
 // button
 .button
     height: 25px 
@@ -60,9 +64,11 @@ a
     border-radius: 10px
     background: #2f95c7
     +ub
-    text-transform: uppercase 
+    text-transform: uppercase
+    +trans(400ms background) 
     color: #fff
-
+    &:hover
+        background: darken(#2f95c7, 5%) 
 // select
 .select
     position: relative
@@ -107,6 +113,33 @@ a
     font-size: 12px 
     color: #353230
     padding: 0 33px 0 12px
+
+// input
+.input
+    width: 200px 
+    height: 25px!important
+    +box
+    +border-radius(10px!important)
+    +box-shadow(none)
+    background: #e6e6e6
+    +um
+    color: #353230
+    +placeholder(#353230)
+
+// textarea
+.textarea
+    width: 200px
+    max-width: 200px
+    height: 100px
+    max-height: 100px
+    +box
+    +border-radius(10px!important)
+    background: #e6e6e6
+    +um
+    color: #353230
+    +placeholder(#353230) 
+
+
 
 
                   

@@ -65,7 +65,7 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 	-webkit-filter: grayscale(100%)/* Chrome 19+ & Safari 6+ */
 	filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)
 	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"
-//media query
+//media query	
 @mixin rt($media)
 	@if $media == 1920
 		@media only screen and (max-width: 1920px)
@@ -76,8 +76,9 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 	@else if $media == 1380
 		@media only screen and (max-width: 1380px)
 			@content
-	@else if $media == 1120
-		@media only screen and (max-width: 1120px)
+	@else if $media == 1200
+		@media only screen and (max-width: 1200px)
+			@content
 		
 // fonts
 

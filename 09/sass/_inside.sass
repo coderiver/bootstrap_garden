@@ -1,0 +1,264 @@
+@import base
+
+// inside
+.contact-agent
+	padding: 20px 0 
+.contact-agent__title
+	margin-bottom: 25px 
+	+ub
+	font-size: 20px
+	color: #f5531a
+.agent-link
+	+um
+	font-size: 20px
+	color: #fff
+	&:hover
+		color: #fff
+.contact-agent__phone
+	margin: 5px 0 
+	font-size: 16px
+	color: #fff
+.contact-agent__reting
+	margin-bottom: 20px 		
+	font-size: 0 	
+	i
+		display: inline-block
+		margin-right: 3px 
+.star-b
+	+s(star-b)
+.star-g
+	+s(star-g)
+.contact-agent__img
+	height: 100px
+	margin-bottom: 22px 
+	img
+		max-height: 100%
+.contact-agent__form 
+	.button
+		width: 200px
+		height: 40px
+		font-size: 16px
+		+border-radius(20px)
+.content
+	background: #fff 
+.content__top
+	margin: 0 0 -50px -16px 
+	background: #2f8ab7
+	padding: 20px 20px 45px 20px
+	+box
+.content__tabs
+	margin-left: -16px 
+.tabs
+	padding: 0 20px
+	li
+		a
+			display: block
+			padding: 0 10px
+			height: 40px
+			+box 
+			border: none!important
+			+border-radius(0)
+			line-height: 40px 
+			+um
+			font-size: 14px
+			color: #fff
+		&:hover
+			background: #fff
+			a
+				color: #000		
+	li.active
+		background: #fff
+		a
+			color: #000 	 
+			   
+.tab-content
+	min-height: 886px
+	background: #fff 	
+//slider
+.building__gallery
+	position: relative
+	margin-bottom: 80px
+	background: #1e1e1e 
+	&:after
+		content: ""
+		position: absolute
+		bottom: -2px
+		left: 0
+		right: 0
+		height: 1px
+		background: #fff  
+.building__photo
+	+clr
+	.building__media
+		text-align: center
+		height: 450px
+		img
+			vertical-align: middle
+			text-align: center
+			width: 100%
+			height: 100%
+			display: block
+.building__thumbs
+	position: relative
+	+clr
+	+box
+	text-align: center 
+	.caro
+		width: 84%
+		height: 90px
+		margin: 0 auto
+		overflow: hidden
+		position: relative
+	ul
+		margin: 0
+		position: absolute
+		width: 20000em
+		list-style: none
+		li
+			width: 94px
+			height: 90px
+			float: left
+			cursor: pointer
+			+opacity(1)
+			+rt(1200)
+				width: 86px 
+			&:hover, &.active
+				border-color: #fff
+				background-color: #fff
+				@include opacity(.55)
+			img
+				width: 100%
+				height: 100%
+				vertical-align: middle
+.slide__arrow-prev, .slide__arrow-next
+	position: absolute
+	top: 32px
+	left: 24px
+	padding: 0 5px
+	+box
+	+s(prev)
+	cursor: pointer
+	+no-sel 
+	&.disabled
+		+opacity(.5)
+.slide__arrow-next
+	position: absolute
+	left: auto
+	right: 24px
+	+s(next)
+.building__about
+	margin-bottom: 30px		
+.building__descr
+	font: 12px/1.6 Arial, sans-serif
+	color: #8c8984
+.building__param
+	ul
+		margin-bottom: 17px
+	dl
+		+clr
+		margin-bottom: 0 
+		dt
+			float: left
+			font-size: 11px
+			font-weight: normal
+			color: #a1a09b
+		.subline
+			overflow: hidden
+			height: 15px 
+			border-bottom: 1px solid #e5e1da
+		.building__param-value
+			width: 115px 
+			float: right
+			font-size: 12px
+			color: #575653 
+			text-align: left
+
+// map
+.building__infrastructure
+	padding: 10px
+	background: #fff
+	margin-bottom: 30px
+	.sidebar__title
+		padding-left: 20px					
+.building__map
+	img
+		width: 100%
+	+border-radius(5px)
+.building__labels
+	margin-top: 20px
+	padding-left: 20px
+	+clr
+	ul
+		margin: 0
+		margin-right: 20px
+		float: left
+		width: 160px
+	li
+		list-style: none
+.checkbox
+	display: inline-block
+	min-height: 40px
+	color: #b8bcbf
+	font-size: 14px
+	cursor: pointer
+	position: relative		
+	input
+		position: relative
+		width: 15px
+		height: 15px
+		+opacity(0)
+		z-index: 2
+		cursor: pointer
+	span
+		position: relative
+		top: 3px
+		margin-left: 20px
+		padding-left: 13px
+		&:after
+			content: ""
+			position: absolute
+			top: -3px
+			left: -20px
+			+s(ico_school)
+		&:before
+			content: ""
+			position: absolute
+			+s(input_ico)
+			left: -39px
+			top: 5px
+			line-height: 16px	
+	input:checked + span
+		color: #3a3c3e
+		&:before
+			content: ""
+			+s(input_checked_ico)
+	input:checked
+		color: #ccc
+	span.g-icon-hschool
+		&:after 
+			+s(ico_hschool)
+	span.g-icon-hospital
+		&:after
+			+s(ico_hospital)
+	span.g-icon-police
+		&:after
+			+s(ico_police)
+	span.g-icon-fire 
+		&:after	
+			+s(ico_fire)
+	span.g-icon-shops 
+		&:after	
+			+s(ico_shops)
+	span.g-icon-restoraunt 
+		&:after
+			+s(ico_restoraunt)
+	span.g-icon-market 
+		&:after	
+			+s(ico_market)
+	span.g-icon-airports
+		&:after
+			+s(ico_airports)				 	 			   
+				
+
+                
+              
