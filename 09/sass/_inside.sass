@@ -2,7 +2,8 @@
 
 // inside
 .contact-agent
-	padding: 20px 0 
+	padding: 20px 14px 124px 0
+	margin-right: -14px  
 .contact-agent__title
 	margin-bottom: 25px 
 	+ub
@@ -39,6 +40,28 @@
 		height: 40px
 		font-size: 16px
 		+border-radius(20px)
+.l-similar
+	position: relative
+	background: #353230
+	padding: 20px 14px 124px 0
+	margin-right: -14px 
+	&:before
+		content: ""
+		position: absolute
+		right: 100%
+		top: 0
+		width: 2000em
+		height: 100%
+		background: #353230
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: -40px
+		width: 1px
+		background: #474443
+		z-index: 999
 .content
 	background: #fff 
 .content__top
@@ -147,46 +170,83 @@
 	right: 24px
 	+s(next)
 .building__about
-	margin-bottom: 30px		
+	position: relative
+	padding-bottom: 30px
+	margin-bottom: 30px 
+	border-bottom: 1px solid #e6e6e6
+.building__price
+	position: absolute
+	top: -80px
+	left: 20px
+	width: 230px
+	height: 50px
+	line-height: 50px
+	text-align: center
+	+ub
+	font-size: 24px 
+	color: #fff
+	background: #f5531a
+.montly
+	position: absolute
+	top: -67px
+	right: 0px
+	width: 172px
+	height: 40px
+	line-height: 40px
+	padding-left: 52px
+	+box    
+	+border-radius(20px)
+	+ub
+	font-size: 11px
+	color: #fff 
+	background: #1d1d1d
+	&:hover
+		color: #fff
+	&:before
+		content: ""
+		position: absolute
+		top: 12px
+		left: 20px
+		+s(montly)
 .building__descr
-	font: 12px/1.6 Arial, sans-serif
-	color: #8c8984
+	line-height: 1.6
+	font-size: 13px  
+	color: #757575
 .building__param
 	ul
 		margin-bottom: 17px
+		padding-left: 20px
 	dl
 		+clr
 		margin-bottom: 0 
 		dt
-			float: left
-			font-size: 11px
+			float: left 
+			+ul
 			font-weight: normal
 			color: #a1a09b
-		.subline
-			overflow: hidden
-			height: 15px 
-			border-bottom: 1px solid #e5e1da
 		.building__param-value
-			width: 115px 
+			width: 60% 
 			float: right
-			font-size: 12px
+			+um
 			color: #575653 
 			text-align: left
+	.more
+		padding-left: 20px		
 
 // map
 .building__infrastructure
-	padding: 10px
+	padding: 10px 10px 10px 20px
 	background: #fff
 	margin-bottom: 30px
 	.sidebar__title
 		padding-left: 20px					
 .building__map
+	margin-top: 20px 
 	img
 		width: 100%
 	+border-radius(5px)
 .building__labels
 	margin-top: 20px
-	padding-left: 20px
 	+clr
 	ul
 		margin: 0

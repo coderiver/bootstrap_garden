@@ -53,7 +53,7 @@ a:hover { text-decoration: none; }
 .select_right { border-radius: 0 10px 10px 0; }
 
 .select__arrow { position: absolute; top: 0; bottom: 0; right: 0; width: 28px; }
-.select__arrow:after { content: ""; position: absolute; top: 50%; left: 50%; margin: -4px 0 0 -6px; background: url('../img/icons-se82da621ea.png') 0 -539px no-repeat; width: 8px; height: 6px; }
+.select__arrow:after { content: ""; position: absolute; top: 50%; left: 50%; margin: -4px 0 0 -6px; background: url('../img/icons-sd962ef6718.png') 0 -565px no-repeat; width: 8px; height: 6px; }
 
 .select__value { -moz-box-sizing: border-box; box-sizing: border-box; font-family: "UbuntuMedium", sans-serif; font-weight: normal; line-height: 25px; font-size: 12px; color: #353230; padding: 0 33px 0 12px; }
 
@@ -98,15 +98,15 @@ a:hover { text-decoration: none; }
 
 .vline { position: absolute; top: 0; bottom: 0; left: -40px; width: 1px; background-color: #e5e5e5; z-index: 999; }
 
-.topper { position: relative; background: #1e1e1e; }
-.topper:before { content: ""; position: absolute; right: 100%; top: 0; width: 2000em; height: 100%; background: #1e1e1e; }
-.topper:after { content: ""; position: absolute; top: 0; bottom: 0; left: -40px; width: 1px; background: #474443; z-index: 999; }
+.topper, .contact-agent { position: relative; background: #1e1e1e; }
+.topper:before, .contact-agent:before { content: ""; position: absolute; right: 100%; top: 0; width: 2000em; height: 100%; background: #1e1e1e; }
+.topper:after, .contact-agent:after { content: ""; position: absolute; top: 0; bottom: 0; left: -40px; width: 1px; background: #474443; z-index: 999; }
 
 .filters { position: relative; margin-right: -15px; padding-top: 30px; }
 .filters .button { width: 200px; }
 
 .filters__title { position: relative; display: inline-block; margin-bottom: 20px; font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 20px; color: #f5531a; }
-.filters__title:after { content: ""; position: absolute; top: 6px; right: -27px; background: url('../img/icons-se82da621ea.png') 0 -419px no-repeat; width: 15px; height: 14px; }
+.filters__title:after { content: ""; position: absolute; top: 6px; right: -27px; background: url('../img/icons-sd962ef6718.png') 0 -419px no-repeat; width: 15px; height: 14px; }
 
 .item__img img { width: 100%; }
 
@@ -163,7 +163,7 @@ a:hover { text-decoration: none; }
 
 .l-popular { position: relative; padding: 40px 0 0px 0; margin-right: 0; background: #353230; }
 
-.popular__title { margin-bottom: 30px; font-family: "UbuntuLight", sans-serif; font-weight: normal; font-size: 26px; color: #a7b983; }
+.popular__title, .similar__title { margin-bottom: 30px; font-family: "UbuntuLight", sans-serif; font-weight: normal; font-size: 26px; color: #a7b983; }
 
 .popular { font-size: 0; }
 .popular li { display: inline-block; width: 50%; margin-bottom: 10px; }
@@ -235,11 +235,11 @@ a:hover { text-decoration: none; }
 .socials li { display: inline-block; margin-left: 20px; font: 0/0 a; text-shadow: none; color: transparent; }
 .socials li a { display: block; }
 
-.social__fb { background: url('../img/icons-se82da621ea.png') 0 -460px no-repeat; width: 9px; height: 16px; }
+.social__fb { background: url('../img/icons-sd962ef6718.png') 0 -486px no-repeat; width: 9px; height: 16px; }
 
-.social__tw { background: url('../img/icons-se82da621ea.png') 0 -366px no-repeat; width: 20px; height: 17px; }
+.social__tw { background: url('../img/icons-sd962ef6718.png') 0 -366px no-repeat; width: 20px; height: 17px; }
 
-.social__gp { background: url('../img/icons-se82da621ea.png') 0 -393px no-repeat; width: 10px; height: 16px; }
+.social__gp { background: url('../img/icons-sd962ef6718.png') 0 -393px no-repeat; width: 10px; height: 16px; }
 
 .header__phone { margin: 7px 0 0 5px; font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 18px; color: #353230; }
 
@@ -293,7 +293,7 @@ a:hover { text-decoration: none; }
 
 @font-face { font-family: "UbuntuItalic"; src: url("../fonts/ubuntu-italic.eot"); src: url("../fonts/ubuntu-italic.eot") format("embedded-opentype"), url("../fonts/ubuntu-italic.woff") format("woff"), url("../fonts/ubuntu-italic.ttf") format("truetype"), url("../fonts/ubuntu-italic.svg#UbuntuItalic") format("svg"); }
 
-.contact-agent { padding: 20px 0; }
+.contact-agent { padding: 20px 14px 124px 0; margin-right: -14px; }
 
 .contact-agent__title { margin-bottom: 25px; font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 20px; color: #f5531a; }
 
@@ -305,14 +305,18 @@ a:hover { text-decoration: none; }
 .contact-agent__reting { margin-bottom: 20px; font-size: 0; }
 .contact-agent__reting i { display: inline-block; margin-right: 3px; }
 
-.star-b { background: url('../img/icons-se82da621ea.png') 0 -503px no-repeat; width: 8px; height: 8px; }
+.star-b { background: url('../img/icons-sd962ef6718.png') 0 -529px no-repeat; width: 8px; height: 8px; }
 
-.star-g { background: url('../img/icons-se82da621ea.png') 0 -521px no-repeat; width: 8px; height: 8px; }
+.star-g { background: url('../img/icons-sd962ef6718.png') 0 -547px no-repeat; width: 8px; height: 8px; }
 
 .contact-agent__img { height: 100px; margin-bottom: 22px; }
 .contact-agent__img img { max-height: 100%; }
 
 .contact-agent__form .button { width: 200px; height: 40px; font-size: 16px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
+
+.l-similar { position: relative; background: #353230; padding: 20px 14px 124px 0; margin-right: -14px; }
+.l-similar:before { content: ""; position: absolute; right: 100%; top: 0; width: 2000em; height: 100%; background: #353230; }
+.l-similar:after { content: ""; position: absolute; top: 0; bottom: 0; left: -40px; width: 1px; background: #474443; z-index: 999; }
 
 .content { background: white; }
 
@@ -347,30 +351,36 @@ a:hover { text-decoration: none; }
 .building__thumbs ul li:hover, .building__thumbs ul li.active { border-color: white; background-color: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=55); opacity: 0.55; }
 .building__thumbs ul li img { width: 100%; height: 100%; vertical-align: middle; }
 
-.slide__arrow-prev, .slide__arrow-next { position: absolute; top: 32px; left: 24px; padding: 0 5px; -moz-box-sizing: border-box; box-sizing: border-box; background: url('../img/icons-se82da621ea.png') 0 -238px no-repeat; width: 20px; height: 20px; cursor: pointer; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+.slide__arrow-prev, .slide__arrow-next { position: absolute; top: 32px; left: 24px; padding: 0 5px; -moz-box-sizing: border-box; box-sizing: border-box; background: url('../img/icons-sd962ef6718.png') 0 -238px no-repeat; width: 20px; height: 20px; cursor: pointer; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
 .slide__arrow-prev.disabled, .slide__arrow-next.disabled { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
 
-.slide__arrow-next { position: absolute; left: auto; right: 24px; background: url('../img/icons-se82da621ea.png') 0 -302px no-repeat; width: 20px; height: 20px; }
+.slide__arrow-next { position: absolute; left: auto; right: 24px; background: url('../img/icons-sd962ef6718.png') 0 -302px no-repeat; width: 20px; height: 20px; }
 
-.building__about { margin-bottom: 30px; }
+.building__about { position: relative; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #e6e6e6; }
 
-.building__descr { font: 12px/1.6 Arial, sans-serif; color: #8c8984; }
+.building__price { position: absolute; top: -80px; left: 20px; width: 230px; height: 50px; line-height: 50px; text-align: center; font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 24px; color: white; background: #f5531a; }
 
-.building__param ul { margin-bottom: 17px; }
+.montly { position: absolute; top: -67px; right: 0px; width: 172px; height: 40px; line-height: 40px; padding-left: 52px; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 11px; color: white; background: #1d1d1d; }
+.montly:hover { color: white; }
+.montly:before { content: ""; position: absolute; top: 12px; left: 20px; background: url('../img/icons-sd962ef6718.png') 0 -443px no-repeat; width: 16px; height: 16px; }
+
+.building__descr { line-height: 1.6; font-size: 13px; color: #757575; }
+
+.building__param ul { margin-bottom: 17px; padding-left: 20px; }
 .building__param dl { margin-bottom: 0; }
 .building__param dl:before, .building__param dl:after { content: ""; display: table; }
 .building__param dl:after { clear: both; }
-.building__param dl dt { float: left; font-size: 11px; font-weight: normal; color: #a1a09b; }
-.building__param dl .subline { overflow: hidden; height: 15px; border-bottom: 1px solid #e5e1da; }
-.building__param dl .building__param-value { width: 115px; float: right; font-size: 12px; color: #575653; text-align: left; }
+.building__param dl dt { float: left; font-family: "UbuntuLight", sans-serif; font-weight: normal; font-weight: normal; color: #a1a09b; }
+.building__param dl .building__param-value { width: 60%; float: right; font-family: "UbuntuMedium", sans-serif; font-weight: normal; color: #575653; text-align: left; }
+.building__param .more { padding-left: 20px; }
 
-.building__infrastructure { padding: 10px; background: white; margin-bottom: 30px; }
+.building__infrastructure { padding: 10px 10px 10px 20px; background: white; margin-bottom: 30px; }
 .building__infrastructure .sidebar__title { padding-left: 20px; }
 
-.building__map { -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+.building__map { margin-top: 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
 .building__map img { width: 100%; }
 
-.building__labels { margin-top: 20px; padding-left: 20px; }
+.building__labels { margin-top: 20px; }
 .building__labels:before, .building__labels:after { content: ""; display: table; }
 .building__labels:after { clear: both; }
 .building__labels ul { margin: 0; margin-right: 20px; float: left; width: 160px; }
@@ -379,19 +389,19 @@ a:hover { text-decoration: none; }
 .checkbox { display: inline-block; min-height: 40px; color: #b8bcbf; font-size: 14px; cursor: pointer; position: relative; }
 .checkbox input { position: relative; width: 15px; height: 15px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; z-index: 2; cursor: pointer; }
 .checkbox span { position: relative; top: 3px; margin-left: 20px; padding-left: 13px; }
-.checkbox span:after { content: ""; position: absolute; top: -3px; left: -20px; background: url('../img/icons-se82da621ea.png') 0 -170px no-repeat; width: 24px; height: 24px; }
-.checkbox span:before { content: ""; position: absolute; background: url('../img/icons-se82da621ea.png') 0 -443px no-repeat; width: 9px; height: 7px; left: -39px; top: 5px; line-height: 16px; }
+.checkbox span:after { content: ""; position: absolute; top: -3px; left: -20px; background: url('../img/icons-sd962ef6718.png') 0 -170px no-repeat; width: 24px; height: 24px; }
+.checkbox span:before { content: ""; position: absolute; background: url('../img/icons-sd962ef6718.png') 0 -469px no-repeat; width: 9px; height: 7px; left: -39px; top: 5px; line-height: 16px; }
 .checkbox input:checked + span { color: #3a3c3e; }
-.checkbox input:checked + span:before { content: ""; background: url('../img/icons-se82da621ea.png') 0 -486px no-repeat; width: 9px; height: 7px; }
+.checkbox input:checked + span:before { content: ""; background: url('../img/icons-sd962ef6718.png') 0 -512px no-repeat; width: 9px; height: 7px; }
 .checkbox input:checked { color: #cccccc; }
-.checkbox span.g-icon-hschool:after { background: url('../img/icons-se82da621ea.png') 0 -34px no-repeat; width: 24px; height: 24px; }
-.checkbox span.g-icon-hospital:after { background: url('../img/icons-se82da621ea.png') 0 -332px no-repeat; width: 24px; height: 24px; }
-.checkbox span.g-icon-police:after { background: url('../img/icons-se82da621ea.png') 0 -204px no-repeat; width: 24px; height: 24px; }
-.checkbox span.g-icon-fire:after { background: url('../img/icons-se82da621ea.png') 0 -102px no-repeat; width: 24px; height: 24px; }
-.checkbox span.g-icon-shops:after { background: url('../img/icons-se82da621ea.png') 0 -268px no-repeat; width: 24px; height: 24px; }
-.checkbox span.g-icon-restoraunt:after { background: url('../img/icons-se82da621ea.png') 0 0 no-repeat; width: 24px; height: 24px; }
-.checkbox span.g-icon-market:after { background: url('../img/icons-se82da621ea.png') 0 -136px no-repeat; width: 24px; height: 24px; }
-.checkbox span.g-icon-airports:after { background: url('../img/icons-se82da621ea.png') 0 -68px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-hschool:after { background: url('../img/icons-sd962ef6718.png') 0 -34px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-hospital:after { background: url('../img/icons-sd962ef6718.png') 0 -332px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-police:after { background: url('../img/icons-sd962ef6718.png') 0 -204px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-fire:after { background: url('../img/icons-sd962ef6718.png') 0 -102px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-shops:after { background: url('../img/icons-sd962ef6718.png') 0 -268px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-restoraunt:after { background: url('../img/icons-sd962ef6718.png') 0 0 no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-market:after { background: url('../img/icons-sd962ef6718.png') 0 -136px no-repeat; width: 24px; height: 24px; }
+.checkbox span.g-icon-airports:after { background: url('../img/icons-sd962ef6718.png') 0 -68px no-repeat; width: 24px; height: 24px; }
 
 @font-face { font-family: "UbuntuBold"; src: url("../fonts/ubuntu-bold.eot"); src: url("../fonts/ubuntu-bold.eot") format("embedded-opentype"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype"), url("../fonts/ubuntu-bold.svg#UbuntuBold") format("svg"); }
 
