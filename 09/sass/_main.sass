@@ -1,10 +1,22 @@
 @import base
 
-// Styles		
-.filters
+// Styles
+.page__grey
+	background: #f0efef 
+.l-vline
+	position: relative
+.vline
+	position: absolute
+	top: 0
+	bottom: 0
+	left: -40px
+	width: 1px
+	background-color: #e5e5e5
+
+	z-index: 999  
+.topper
 	position: relative
 	background: #1e1e1e
-	margin-right: -15px
 	&:before
 		content: ""
 		position: absolute
@@ -12,12 +24,270 @@
 		top: 0
 		width: 2000em
 		height: 100%
-		background: #1e1e1e   
+		background: #1e1e1e
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: -40px
+		width: 1px
+		background: #474443
+		z-index: 999  	 		
+.filters
+	position: relative
+	margin-right: -15px
+	padding-top: 30px
+	.button
+		width: 200px  
+.filters__title
+	position: relative
+	display: inline-block
+	margin-bottom: 20px
+	+ub
+	font-size: 20px 
+	color: #f5531a 
+	&:after
+		content: ""
+		position: absolute
+		top: 6px
+		right: -27px
+		+s(search)	   
 .item__img
 	img
 		width: 100%
 .slide
-	margin-left: -15px 	 
+	margin: 0 0 0 -15px
+.slide_agent
+	.item__block
+		right: 230px
+		left: 0px
+		width: auto 
+.filter__item
+	margin-bottom: 20px
+	p
+		margin-bottom: 5px 
+		+um
+		color: #fff
+.filter__item_group
+	.select
+		width: 98px
+		display: inline-block 
+.item__block
+	position: absolute
+	bottom: 0
+	right: 0
+	width: 480px
+	+box 
+	@include opacity(.9)
+	background: #f55319
+	padding: 20px 18px 13px
+.item__title
+	display: inline-block
+	margin-right: 15px 
+	+um
+	font-size: 20px
+	color: #fff
+.item__price	
+	display: inline-block
+	+ub
+	font-size: 20px 
+	color: #1e1e1e
+.item__info
+	font-size: 0
+	width: 280px
+	margin: 13px 17px 0 0  
+	li
+		display: inline-block
+		width: 140px
+		p
+			display: inline-block
+.item__type
+	font-size: 11px
+	color: #fff
+.item__value
+	font-size: 12px
+	color: #fff
+	+ub
+.item__more
+	margin-top: 13px	
+.item__link
+	display: inline-block
+	height: 20px
+	line-height: 20px  
+	padding: 0 10px
+	border-radius: 10px
+	@include background-clip(padding-box)
+	background: #fff
+	+ub
+	font-size: 11px
+	color: #1e1e1e
+.carousel-indicators
+	position: absolute
+	bottom: 50px
+	top: auto
+	right: 20px
+	z-index: 9
+	li
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		+box
+		border: 2px solid #c03a09
+		background: #fff
+	li.active
+		border: 2px solid #fff
+		background: #f15f29
+.carousel-indicators_agent
+	right: 250px
+.agent
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0px
+	width: 230px 
+	padding: 17px
+	overflow: hidden
+	+box
+	+opacity(.9)
+	background-color: #2f95c7
+.agent__title
+	margin-bottom: 18px 
+	+um
+	font-size: 20px
+	color: #fff
+.agent__img
+	height: 100px
+	line-height: 100px
+	margin-bottom: 17px 
+	img
+		max-height: 100px
+.agent__info 
+	font-size: 13px 
+	color: #fff
+	line-height: 1.5
+	margin-bottom: 17px  
+.article
+	position: relative
+	background: #353230
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: -40px
+		width: 1px
+		background: #474443
+		z-index: 999
+	&:before
+		content: ""
+		position: absolute
+		right: 100%
+		top: 0
+		width: 2000em
+		height: 100%
+		background: #353230
+.article__list
+	margin-left: -15px
+	padding-left: 15px 
+	padding-bottom: 40px
+	background: #fff
+.article__item
+	padding-top: 40px
+	p
+		font-size: 13px
+		color: #757575
+		line-height: 1.6 
+		margin-bottom: 10px
+.l-popular 
+	position: relative
+	padding: 40px 0 0px 0
+	margin-right: 0
+	background: #353230
+.popular__title
+	margin-bottom: 30px  
+	+ul
+	font-size: 26px 
+	color: #a7b983
+.popular
+	font-size: 0
+	li
+		display: inline-block
+		width: 50%
+		margin-bottom: 10px 
+		a
+			font-size: 12px
+			color: #f0efef
+			&:hover
+				text-decoration: underline
+.page__border
+	border-bottom: 1px solid #e6e6e6
+.l-preoperties
+	padding-top: 40px
+.preoperties__item
+	margin-bottom: 35px 	 
+.preoperties__img
+	display: block
+	margin-bottom: 20px 
+	img
+		width: 100%
+		height: 100%
+.preoperties__adress
+	display: block
+	padding-bottom: 17px
+	border-bottom: 1px solid #c5c2c0
+	margin-bottom: 20px  
+	+um_i
+	font-size: 18px
+	color: #9c9a99
+	&:hover
+		color: #9c9a99
+		text-decoration: underline
+.preoperties__info
+	margin-bottom: 20px 
+	li
+		+clr
+.preoperties__type
+	width: 30%
+	+ul
+	color: #9c9a99
+.preoperties__value
+	width: 70%
+	+um
+	color: #9c9a99 
+.preoperties__price
+	+ub
+	font-size: 16px
+	color: #f5531a
+.preoperties__more
+	display: block
+	height: 245px
+	line-height: 245px  
+	border-radius: 0 20px 0 0 
+	background: #f55d27
+	text-align: center
+	+ub
+	font-size: 16px
+	color: #fff
+	text-transform: uppercase
+	+trans(background 400ms)
+	&:hover
+		color: #fff
+		background: darken(#f55d27, 5%)  
+	
+
+
+	
+		
+
+
+	 
+		  	 		
+
+		 		
+	 	
+
+
 
 
 

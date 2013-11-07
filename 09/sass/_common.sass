@@ -35,10 +35,22 @@ a
         text-decoration: none
 .page
     position: relative
+.h1
+    margin-bottom: 30px 
+    +ub
+    font-size: 26px
+    color: #1e1e1e     
 .h2
     font-size: 20px
     color: #353230
-
+.more
+    font-size: 13px
+    color: #3091c1    
+.more_white
+    color: #fff
+    &:hover
+        color: #fff
+        text-decoration: underline
 // button
 .button
     height: 25px 
@@ -50,6 +62,52 @@ a
     +ub
     text-transform: uppercase 
     color: #fff
+
+// select
+.select
+    position: relative
+    width: 200px 
+    height: 25px
+    +box
+    background: #e6e6e6
+    border: none
+    border-radius: 10px
+    select
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 100%
+        height: 25px
+        line-height: 25px  
+        padding: 0 4px
+        +opacity(0)
+        color: #292b2c
+        z-index: 2
+.select_left
+    border-radius: 10px 0 0 10px
+.select_right
+    border-radius: 0 10px 10px 0             
+.select__arrow
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    width: 28px
+    &:after
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        margin: -4px 0 0 -6px
+        +s(select)
+.select__value
+    +box
+    +um
+    line-height: 25px
+    font-size: 12px 
+    color: #353230
+    padding: 0 33px 0 12px
+
 
                   
 
