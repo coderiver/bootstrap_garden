@@ -370,7 +370,7 @@ a:hover { text-decoration: none; }
 .result-details__info p { margin-bottom: 5px; }
 .result-details__info p span { font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 12px; color: #f0efef; }
 
-.tab-content { min-height: 886px; padding-left: 16px; background: white; }
+.tab-content { padding-left: 16px; background: white; }
 .tab-content .l-preoperties { margin-left: -20px; padding-left: 20px; }
 
 .building__gallery { position: relative; margin-bottom: 80px; margin-left: -16px; background: #1e1e1e; }
@@ -464,6 +464,19 @@ a:hover { text-decoration: none; }
 .refine__title:before { content: ""; position: absolute; top: 3px; left: -20px; background: url('../img/icons-s6679cb7d30.png') 0 -393px no-repeat; width: 14px; height: 14px; }
 
 .result-details { position: absolute; top: 0; right: 0; padding: 20px; }
+
+.list-pagination { position: relative; margin: 47px 0; }
+.list-pagination:before, .list-pagination:after { content: ""; display: table; }
+.list-pagination:after { clear: both; }
+
+.pagination { float: right; margin: 0 30px; font-size: 0; }
+.pagination li { display: inline-block; }
+.pagination li a { width: 36px; height: 25px; line-height: 25px; text-align: center; display: block; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; font-family: "UbuntuMedium", sans-serif; font-weight: normal; font-size: 12px; color: #1e1e1e; }
+.pagination li a:hover { background: #f0efef; color: #2f95c8; }
+
+.pagination-next, .pagination-prev { position: relative; top: 2px; float: right; font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-s6679cb7d30.png') 0 -302px no-repeat; width: 20px; height: 20px; }
+
+.pagination-prev { background: url('../img/icons-s6679cb7d30.png') 0 -238px no-repeat; width: 20px; height: 20px; }
 
 @font-face { font-family: "UbuntuBold"; src: url("../fonts/ubuntu-bold.eot"); src: url("../fonts/ubuntu-bold.eot") format("embedded-opentype"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype"), url("../fonts/ubuntu-bold.svg#UbuntuBold") format("svg"); }
 

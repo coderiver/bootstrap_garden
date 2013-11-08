@@ -23,4 +23,37 @@
 	position: absolute
 	top: 0
 	right: 0
-	padding: 20px				 							 				
+	padding: 20px
+	
+// pagination
+.list-pagination
+	position: relative
+	margin: 47px 0
+	+clr
+.pagination
+	float: right
+	margin: 0 30px
+	font-size: 0 
+	li
+		display: inline-block
+		a
+			width: 36px
+			height: 25px
+			line-height: 25px
+			text-align: center   
+			display: block
+			+border-radius(10px)
+			+um
+			font-size: 12px
+			color: #1e1e1e
+			&:hover
+				background: #f0efef
+				color: #2f95c8
+.pagination-next, .pagination-prev
+	position: relative
+	top: 2px
+	float: right
+	+ht
+	+s(next)
+.pagination-prev
+	+s(prev)
