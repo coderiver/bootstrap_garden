@@ -105,7 +105,25 @@ table
 	&:focus
 		background-color: #368111
 		background: #368111
-
+		
+.g-btn_green
+	height: 25px
+	line-height: 25px
+	@include border-radius(10px)
+	@include background-clip(padding-box)
+	background-color: #7fad45
+	+background-image(linear-gradient(transparent, transparent))
+	font-size: 12px
+	color: #FFF
+	text-transform: uppercase
+	+ub
+	&:hover
+		background-color: #729c3e
+		background: #729c3e
+	&:active
+		// background-color: #368111
+		// background: #368111
+		+box-shadow(inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05))
 .g-btn_dark-green
 	background: #244F0E
 	border: none
@@ -179,6 +197,83 @@ table
 				cursor: pointer
 			span
 				padding: 0
+
+// select-radio
+.select-radio
+	position: relative
+	display: inline-block
+	min-width: 100%
+	font-size: 12px
+	+u
+	span
+		display: inline-block
+		margin-left: 6px
+	input
+		+opacity(0)
+		position: relative
+	input + span
+		color: #7c7a77
+		&:before
+			content: ""
+			position: absolute
+			top: 3px
+			left: 0px
+			width: 14px
+			height: 14px
+			+box
+			@include box-shadow(inset 0 1px 1px #b4b2a7)
+			border-radius: 50%
+			background: #fff
+			opacity: 1 
+	input:checked + span
+		&:after
+			content: ""
+			position: absolute
+			top: 8px
+			left: 4px
+			width: 6px
+			height: 6px
+			border-radius: 50%
+			background: #80ae46
+
+// select-checkbox
+.select-checkbox
+	position: relative
+	display: inline-block
+	min-width: 51%
+	color: #f0f4f5
+	font-size: 12px
+	span
+		display: inline-block
+		margin-left: 6px
+		font-size: 13px
+		color: #757575
+		+no-sel
+	input
+		+opacity(0)
+	input + span
+		&:before
+			content: ""
+			position: absolute
+			top: 3px
+			left: 0px
+			width: 14px
+			height: 14px
+			background: #FFF 
+			+box
+			@include border-radius(1px)
+			@include box-shadow(inset 0 1px 1px #b4b2a7)
+			+u
+			font-size: 12px 
+			color: #7C7A77
+			background: #fff
+	input:checked + span
+		&:after
+			content: ""
+			position: absolute
+			top: 7px
+			left: 3px
+			+sized-sprite($icons, checked)
 
 // input
 input.input
@@ -413,3 +508,107 @@ input.input
 	+ub
 	color: #83B644 	
 	font-size: 18px
+
+// breadcrumbs
+.breadcrumbs
+	margin: 0
+	height: 24px
+	@include border-radius(10px)
+	@include box-shadow(inset 0 1px 1px #968a7c)
+	background-color: #cbc1b5
+	position: relative
+	&:before, &:after
+		content: ""
+		position: absolute
+		top: 0
+	&:before
+		left: -6px
+		+s(breadcrumbs-left)
+		height: 24px
+	&:after
+		right: -6px
+		+s(breadcrumbs-right)
+		height: 24px
+	ul
+		margin: 0
+	li
+		float: left
+		margin-right: 10px
+		background-color: transparent
+		&:last-child
+			margin-right: 0
+		&.active
+			padding-bottom: 1px
+			margin-bottom: 5px
+			@include border-radius(10px)
+			background-color: #db4537
+			+box-shadow(0px 2px 5px 0 rgba(0,0,0, .5))
+			position: relative
+			&:before, &:after
+				content: ""
+				position: absolute
+				top: 0
+				z-index: 100	
+			&:before
+				left: -6px
+				+s(label-left)
+				height: 24px
+			&:after
+				right: -6px
+				+s(label-right)
+				height: 24px
+			a
+				color: #FFF
+	a
+		display: block
+		padding: 0 18px
+		font-size: 12px
+		line-height: 24px
+		color: #332F2D
+		+ub
+
+.breadcrumbs_tabs
+	margin: 5px 0 0
+
+// page__sidebar refine
+.refine
+	padding: 0 20px
+	margin-bottom: 20px
+	@include border-radius(20px)
+	background-color: #f1ebe7
+	@include box-shadow(0 1px 2px #a08f79)
+
+.refine__title
+	padding-top: 20px
+	.g-btn
+
+.refine__bottom
+	margin: 0
+	padding-bottom: 20px
+
+.refine__item
+	.h1
+		display: inline-block
+		margin: 18px 0 6px 10px
+		line-height: 1
+		font-size: 12px
+		color: #322f2e
+		position: relative
+		text-transform: uppercase
+		+um
+		+no-sel
+		&:before
+			content: ""
+			position: absolute
+			right: -16px
+			top: 50%
+			margin-top: -3px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 6px 4px 0 4px
+			border-color: #322f2e transparent transparent transparent
+		&:hover
+			text-decoration: none
+	.wrap-select_mod
+		display: block
