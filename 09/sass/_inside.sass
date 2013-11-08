@@ -94,6 +94,7 @@
 .content
 	background: #fff 
 .content__top
+	position: relative
 	margin: 0 0 -50px -16px 
 	background: #2f8ab7
 	padding: 20px 20px 45px 20px
@@ -101,6 +102,7 @@
 .content__top_orange
 	background: #f5541c 	
 .content__tabs
+	position: relative
 	margin-left: -16px 
 .tabs
 	padding: 0 20px
@@ -124,14 +126,29 @@
 		background: #fff
 		a
 			color: #000 	 
-			   
+.result-details__info
+	margin-bottom: 20px 
+	font-size: 11px
+	+um
+	color: #ffbaa2
+	p
+		margin-bottom: 5px 
+		span
+			+ub
+			font-size: 12px
+			color: #f0efef
 .tab-content
 	min-height: 886px
-	background: #fff 	
+	padding-left: 16px 
+	background: #fff
+	.l-preoperties
+		margin-left: -20px
+		padding-left: 20px  	
 //slider
 .building__gallery
 	position: relative
 	margin-bottom: 80px
+	margin-left: -16px 
 	background: #1e1e1e 
 	&:after
 		content: ""
@@ -208,7 +225,7 @@
 .building__price
 	position: absolute
 	top: -80px
-	left: 20px
+	left: 14px
 	width: 230px
 	height: 50px
 	line-height: 50px
@@ -266,7 +283,7 @@
 
 // map
 .building__infrastructure
-	padding: 10px 10px 10px 20px
+	padding: 10px 0px 10px 0px
 	background: #fff
 	margin-bottom: 30px
 	.sidebar__title
