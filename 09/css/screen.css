@@ -186,7 +186,7 @@ a:hover { text-decoration: none; }
 
 .page__border { border-bottom: 1px solid #e6e6e6; }
 
-.l-preoperties { padding-top: 40px; }
+.l-preoperties { padding-top: 30px; }
 
 .preoperties__item { margin-bottom: 22px; }
 
@@ -353,7 +353,7 @@ a:hover { text-decoration: none; }
 
 .content { background: white; }
 
-.content__top { position: relative; margin: 0 0 -50px -16px; background: #2f8ab7; padding: 20px 20px 45px 20px; -moz-box-sizing: border-box; box-sizing: border-box; }
+.content__top { position: relative; margin: 0 0 -39px -16px; background: #2f8ab7; padding: 20px 20px 45px 20px; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .content__top_orange { background: #f5541c; }
 
@@ -477,6 +477,28 @@ a:hover { text-decoration: none; }
 .pagination-next, .pagination-prev { position: relative; top: 2px; float: right; font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-s6679cb7d30.png') 0 -302px no-repeat; width: 20px; height: 20px; }
 
 .pagination-prev { background: url('../img/icons-s6679cb7d30.png') 0 -238px no-repeat; width: 20px; height: 20px; }
+
+.l-list-item { padding: 30px 0 0; }
+
+.list-item { margin-bottom: 20px; }
+
+.list-item__img img { width: 100%; }
+
+.list-item__topper { margin-bottom: 17px; }
+.list-item__topper:before, .list-item__topper:after { content: ""; display: table; }
+.list-item__topper:after { clear: both; }
+
+.list-item__adress { float: left; font-family: "UbuntuMediumItalic", sans-serif; font-weight: normal; font-size: 18px; color: #9c9a99; }
+
+.item__link_list { float: right; margin-left: 10px; background: #f0efef; }
+
+.list-item__table { margin: 20px 0; }
+.list-item__table:before, .list-item__table:after { content: ""; display: table; }
+.list-item__table:after { clear: both; }
+
+.list-item__type { float: left; width: 14%; font-family: "UbuntuLight", sans-serif; font-weight: normal; color: #9c9a99; }
+
+.list-item__value { float: left; width: 86%; font-family: "UbuntuMedium", sans-serif; font-weight: normal; color: #9c9a99; }
 
 @font-face { font-family: "UbuntuBold"; src: url("../fonts/ubuntu-bold.eot"); src: url("../fonts/ubuntu-bold.eot") format("embedded-opentype"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype"), url("../fonts/ubuntu-bold.svg#UbuntuBold") format("svg"); }
 
