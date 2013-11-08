@@ -308,6 +308,7 @@ a:hover { text-decoration: none; }
 @font-face { font-family: "UbuntuItalic"; src: url("../fonts/ubuntu-italic.eot"); src: url("../fonts/ubuntu-italic.eot") format("embedded-opentype"), url("../fonts/ubuntu-italic.woff") format("woff"), url("../fonts/ubuntu-italic.ttf") format("truetype"), url("../fonts/ubuntu-italic.svg#UbuntuItalic") format("svg"); }
 
 .sidebar { padding-right: 14px; margin-right: -14px; }
+@media only screen and (max-width: 1200px) { .sidebar { padding-right: 0px; margin-right: 0px; } }
 .sidebar .button { width: 200px; height: 40px; font-size: 16px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
 
 .contact-agent { padding: 20px 14px 124px 0; margin-right: -14px; }
@@ -354,6 +355,7 @@ a:hover { text-decoration: none; }
 .content { background: white; }
 
 .content__top { position: relative; margin: 0 0 -39px -16px; background: #2f8ab7; padding: 20px 20px 45px 20px; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 1200px) { .content__top { margin: 0 0 -39px -20px; } }
 
 .content__top_orange { background: #f5541c; }
 
