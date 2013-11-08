@@ -2370,7 +2370,7 @@ input.input { -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-
 .footer .footer__top { background-color: white; -webkit-box-shadow: inset 0px 1px 0px #6f9c36; -moz-box-shadow: inset 0px 1px 0px #6f9c36; box-shadow: inset 0px 1px 0px #6f9c36; padding: 30px 0 45px; background: #80ae46; }
 .footer .footer__address ul { margin-left: -35px; }
 .footer .footer__address .footer__address-item { display: inline-block; margin-left: 35px; color: #191919; }
-.footer .footer__address .footer__address-item a { color: inherit; text-decoration: none; }
+.footer .footer__address .footer__address-item a { color: #26390e; text-decoration: none; font-size: 12px; }
 .footer .footer__address .footer__address-item a:hover { text-decoration: underline; }
 .footer .footer__address em { display: block; font-weight: normal; font-style: normal; font-size: 11px; color: #4e6d28; font-family: "UbuntuRegular", sans-serif; font-weight: normal; }
 .footer .l-footer-i { background-color: #3a8911; }
@@ -2382,10 +2382,10 @@ input.input { -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-
 .footer .footer__menu ul { float: right; }
 .footer .footer__menu li { float: left; margin: 0 0 0 20px; }
 .footer .footer__menu li:first-child { margin-left: 0; }
-.footer .footer__menu li a { color: white; text-decoration: none; text-shadow: 0 0 0; font-family: "UbuntuRegular", sans-serif; font-weight: normal; }
+.footer .footer__menu li a { font-size: 12px; color: white; text-decoration: none; text-shadow: 0 0 0; font-family: "UbuntuRegular", sans-serif; font-weight: normal; }
 .footer .footer__menu li a:hover { text-decoration: underline; color: #f9f9f9; }
-.footer .footer__logo { margin-top: -6px; text-align: right; font: 0/0 a; text-shadow: none; color: transparent; }
-.footer .footer__logo a { display: inline-block; vertical-align: top; background: url('../img/icons-sdc608a649a.png') 0 0 no-repeat; width: 82px; height: 29px; }
+.footer .footer__logo { margin-top: -6px; text-align: right; }
+.footer .footer__logo a { display: inline-block; vertical-align: top; font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-sdc608a649a.png') 0 0 no-repeat; width: 82px; height: 29px; }
 .footer .footer__request { position: relative; }
 .footer .footer__request:after { content: ""; width: 100%; height: 4px; background: url("../img/icons/footer-border.png") 0 0 repeat-x; position: absolute; top: -10px; left: 0; right: 0; }
 .footer .footer__request input { margin-bottom: 0; }
