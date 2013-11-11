@@ -5290,7 +5290,7 @@ button.close {
     display: none !important;
   }
 }
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   body {
     padding-left: 20px;
     padding-right: 20px;
@@ -5777,7 +5777,7 @@ button.close {
   .uneditable-input.span1 {
     width: 28px;
   }
-}
+}*/
 @media (min-width: 1200px) {
   .row {
     margin-left: -30px;
@@ -6127,7 +6127,7 @@ button.close {
     margin-left: 0;
   }
 }
-@media (max-width: 979px) {
+/*@media (max-width: 979px) {
   body {
     padding-top: 0;
   }
@@ -6277,7 +6277,7 @@ button.close {
     padding-left: 10px;
     padding-right: 10px;
   }
-}
+}*/
 @media (min-width: 980px) {
   .nav-collapse.collapse {
     height: auto !important;

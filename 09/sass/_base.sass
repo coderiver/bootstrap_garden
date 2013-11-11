@@ -65,7 +65,7 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 	-webkit-filter: grayscale(100%)/* Chrome 19+ & Safari 6+ */
 	filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)
 	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"
-//media query
+//media query	
 @mixin rt($media)
 	@if $media == 1920
 		@media only screen and (max-width: 1920px)
@@ -76,8 +76,9 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 	@else if $media == 1380
 		@media only screen and (max-width: 1380px)
 			@content
-	@else if $media == 1120
-		@media only screen and (max-width: 1120px)
+	@else if $media == 1200
+		@media only screen and (max-width: 1200px)
+			@content
 		
 // fonts
 
@@ -101,13 +102,19 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 	font-family: 'UbuntuMediumItalic'
 	src: url('../fonts/ubuntu-mediumitalic.eot')
 	src: url('../fonts/ubuntu-mediumitalic.eot') format('embedded-opentype'),	url('../fonts/ubuntu-mediumitalic.woff') format('woff'),	url('../fonts/ubuntu-mediumitalic.ttf') format('truetype'), url('../fonts/ubuntu-mediumitalic.svg#UbuntuMediumItalic') format('svg')
-
+@font-face
+	font-family: 'UbuntuItalic'
+	src: url('../fonts/ubuntu-italic.eot')
+	src: url('../fonts/ubuntu-italic.eot') format('embedded-opentype'), url('../fonts/ubuntu-italic.woff') format('woff'), url('../fonts/ubuntu-italic.ttf') format('truetype'), url('../fonts/ubuntu-italic.svg#UbuntuItalic') format('svg')
 =ul
 	font-family: 'UbuntuLight', sans-serif
 	font-weight: normal
 =u
 	font-family: 'UbuntuRegular', sans-serif
 	font-weight: normal
+=u_i
+	font-family: 'UbuntuItalic', sans-serif
+	font-weight: normal	
 =um
 	font-family: 'UbuntuMedium', sans-serif
 	font-weight: normal

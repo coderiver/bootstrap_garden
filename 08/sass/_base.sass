@@ -78,3 +78,45 @@ $icons: sprite-map("icons/*.png", $spacing: 10px)
 			@content
 	@else if $media == 1120
 		@media only screen and (max-width: 1120px)
+
+
+// fonts 
+@font-face
+	font-family: 'UbuntuBold'
+	src: url('../fonts/ubuntu-bold.eot')
+	src: url('../fonts/ubuntu-bold.eot') format('embedded-opentype'), url('../fonts/ubuntu-bold.woff') format('woff'), url('../fonts/ubuntu-bold.ttf') format('truetype'), url('../fonts/ubuntu-bold.svg#UbuntuBold') format('svg')
+@font-face
+	font-family: 'UbuntuRegular'
+	src: url('../fonts/ubuntu-regular.eot')
+	src: url('../fonts/ubuntu-regular.eot') format('embedded-opentype'), url('../fonts/ubuntu-regular.woff') format('woff'), url('../fonts/ubuntu-regular.ttf') format('truetype'), url('../fonts/ubuntu-regular.svg#UbuntuRegular') format('svg')
+@font-face
+	font-family: 'UbuntuMedium'
+	src: url('../fonts/ubuntu-medium.eot')
+	src: url('../fonts/ubuntu-medium.eot') format('embedded-opentype'), url('../fonts/ubuntu-medium.woff') format('woff'), url('../fonts/ubuntu-medium.ttf') format('truetype'), url('../fonts/ubuntu-medium.svg#UbuntuMedium') format('svg')
+@font-face
+	font-family: 'UbuntuLight'
+	src: url('../fonts/ubuntu-light.eot')
+	src: url('../fonts/ubuntu-light.eot') format('embedded-opentype'), url('../fonts/ubuntu-light.woff') format('woff'), url('../fonts/ubuntu-light.ttf') format('truetype'), url('../fonts/ubuntu-light.svg#UbuntuLight') format('svg')
+@font-face
+	font-family: 'UbuntuMediumItalic'
+	src: url('../fonts/ubuntu-mediumitalic.eot')
+	src: url('../fonts/ubuntu-mediumitalic.eot') format('embedded-opentype'), url('../fonts/ubuntu-mediumitalic.woff') format('woff'), url('../fonts/ubuntu-mediumitalic.ttf') format('truetype'), url('../fonts/ubuntu-mediumitalic.svg#UbuntuMediumItalic') format('svg')
+
+=ul
+	font-family: 'UbuntuLight', sans-serif
+	font-weight: normal
+=u
+	font-family: 'UbuntuRegular', sans-serif
+	font-weight: normal
+=um
+	font-family: 'UbuntuMedium', sans-serif
+	font-weight: normal
+=um_i
+	font-family: 'UbuntuMediumItalic', sans-serif
+	font-weight: normal   
+=ub
+	font-family: 'UbuntuBold', sans-serif
+	font-weight: normal
+
+@mixin m-pro
+	font-family: "Myriad Pro", arial, helvetica, sans-serif

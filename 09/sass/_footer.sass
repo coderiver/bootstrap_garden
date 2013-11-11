@@ -2,7 +2,65 @@
 
 // Footer
 .l-footer
-    position: relative
-    height: 397px
+	position: relative
+	height: 296px
+	+box
+	border-top: 1px solid #e6e6e6
+.footer__nav
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: -40px
+		width: 1px
+		background: #e6e6e6
+		z-index: 999
+	li
+		display: inline-block
+		margin-right: 20px 
+	a
+		color: #a7b983
+		line-height: 29px
+		&:hover
+			text-decoration: underline
+.footer
+	height: 265px
+	padding-top: 30px
+	+box 
+	border-top: 1px solid #e6e6e6
+	background: #f0efef
+.copyrights
+	padding-top: 6px
+	margin-bottom: 37px 
+	font-size: 10px
+	+u_i
+	color: #c5c2c0
+	p
+		margin-bottom: 10px
+.contacts
+	margin-top: 10px 
+	li
+		margin-bottom: 8px
+		color: #353230
+		a
+			color: #353230
+			&:hover
+				text-decoration: underline		
+.contacts__title
+	color: #a2a09f
+	font-size: 10px 		
+.footer__form
+	margin-top: 16px 
+	input[type="text"]
+		width: 100% 
+		margin-bottom: 15px 
+		border-radius: 10px
+		background: #fff
+		+um
+		+placeholder(#353230)
+		color: #353230
+
                 
               

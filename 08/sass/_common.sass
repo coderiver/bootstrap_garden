@@ -10,6 +10,7 @@ body
 	font-weight: normal 
 	font-size: 14px
 	line-height: 1.2
+	min-width: 980px
 	//-webkit-transform: translate3d(0,0,0);
 	//-weblit-backface-visibility: hidden;
 // resets
@@ -42,16 +43,572 @@ table
 	min-height: 100%
 	height: auto !important
 	height: 100%
-	margin: 0 auto -225px
+	margin: 0 auto -345px
 .wrap__in
 	position: relative
 	width: 1175px
 	margin: 0 auto
 	background: #FFF 
-	z-index: 10 
+	z-index: 10
+.l-info, .page
+	background: #E4DBCF
 .push
-	height: 225px
+	height: 345px
 	clear: both
-//header
-.header
 
+// some style for btn
+.more
+	border: 1px solid #9e9488
+	@include border-radius(10px)
+	background-color: #aea498
+	@include box-shadow(0 1px 3px #c6c2ac)
+	display: inline-block
+	padding: 5px 10px
+	line-height: 1
+	font-size: 12px
+	color: #F2ECE5
+	&:hover
+		background: #9D968C
+		color: #F2ECE5
+		text-decoration: none
+	&:active
+		+box-shadow(inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05))
+
+.btn
+	+ub
+.g-btn
+	&:focus
+		outline: none
+
+.g-btn_ub-bold
+	+ub
+.g-btn_tt-u
+	text-transform: uppercase
+
+.btn-primary
+	background-color: #005aad
+	background: #005aad
+	&:hover, &:focus
+		background-color: #0c5aa1
+		background: #0c5aa1	
+
+.btn-success
+	background-color: #398911
+	background: #398911
+	text-transform: none
+	padding: 0 8px
+	height: 25px
+	line-height: 25px
+	&:hover
+		background-color: #368111
+		background: #368111
+	&:focus
+		background-color: #368111
+		background: #368111
+		
+.g-btn_green
+	height: 25px
+	line-height: 25px
+	@include border-radius(10px)
+	@include background-clip(padding-box)
+	background-color: #7fad45
+	+background-image(linear-gradient(transparent, transparent))
+	font-size: 12px
+	color: #FFF
+	text-transform: uppercase
+	+ub
+	&:hover
+		background-color: #729c3e
+		background: #729c3e
+	&:active
+		// background-color: #368111
+		// background: #368111
+		+box-shadow(inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05))
+.g-btn_dark-green
+	background: #244F0E
+	border: none
+	+um
+	+box-shadow(none)
+	font-size: 12px
+	&:hover
+		background-color: #295a10
+		background: #295a10
+	&:focus
+		background-color: #295a10
+		background: #295a10
+	&:active
+		+box-shadow(inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05))
+
+// select
+.select
+	position: relative
+	height: 30px
+	line-height: 30px
+	color: #54595a
+	font-size: 12px
+	background-color: #fff
+	+box-shadow(0 -1px 0 #c7c6bd, inset 0 1px 1px #ecece9)
+	border-radius: 10px
+	&.select_mod
+		float: left
+		width: 48%
+		&.pull-right
+			float: right
+	&:hover
+		cursor: pointer
+	span
+		display: block
+		padding: 0px 32px 0 10px
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		em
+			font-style: normal
+		i
+			position: absolute
+			right: 8px
+			top: 50%
+			margin-top: -8px
+			content: ""
+			+s(arrow)
+	&.is-open
+		border-radius: 10px 10px 0 0
+		span
+			i
+				+transform(rotate(180deg))
+		.select__drop
+			display: block
+	.select__drop
+		display: none
+		position: absolute
+		top: 100%
+		z-index: 10
+		left: 0
+		width: 100%
+		background-color: #fff
+		+box-shadow(inset 0 0px 1px #b4bcbf)
+		ul
+			margin: 0
+			padding: 5px 0
+		li
+			padding: 2px 10px
+			&:hover
+				background-color: #cedee5
+				cursor: pointer
+			span
+				padding: 0
+
+// select-radio
+.select-radio
+	position: relative
+	display: inline-block
+	min-width: 100%
+	font-size: 12px
+	+u
+	span
+		display: inline-block
+		margin-left: 6px
+	input
+		+opacity(0)
+		position: relative
+	input + span
+		color: #7c7a77
+		&:before
+			content: ""
+			position: absolute
+			top: 3px
+			left: 0px
+			width: 14px
+			height: 14px
+			+box
+			@include box-shadow(inset 0 1px 1px #b4b2a7)
+			border-radius: 50%
+			background: #fff
+			opacity: 1 
+	input:checked + span
+		&:after
+			content: ""
+			position: absolute
+			top: 8px
+			left: 4px
+			width: 6px
+			height: 6px
+			border-radius: 50%
+			background: #80ae46
+
+// select-checkbox
+.select-checkbox
+	position: relative
+	display: inline-block
+	min-width: 51%
+	color: #f0f4f5
+	font-size: 12px
+	span
+		display: inline-block
+		margin-left: 6px
+		font-size: 13px
+		color: #757575
+		+no-sel
+	input
+		+opacity(0)
+	input + span
+		&:before
+			content: ""
+			position: absolute
+			top: 3px
+			left: 0px
+			width: 14px
+			height: 14px
+			background: #FFF 
+			+box
+			@include border-radius(1px)
+			@include box-shadow(inset 0 1px 1px #b4b2a7)
+			+u
+			font-size: 12px 
+			color: #7C7A77
+			background: #fff
+	input:checked + span
+		&:after
+			content: ""
+			position: absolute
+			top: 7px
+			left: 3px
+			+sized-sprite($icons, checked)
+
+// input
+input.input
+	+border-radius(10px)
+	+box-shadow(inset 0 1px 1px #3e5f16)
+	background-color: #fff
+
+// carousel
+.carousel
+	.carousel-inner
+		.item
+			.header__promo-image
+				width: 770px
+				height: 330px
+				overflow: hidden
+				img
+					max-width: 100% 
+			.header__promo-text
+				background: #FFF
+				padding: 20px 20px 15px 20px
+				+box
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				text-align: left
+			.btn
+				display: block
+				+um
+			.h1, .header__promo-price
+				display: inline-block
+			.h1
+				margin: 0 50px 15px 0
+				font-size: 24px
+				line-height: 1
+				color: #322F2E
+			.header__promo-price
+				font-size: 24px
+				color: #3A8911
+
+	.carousel-indicators
+		top: initial
+		bottom: 20px
+		right: 20px
+		.active
+			background: #322F2E
+		li
+			margin-right: 3px
+			background: #fff
+			+box-shadow(0 0 0 1px #322f2e)
+			
+// header__filter
+.header__filter
+	text-align: left
+	.header__filter-top
+		.h1
+			margin: 0
+			line-height: 1
+			color: #DB4637
+			font-size: 20px
+			+um
+	.header__filter-item-heading
+		margin: 18px 0 6px 10px
+		line-height: 1
+		font-size: 12px
+		font-weight: normal
+		color: #322F2E 
+		+um
+	.header__filter-add
+		margin-top: 30px
+		position: relative
+		.g-btn
+			&:after
+				content: ""
+				position: absolute
+				top: 8px
+				right: 12px
+				+s(lupa)
+
+// l-info
+.l-info
+	+box-shadow(inset 0px 1px 0 #fff)
+.info__in
+	.h1
+		+ul
+		font-size: 26px
+		@include text-shadow(0 1px 0 #fff)
+	p
+		color: #747474
+		font-size: 13px
+		line-height: 1.6 
+		+u
+		@include text-shadow(0 1px 0 #fff)
+	ul
+		display: inline-block
+		width: 48%
+		margin: 0
+		vertical-align: top
+		a
+			+um_i
+			text-decoration: underline
+			color: #4C4C4C
+			font-size: 13px
+			&:hover
+				text-decoration: none
+				color: #4C4C4C
+.info__in_red
+	.h1
+		color: #e52310
+.info__in_orange
+	.h1
+		color: #EF7A08 
+.info__in_yellow
+	.h1
+		color: #E1B20F 
+.info__in_olive
+	.h1
+		color: #BAB321
+
+// page
+.l-page
+	background: #e4dbcf
+	padding: 40px 0 0
+	overflow: hidden
+.page
+	
+.page__title
+	position: relative	
+	h2
+		position: relative
+		margin: 0
+		text-align: center
+		+u
+		color: #322F2E
+		font-size: 26px
+		span
+			position: relative
+			display: inline-block
+			padding: 0 15px 
+			&:after, &:before
+				content: ""
+				top: 22px				
+				position: absolute
+				// +s(page__title-border)
+				width: 10000px
+				height: 4px
+				background: url("../img/icons/page__title-border.png") 0 0 repeat-x 
+			&:after
+				right: 100%				
+			&:before
+				left: 100%
+
+.g-label
+	text-align: center
+	+um
+	span
+		height: 26px
+		line-height: 26px
+		display: inline-block
+		position: relative
+		background: #DB4637
+		color: #FFF
+		+box-shadow(0px 2px 5px 0 rgba(0,0,0, .5))
+		+um
+		&:after, &:before
+			content: ""
+			position: absolute
+			top: 0
+		&:before
+			+s(label-left)
+			left: -15px
+		&:after
+			+s(label-right)
+			right: -15px
+
+// properties
+.properties
+
+.properties__item
+	margin-top: 25px
+	margin-bottom: 35px
+	&.is-sale
+		&:hover
+			.properties__image
+				&:before
+					content: none
+			.properties__image img, table, .h1, .properties__price
+				opacity: 1
+		.properties__image
+			position: relative
+			&:before
+				content: ""
+				+s(sale)
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-top: -36px
+				margin-left: -36px
+				z-index: 100
+		.properties__image img, table, .h1, .properties__price
+			opacity: 0.5 
+	table
+		margin-bottom: 15px
+		td
+			font-size: 12px
+			color: #414345
+			+um
+			&:first-child
+				width: 46%
+				padding: 0
+				color: #929496
+				font-size: 12px
+				+ul
+.properties__image
+	width: 230px
+	height: 190px
+	overflow: hidden
+	border: 2px solid #fff
+	border-radius: 1px
+	a
+		display: block
+	img
+		max-width: 100%
+.h1, a
+	color: #322F2E
+	font-size: 18px
+	&:hover
+		color: #322F2E
+		text-decoration: underline
+	+u
+.properties__price
+	+ub
+	color: #83B644 	
+	font-size: 18px
+
+// breadcrumbs
+.breadcrumbs
+	margin: 0
+	height: 24px
+	@include border-radius(10px)
+	@include box-shadow(inset 0 1px 1px #968a7c)
+	background-color: #cbc1b5
+	position: relative
+	&:before, &:after
+		content: ""
+		position: absolute
+		top: 0
+	&:before
+		left: -6px
+		+s(breadcrumbs-left)
+		height: 24px
+	&:after
+		right: -6px
+		+s(breadcrumbs-right)
+		height: 24px
+	ul
+		margin: 0
+	li
+		float: left
+		margin-right: 10px
+		background-color: transparent
+		&:last-child
+			margin-right: 0
+		&.active
+			padding-bottom: 1px
+			margin-bottom: 5px
+			@include border-radius(10px)
+			background-color: #db4537
+			+box-shadow(0px 2px 5px 0 rgba(0,0,0, .5))
+			position: relative
+			&:before, &:after
+				content: ""
+				position: absolute
+				top: 0
+				z-index: 100	
+			&:before
+				left: -6px
+				+s(label-left)
+				height: 24px
+			&:after
+				right: -6px
+				+s(label-right)
+				height: 24px
+			a
+				color: #FFF
+	a
+		display: block
+		padding: 0 18px
+		font-size: 12px
+		line-height: 24px
+		color: #332F2D
+		+ub
+
+.breadcrumbs_tabs
+	margin: 5px 0 0
+
+// page__sidebar refine
+.refine
+	padding: 0 20px
+	margin-bottom: 20px
+	@include border-radius(20px)
+	background-color: #f1ebe7
+	@include box-shadow(0 1px 2px #a08f79)
+
+.refine__title
+	padding-top: 20px
+	.g-btn
+
+.refine__bottom
+	margin: 0
+	padding-bottom: 20px
+
+.refine__item
+	.h1
+		display: inline-block
+		margin: 18px 0 6px 10px
+		line-height: 1
+		font-size: 12px
+		color: #322f2e
+		position: relative
+		text-transform: uppercase
+		+um
+		+no-sel
+		&:before
+			content: ""
+			position: absolute
+			right: -16px
+			top: 50%
+			margin-top: -3px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 6px 4px 0 4px
+			border-color: #322f2e transparent transparent transparent
+		&:hover
+			text-decoration: none
+	.wrap-select_mod
+		display: block
