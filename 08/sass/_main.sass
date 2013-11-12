@@ -37,26 +37,41 @@
 	line-height: 1.6 
 	+u
 
-// buildlist
-.buildlist
-.buildlist__count, .buildlist__showing-page
-	line-height: 30px
-	font-size: 12px
-	color: #9F9E8A 
-	strong
-		color: #332F2D
-		font-size: 12px
-		+ub
-
-.buildlist__in
-	margin: 0
-	list-style: none
-	li
-		margin-top: 25px
-		border-bottom: 1px solid #fff 
-	.buildlist__image
-		margin-bottom: 0
-	.buildlist__item
-		margin-bottom: 0
-	
-	
+// contactagent
+.contactagent
+	padding: 20px 0 0
+	.h1,
+		line-height: 1
+		margin: 0 0 15px
+		+um
+		font-size: 20px
+		color: #3a8911
+		&:hover
+			text-decoration: none
+	.contactagent__name
+		line-height: 1
+		margin: 0 0 5px
+		+um
+		font-size: 20px
+		color: #575653
+	.contactagent__tel
+		+u
+		color: #575653
+		font-size: 16px
+	.contactagent__stars
+		ul
+			margin-left: 0
+		li
+			display: inline-block
+			a
+				display: inline-block
+				+sized-sprite($icons, star-ico)
+			&.active
+				a
+					display: inline-block
+					+sized-sprite($icons, star_active) 
+	.contactagent__image
+		margin: 15px 0 20px
+	.g-btn
+		margin-bottom: 20px
+		display: inline-block

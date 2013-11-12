@@ -278,9 +278,18 @@ table
 // input
 input.input
 	+border-radius(10px)
-	+box-shadow(inset 0 1px 1px #3e5f16)
+	+box-shadow(0 -1px 1px #6f8751)
 	background-color: #fff
-
+input.input_mod
+	+box-shadow(0 -1px 1px #c7c6bd)	
+// textarea
+.textarea
+	+um
+	font-size: 12px
+	color: #9F9E8A
+	+border-radius(10px)
+	+box-shadow(0 -1px 1px #c7c6bd)
+	resize: vertical
 // carousel
 .carousel
 	.carousel-inner
@@ -466,7 +475,101 @@ input.input
 		right: 0
 		height: 4px
 		background: url("../img/icons/page__title-border.png") 0 0 repeat-x
-		
+
+.buildlist__count, .buildlist__showing-page
+	line-height: 30px
+	font-size: 12px
+	color: #9F9E8A 
+	strong
+		color: #332F2D
+		font-size: 12px
+		+ub
+
+.building__param2
+	ul
+		margin: 0 0 15px
+		padding: 0
+	dl
+		+clr
+		margin-bottom: 0 
+		dt
+			float: left 
+			+ul
+			font-weight: normal
+			color: #a1a09b
+		.building__param-value
+			width: 60% 
+			float: right
+			+um
+			color: #575653 
+			text-align: left
+.building__descr
+	+u
+	line-height: 1.6 
+	color: #757575
+	font-size: 13px
+	@include text-shadow(0 1px 0 #fff)
+.buildlist__in
+	margin: 0
+	list-style: none
+	li
+		margin-top: 25px
+		border-bottom: 1px solid #fff 
+	.buildlist__image
+		margin-bottom: 0
+	.buildlist__item
+		margin-bottom: 0
+
+.building__btn
+	margin-bottom: 15px
+	.building__btn-price
+		height: 55px
+		line-height: 55px
+		padding: 0 13px
+		margin-right: 4px
+		display: inline-block
+		vertical-align: top
+		background: #3A8911
+		border-radius: 5px
+		font-size: 24px
+		color: #FFF
+		+ub
+	.building__btn-payment
+		height: 55px
+		line-height: 55px
+		padding: 0 13px 0 45px
+		display: inline-block
+		vertical-align: top
+		background-color: #fff
+		@include border-radius(5px)
+		+box-shadow(inset 0px -1px 2px #a0907a)
+		+um
+		font-size: 12px
+		position: relative
+		&:hover
+			text-decoration: none
+		i
+			position: absolute
+			top: 20px
+			left: 18px
+			+s(ico_payment)
+
+.building__note
+	padding: 25px 0
+	margin-bottom: 40px
+	position: relative
+	&:after, &:before
+		content: ""		
+		position: absolute
+		left: 0
+		right: 0
+		height: 4px
+		background: url("../img/icons/page__title-border.png") 0 0 repeat-x
+	&:after
+		bottom: 0
+	&:before
+		top: 0
+
 .buildlist__topper
 	margin-bottom: 25px
 .buildlist__item
@@ -701,6 +804,12 @@ input.input
 	margin-bottom: 30px
 	padding: 3px
 	background: #fff
+.building__h2
+	line-height: 1
+	margin: 0 0 25px
+	+u
+	font-size: 26px
+	color: #322F2E
 	.sidebar__title
 		padding-left: 20px
 .building__map
@@ -718,6 +827,84 @@ input.input
 		width: 160px
 	li
 		list-style: none
+
+//slider
+.building__gallery
+	position: relative
+	margin-bottom: 20px
+	border: 1px solid #fff
+	border-radius: 2px
+
+.building__photo
+	+clr
+	.building__media
+		text-align: center
+		height: 430px
+		img
+			vertical-align: middle
+			text-align: center
+			width: 100%
+			height: 100%
+			display: block
+.building__thumbs
+	position: absolute
+	bottom: 20px
+	right: 20px
+	left: 20px
+	@include opacity(.8)
+	@include border-radius(10px)
+	background-color: #fff
+	+clr
+	+box
+	text-align: center  
+
+	.caro
+		width: 84%
+		height: 75px
+		margin: 0 auto
+		overflow: hidden
+		position: relative
+	ul
+		margin: 10px 0 0
+		position: absolute
+		width: 20000em
+		list-style: none
+		li
+			margin-right: 5px
+			width: 75px
+			height: 55px
+			float: left
+			cursor: pointer
+			border: 2px solid transparent
+			border-radius: 1px
+			// @include opacity(1)
+				width: 86px 
+			&:hover, &.active
+				border-color: #fff
+				background-color: #fff
+				// @include opacity(.55)
+			&.active
+				border: 2px solid #db4637
+			img
+				width: 100%
+				height: 100%
+				vertical-align: middle
+.slide__arrow-prev, .slide__arrow-next
+	position: absolute
+	top: 31px
+	left: 9px
+	padding: 0 5px
+	font-size: 12px
+	color: #575653
+	+box
+	cursor: pointer
+	+um
+	&.disabled
+		+opacity(.5)
+.slide__arrow-next
+	position: absolute
+	left: auto
+	right: 9px
 
 // checkbox
 .checkbox
