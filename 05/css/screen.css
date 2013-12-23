@@ -19,7 +19,7 @@ button::-moz-focus-inner { padding: 0; border: 0; }
 
 table { border-spacing: 0; border-collapse: collapse; }
 
-#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -280px; }
+#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -280px; min-width: 1070px; }
 
 #push { height: 280px; }
 
