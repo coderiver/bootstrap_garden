@@ -1925,7 +1925,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
   .hidden-phone { display: none !important; } }
 .visible-print { display: none !important; }
 
-@media print { .visible-print { display: inherit !important; }
+/*@media print { .visible-print { display: inherit !important; }
   .hidden-print { display: none !important; } }
 @media (max-width: 767px) { body { padding-left: 20px; padding-right: 20px; }
   .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top { margin-left: -20px; margin-right: -20px; }
@@ -2041,8 +2041,8 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
   input.span4, textarea.span4, .uneditable-input.span4 { width: 214px; }
   input.span3, textarea.span3, .uneditable-input.span3 { width: 152px; }
   input.span2, textarea.span2, .uneditable-input.span2 { width: 90px; }
-  input.span1, textarea.span1, .uneditable-input.span1 { width: 28px; } }
-@media (min-width: 1200px) { .row { margin-left: -30px; *zoom: 1; }
+  input.span1, textarea.span1, .uneditable-input.span1 { width: 28px; } }*/
+/*@media (min-width: 1200px) { */.row { margin-left: -30px; *zoom: 1; }
   .row:before, .row:after { display: table; content: ""; line-height: 0; }
   .row:after { clear: both; }
   [class*="span"] { float: left; min-height: 1px; margin-left: 30px; }
@@ -2129,8 +2129,8 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
   input.span1, textarea.span1, .uneditable-input.span1 { width: 56px; }
   .thumbnails { margin-left: -30px; }
   .thumbnails > li { margin-left: 30px; }
-  .row-fluid .thumbnails { margin-left: 0; } }
-@media (max-width: 979px) { body { padding-top: 0; }
+  .row-fluid .thumbnails { margin-left: 0; } /*}*/
+/*@media (max-width: 979px) { body { padding-top: 0; }
   .navbar-fixed-top, .navbar-fixed-bottom { position: static; }
   .navbar-fixed-top { margin-bottom: 20px; }
   .navbar-fixed-bottom { margin-top: 20px; }
@@ -2160,5 +2160,5 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
   .navbar .nav-collapse .nav.pull-right { float: none; margin-left: 0; }
   .nav-collapse, .nav-collapse.collapse { overflow: hidden; height: 0; }
   .navbar .btn-navbar { display: block; }
-  .navbar-static .navbar-inner { padding-left: 10px; padding-right: 10px; } }
+  .navbar-static .navbar-inner { padding-left: 10px; padding-right: 10px; } }*/
 @media (min-width: 980px) { .nav-collapse.collapse { height: auto !important; overflow: visible !important; } }
