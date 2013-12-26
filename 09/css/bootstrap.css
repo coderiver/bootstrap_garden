@@ -156,7 +156,7 @@ textarea {
   * {
     text-shadow: none !important;
     color: #000 !important;
-    background: transparent !important;
+/*    background: transparent !important;*/
     box-shadow: none !important;
   }
   a,
@@ -5251,7 +5251,7 @@ button.close {
 .visible-desktop {
   display: inherit !important;
 }
-@media (min-width: 768px) and (max-width: 979px) {
+/*@media (min-width: 768px) and (max-width: 979px) {
   .hidden-desktop {
     display: inherit !important;
   }
@@ -5289,7 +5289,7 @@ button.close {
   .hidden-print {
     display: none !important;
   }
-}
+}*/
 /*@media (max-width: 767px) {
   body {
     padding-left: 20px;
@@ -5778,7 +5778,7 @@ button.close {
     width: 28px;
   }
 }*/
-@media (min-width: 1200px) {
+/*@media (width: 1200px) {
   .row {
     margin-left: -30px;
     *zoom: 1;
@@ -6126,7 +6126,7 @@ button.close {
   .row-fluid .thumbnails {
     margin-left: 0;
   }
-}
+}*/
 /*@media (max-width: 979px) {
   body {
     padding-top: 0;
@@ -6278,9 +6278,9 @@ button.close {
     padding-right: 10px;
   }
 }*/
-@media (min-width: 980px) {
+/*@media (min-width: 980px) {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
   }
-}
+}*/
