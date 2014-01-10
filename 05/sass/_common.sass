@@ -717,6 +717,8 @@ a.more
 		background: transparent
 		font-size: 18px
 		color: #FFF
+		line-height: inherit
+		vertical-align: top
 		+geo
 
 .refine__btn
@@ -1061,6 +1063,79 @@ a.more
 	left: auto
 	right: 30px
 	+s(next2)
+
+
+// contactagent
+.contactagent
+	padding: 10px 10px 0
+	font-size: 18px
+	margin-bottom: 30px
+	background: #DBDAD8
+	+box
+	.h1
+		color: #393d3e
+		font-size: 24px
+		font-weight: normal
+		margin: 15px 0 20px 0
+		padding-left: 0
+		line-height: 1
+
+	select,
+	textarea,
+	input,
+	.uneditable-input
+		padding: 4px 2%
+		width: 96%
+		margin: 0
+		+border-radius(0px)
+		+placeholder(#979797)
+		border: 0
+		border-bottom: 1px solid #d6d6d6
+		box-shadow: none
+		font-family: Arial, Helvetica, "Helvetica Neue", sans-serif
+		color: #979797 
+		&:focus
+			box-shadow: none
+			border-color: #d6d6d6
+	form
+		margin-bottom: 0
+	textarea
+		resize: vertical
+
+.contactagent__info
+	margin-bottom: 20px
+
+.contactagent__image
+	width: 260px
+	height: 140px
+	margin: 0 -10px 10px
+	img
+		width: 100%
+
+
+.contactagent__name
+	color: #7d2646
+	font-size: 22px
+	font-weight: bold
+	line-height: 1
+	margin: 0
+
+.contactagent__tel
+	margin-bottom: 5px
+	color: #393d3e
+
+.contactagent__stars
+	ul
+		margin-left: 0
+	li
+		display: inline-block
+		&.active
+			a
+				display: inline-block
+				+sized-sprite($icons, star3_active)
+	a
+		display: inline-block
+		+sized-sprite($icons, star2)
 
 
 
