@@ -215,7 +215,7 @@ a.more:hover { text-decoration: none; }
 .refine__btn:hover { background: #a1382c; cursor: pointer; }
 .refine__btn:active { -webkit-transition: all 0s; -moz-transition: all 0s; -o-transition: all 0s; transition: all 0s; -webkit-box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
 
-.refine__btn_inside { width: 260px; }
+.refine__btn_inside { width: 250px; margin: 10px 0 0 !important; }
 
 .refine__bottom { margin: 30px -10px 0; }
 
@@ -311,7 +311,8 @@ a.more:hover { text-decoration: none; }
 
 .slide__arrow-next { position: absolute; left: auto; right: 30px; background: url('../img/icons-sa93e4d7fd4.png') 0 -362px no-repeat; width: 15px; height: 15px; }
 
-.contactagent { padding: 10px 10px 0; font-size: 18px; margin-bottom: 30px; background: #dbdad8; -moz-box-sizing: border-box; box-sizing: border-box; }
+.contactagent { width: 250px; padding: 10px 10px 0; font-size: 18px; margin-bottom: 30px; background: #dbdad8; -moz-box-sizing: border-box; box-sizing: border-box; }
+.contactagent .refine__btn { margin: 10px -10px 0; }
 .contactagent .h1 { color: #393d3e; font-size: 24px; font-weight: normal; margin: 15px 0 20px 0; padding-left: 0; line-height: 1; }
 .contactagent select, .contactagent textarea, .contactagent input, .contactagent .uneditable-input { padding: 4px 2%; width: 96%; margin: 0; -webkit-border-radius: 0px; -moz-border-radius: 0px; -ms-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px; border: 0; border-bottom: 1px solid #d6d6d6; box-shadow: none; font-family: Arial, Helvetica, "Helvetica Neue", sans-serif; color: #979797; }
 .contactagent select.placeholder, .contactagent textarea.placeholder, .contactagent input.placeholder, .contactagent .uneditable-input.placeholder { color: #979797; }
@@ -323,7 +324,7 @@ a.more:hover { text-decoration: none; }
 
 .contactagent__info { margin-bottom: 20px; }
 
-.contactagent__image { width: 260px; height: 140px; margin: 0 -10px 10px; }
+.contactagent__image { width: 250px; height: 140px; margin: 0 -10px 10px; overflow: hidden; }
 .contactagent__image img { width: 100%; }
 
 .contactagent__name { color: #7d2646; font-size: 22px; font-weight: bold; line-height: 1; margin: 0; }

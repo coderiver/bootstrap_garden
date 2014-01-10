@@ -729,7 +729,8 @@ a.more
 		+transition(all 0s)
 		@include box-shadow(inset 0 2px 10px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05))
 .refine__btn_inside
-	width: 260px	
+	width: 250px
+	margin: 10px 0 0 !important
 .refine__bottom
 	margin: 30px -10px 0 
 .refine__item
@@ -1068,11 +1069,14 @@ a.more
 
 // contactagent
 .contactagent
+	width: 250px
 	padding: 10px 10px 0
 	font-size: 18px
 	margin-bottom: 30px
 	background: #DBDAD8
 	+box
+	.refine__btn
+		margin: 10px -10px 0
 	.h1
 		color: #393d3e
 		font-size: 24px
@@ -1107,9 +1111,10 @@ a.more
 	margin-bottom: 20px
 
 .contactagent__image
-	width: 260px
+	width: 250px
 	height: 140px
 	margin: 0 -10px 10px
+	overflow: hidden
 	img
 		width: 100%
 
