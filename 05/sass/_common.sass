@@ -52,7 +52,11 @@ table
 .container
 	width: 1070px
 	margin: 0 auto
-
+.container_inside
+	padding-top: 40px
+	.tab-content
+		.building__infrastructure
+			margin-top: 0
 .page_inner
 	background: #E2E4E4
 
@@ -65,8 +69,12 @@ table
 .h3
 	margin: 45px 0 20px
 	font-size: 26px
-	+geo	
+	+geo
 
+.h4
+	font-size: 26px
+	font-weight: normal
+	+geo
 // search
 .l-search
 	min-height: 150px
@@ -275,7 +283,6 @@ table
 		background: #6f5247 
 	img
 		width: 100%
-		height: 100%
 
 .slider__wrap
 	width: 1070px
@@ -398,7 +405,8 @@ table
 		color: #7E2647
 		font-size: 18px
 		font-weight: bold		
-
+.price_mod
+	background: #7D2648
 // info
 .l-info
 	min-height: 280px
@@ -513,6 +521,14 @@ a.more
 				font-size: 11px
 				color: #777979
 
+.properties__item_mod
+	margin-bottom: 15px
+	&:hover
+		.properties__image
+			width: 250px
+	.properties__image
+		width: 250px
+
 .properties__image
 	width: 270px
 	height: 215px
@@ -542,6 +558,42 @@ a.more
 
 // properties_mod
 .properties_mod
+
+.properties_list
+	margin: 0
+	li
+		overflow: hidden
+		&:hover
+			background: #FFF 
+	.properties__item
+		margin-right: 0
+		&:hover
+			.properties__image
+				&:after
+					content: none
+		.properties__image
+			float: left
+			img
+				opacity: 1
+	.properties__info
+		margin-left: 290px
+	.properties__info-top
+		margin-bottom: 15px
+		overflow: hidden
+		.h1
+			float: left
+		.price
+			float: right
+	.properties__info-cont
+		margin-bottom: 25px
+		overflow: hidden
+		table
+			float: left
+			margin-right: 20px 
+
+
+	
+
 
 
 // popular
@@ -665,16 +717,20 @@ a.more
 		background: transparent
 		font-size: 18px
 		color: #FFF
+		line-height: inherit
+		vertical-align: top
 		+geo
 
-.refine__btn
+.refine__btn 
 	&:hover
 		background: #a1382c
 		cursor: pointer
 	&:active
 		+transition(all 0s)
 		@include box-shadow(inset 0 2px 10px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05))
-		
+.refine__btn_inside
+	width: 250px
+	margin: 10px 0 0 !important
 .refine__bottom
 	margin: 30px -10px 0 
 .refine__item
@@ -750,7 +806,7 @@ a.more
 		padding-left: 20px
 .tab-content
 	.building__infrastructure
-		margin-top: 24px					
+		// margin-top: 24px					
 .building__map
 	img
 		width: 100%
@@ -766,6 +822,45 @@ a.more
 		width: 160px
 	li
 		list-style: none
+.building__info
+	padding: 30px 30px 20px
+	position: relative
+	background: url('../img/icons/gal-bg.png') 0 0 repeat
+	color: #948A88
+	line-height: 1.6
+	+box
+	+clr
+	.building__info-descr
+		width: 450px
+		float: left
+	.building__info-general
+		width: 225px
+		margin-top: 40px
+		float: right
+		.price
+			position: absolute
+			top: 0
+			right: 0
+		.more
+			color: #B2B1AF
+			font-size: 12px 
+		.h1
+			line-height: 1
+			font-size: 15px
+			color: #2d2d2d
+			a
+				font-size: 15px
+				color: #2d2d2d		
+		table
+			margin-bottom: 15px
+			td
+				line-height: 1.6 
+				font-size: 12px
+				color: #fefffd
+				&:first-child
+					width: 90px
+					font-size: 11px
+					color: #948a88
 .checkbox
 	display: inline-block
 	min-height: 40px
@@ -877,13 +972,176 @@ a.more
 				&:hover
 					border: 2px solid #b52514	
 
+
+.montly
+	display: inline-block
+	position: relative
+	width: 172px
+	height: 40px
+	line-height: 40px
+	padding-left: 52px
+	+box
+	font-size: 11px
+	color: #fff 
+	background: #993f36
+	&:hover
+		color: #fff
+		text-decoration: none
+		background: #8D3D35 
+	&:before
+		content: ""
+		position: absolute
+		top: 12px
+		left: 20px
+		+s(montly)
+
 						
 
 
+//slider
+.building__gallery
+	margin-left: -16px 
+	position: relative
+
+.building__photo
+	+clr
+	.building__media
+		text-align: center
+		height: 450px
+		img
+			vertical-align: middle
+			text-align: center
+			width: 100%
+			height: 100%
+			display: block
+.building__thumbs
+	position: absolute
+	bottom: 0
+	+clr
+	+box
+	text-align: center
+	background: rgba(0,0,0, .7)  
+	.caro
+		width: 345px
+		height: 110px
+		margin: 0 90px
+		overflow: hidden
+		position: relative
+	ul
+		margin: 0
+		position: absolute
+		width: 20000em
+		list-style: none
+		li
+			width: 115px
+			height: 110px
+			float: left
+			cursor: pointer
+			+opacity(1)
+			+rt(1200)
+				width: 86px 
+			&:hover, &.active
+				border-color: #fff
+				background-color: #fff
+				@include opacity(.55)
+			img
+				width: 100%
+				height: 100%
+				vertical-align: middle
+.slide__arrow-prev, .slide__arrow-next
+	position: absolute
+	top: 50%
+	left: 46px
+	margin-top: -7px
+	padding: 0 5px
+	+box
+	+s(prev2)
+	cursor: pointer
+	+no-sel 
+	&.disabled
+		+opacity(.5)
+.slide__arrow-next
+	position: absolute
+	left: auto
+	right: 30px
+	+s(next2)
 
 
+// contactagent
+.contactagent
+	width: 250px
+	padding: 10px 10px 0
+	font-size: 18px
+	margin-bottom: 30px
+	background: #DBDAD8
+	+box
+	.refine__btn
+		margin: 10px -10px 0
+	.h1
+		color: #393d3e
+		font-size: 24px
+		font-weight: normal
+		margin: 15px 0 20px 0
+		padding-left: 0
+		line-height: 1
 
-	
+	select,
+	textarea,
+	input,
+	.uneditable-input
+		padding: 4px 2%
+		width: 96%
+		margin: 0
+		+border-radius(0px)
+		+placeholder(#979797)
+		border: 0
+		border-bottom: 1px solid #d6d6d6
+		box-shadow: none
+		font-family: Arial, Helvetica, "Helvetica Neue", sans-serif
+		color: #979797 
+		&:focus
+			box-shadow: none
+			border-color: #d6d6d6
+	form
+		margin-bottom: 0
+	textarea
+		resize: vertical
+
+.contactagent__info
+	margin-bottom: 20px
+
+.contactagent__image
+	width: 250px
+	height: 140px
+	margin: 0 -10px 10px
+	overflow: hidden
+	img
+		width: 100%
+
+
+.contactagent__name
+	color: #7d2646
+	font-size: 22px
+	font-weight: bold
+	line-height: 1
+	margin: 0
+
+.contactagent__tel
+	margin-bottom: 5px
+	color: #393d3e
+
+.contactagent__stars
+	ul
+		margin-left: 0
+	li
+		display: inline-block
+		&.active
+			a
+				display: inline-block
+				+sized-sprite($icons, star3_active)
+	a
+		display: inline-block
+		+sized-sprite($icons, star2)
 
 
 
