@@ -12,7 +12,7 @@
 
 * { margin: 0; padding: 0; }
 
-body { min-width: 1025px !important; font-size: 12px; font-family: "UbuntuRegular", sans-serif; font-weight: normal; color: #424b5a; line-height: 1.2; }
+body { min-width: 980px !important; font-size: 12px; font-family: "UbuntuRegular", sans-serif; font-weight: normal; color: #424b5a; line-height: 1.2; }
 
 ul, ol { list-style: none; margin: 0; }
 
@@ -228,6 +228,7 @@ a:hover { text-decoration: none; }
 
 .header__content { position: relative; }
 .header__content:after { content: ""; position: absolute; top: 0; left: -14px; height: 4px; width: 2000em; background: #a7b983; }
+.header__content .span3 { padding-left: 20px; }
 
 .logo a { line-height: 80px; font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 32px; color: #1e1e1e; }
 
@@ -311,7 +312,7 @@ a:hover { text-decoration: none; }
 @media only screen and (max-width: 1200px) { .sidebar { padding-right: 0px; margin-right: 0px; } }
 .sidebar .button { width: 200px; height: 40px; font-size: 16px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
 
-.contact-agent { padding: 20px 14px 124px 0; margin-right: -14px; }
+.contact-agent { padding: 20px 14px 124px 0; margin-right: -14px; z-index: 1; }
 
 .contact-agent__title { margin-bottom: 25px; font-family: "UbuntuBold", sans-serif; font-weight: normal; font-size: 20px; color: #f5531a; }
 
@@ -330,7 +331,7 @@ a:hover { text-decoration: none; }
 .contact-agent__img { height: 100px; margin-bottom: 22px; }
 .contact-agent__img img { max-height: 100%; }
 
-.l-similar { position: relative; background: #353230; padding: 20px 14px 124px 0; margin-right: -14px; }
+.l-similar { position: relative; background: #353230; padding: 20px 14px 124px 0; margin-right: -14px; z-index: 1; }
 .l-similar:before { content: ""; position: absolute; right: 100%; top: 0; width: 2000em; height: 100%; background: #353230; }
 .l-similar:after { content: ""; position: absolute; top: 0; bottom: 0; left: -40px; width: 1px; background: #474443; z-index: 999; }
 
@@ -340,7 +341,7 @@ a:hover { text-decoration: none; }
 
 .similar__left { float: left; width: 90px; margin-right: 10px; }
 
-.similar__right { float: right; width: 170px; }
+.similar__right { float: right; width: 118px; }
 
 .similar__img { display: block; width: 100%; }
 
@@ -354,7 +355,7 @@ a:hover { text-decoration: none; }
 
 .content { background: white; }
 
-.content__top { position: relative; margin: 0 0 -39px -16px; background: #2f8ab7; padding: 20px 20px 45px 20px; -moz-box-sizing: border-box; box-sizing: border-box; }
+.content__top { position: relative; margin: 0 0 -39px -16px; background: #2f8ab7; padding: 20px 20px 35px 20px; -moz-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 1200px) { .content__top { margin: 0 0 -39px -20px; } }
 
 .content__top_orange { background: #f5541c; }
@@ -416,7 +417,7 @@ a:hover { text-decoration: none; }
 .building__param dl .building__param-value { width: 60%; float: right; font-family: "UbuntuMedium", sans-serif; font-weight: normal; color: #575653; text-align: left; }
 .building__param .more { padding-left: 20px; }
 
-.building__infrastructure { padding: 10px 0px 10px 0px; background: white; margin-bottom: 30px; }
+.building__infrastructure { margin-left: 16px; padding: 10px 0px 10px 0px; background: white; margin-bottom: 30px; }
 .building__infrastructure .sidebar__title { padding-left: 20px; }
 
 .building__map { margin-top: 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }

@@ -20,7 +20,7 @@ a
 	color: #2c2c2c 
 	text-decoration: none
 	&:hover
-
+		text-decoration: underline
 p
 	line-height: 1.2
 li 
@@ -278,9 +278,21 @@ table
 // input
 input.input
 	+border-radius(10px)
-	+box-shadow(inset 0 1px 1px #3e5f16)
+	+box-shadow(0 -1px 1px #6f8751)
 	background-color: #fff
-
+input.input_mod
+	+box-shadow(0 -1px 1px #c7c6bd)	
+	width: 169px !important
+// textarea
+.textarea
+	+um
+	font-size: 12px
+	color: #9F9E8A
+	+border-radius(10px)
+	+box-shadow(0 -1px 1px #c7c6bd)
+	resize: vertical
+.textarea_mod
+	width: 169px !important
 // carousel
 .carousel
 	.carousel-inner
@@ -388,7 +400,7 @@ input.input
 		color: #EF7A08 
 .info__in_yellow
 	.h1
-		color: #E1B20F 
+		color: #E1B20F
 .info__in_olive
 	.h1
 		color: #BAB321
@@ -398,8 +410,9 @@ input.input
 	background: #e4dbcf
 	padding: 40px 0 0
 	overflow: hidden
-.page
-	
+
+.l-page_inner
+	+box-shadow(inset 0px 1px 0 #fff)
 .page__title
 	position: relative	
 	h2
@@ -427,6 +440,7 @@ input.input
 				left: 100%
 
 .g-label
+	margin-bottom: 25px
 	text-align: center
 	+um
 	span
@@ -449,20 +463,125 @@ input.input
 			+s(label-right)
 			right: -15px
 
-// properties
-.properties
+// buildlist
+.buildlist
+	margin-bottom: 80px
+	position: relative
+	&:after
+		content: ""
+		bottom: -38px			
+		position: absolute
+		left: 0
+		right: 0
+		height: 4px
+		background: url("../img/icons/page__title-border.png") 0 0 repeat-x
 
-.properties__item
-	margin-top: 25px
+.buildlist__count, .buildlist__showing-page
+	line-height: 30px
+	font-size: 12px
+	color: #9F9E8A 
+	strong
+		color: #332F2D
+		font-size: 12px
+		+ub
+
+.building__param2
+	ul
+		margin: 0 0 15px
+		padding: 0
+	dl
+		+clr
+		margin-bottom: 0 
+		dt
+			float: left 
+			+ul
+			font-weight: normal
+			color: #a1a09b
+		.building__param-value
+			width: 60% 
+			float: right
+			+um
+			color: #575653 
+			text-align: left
+.building__descr
+	+u
+	line-height: 1.6 
+	color: #757575
+	font-size: 13px
+	@include text-shadow(0 1px 0 #fff)
+.buildlist__in
+	margin: 0
+	list-style: none
+	li
+		margin-top: 25px
+		border-bottom: 1px solid #fff 
+	.buildlist__image
+		margin-bottom: 0
+	.buildlist__item
+		margin-bottom: 0
+
+.building__btn
+	margin-bottom: 15px
+	.building__btn-price
+		height: 55px
+		line-height: 55px
+		padding: 0 13px
+		margin-right: 4px
+		display: inline-block
+		vertical-align: top
+		background: #3A8911
+		border-radius: 5px
+		font-size: 24px
+		color: #FFF
+		+ub
+	.building__btn-payment
+		height: 55px
+		line-height: 55px
+		padding: 0 13px 0 45px
+		display: inline-block
+		vertical-align: top
+		background-color: #fff
+		@include border-radius(5px)
+		+box-shadow(inset 0px -1px 2px #a0907a)
+		+um
+		font-size: 12px
+		position: relative
+		&:hover
+			text-decoration: none
+		i
+			position: absolute
+			top: 20px
+			left: 18px
+			+s(ico_payment)
+
+.building__note
+	padding: 25px 0
+	margin-bottom: 40px
+	position: relative
+	&:after, &:before
+		content: ""		
+		position: absolute
+		left: 0
+		right: 0
+		height: 4px
+		background: url("../img/icons/page__title-border.png") 0 0 repeat-x
+	&:after
+		bottom: 0
+	&:before
+		top: 0
+
+.buildlist__topper
+	margin-bottom: 25px
+.buildlist__item
 	margin-bottom: 35px
 	&.is-sale
 		&:hover
-			.properties__image
+			.buildlist__image
 				&:before
 					content: none
-			.properties__image img, table, .h1, .properties__price
+			.buildlist__image img, table, .h1, .buildlist__price
 				opacity: 1
-		.properties__image
+		.buildlist__image
 			position: relative
 			&:before
 				content: ""
@@ -473,11 +592,25 @@ input.input
 				margin-top: -36px
 				margin-left: -36px
 				z-index: 100
-		.properties__image img, table, .h1, .properties__price
+		.buildlist__image img, table, .h1, .buildlist__price
 			opacity: 0.5 
+	.buildlist__item-top
+		overflow: hidden
+	.h1
+		float: left
+		margin: 0 0 15px
+		line-height: 1
+		color: #322F2E
+		font-size: 24px
+		+um
+	.buildlist__item-btn
+		float: right
+		.more
+			margin-right: 8px
 	table
 		margin-bottom: 15px
 		td
+			line-height: 1.4
 			font-size: 12px
 			color: #414345
 			+um
@@ -487,9 +620,10 @@ input.input
 				color: #929496
 				font-size: 12px
 				+ul
-.properties__image
+.buildlist__image
 	width: 230px
 	height: 190px
+	margin-bottom: 20px
 	overflow: hidden
 	border: 2px solid #fff
 	border-radius: 1px
@@ -504,7 +638,7 @@ input.input
 		color: #322F2E
 		text-decoration: underline
 	+u
-.properties__price
+.buildlist__price
 	+ub
 	color: #83B644 	
 	font-size: 18px
@@ -580,8 +714,6 @@ input.input
 
 .refine__title
 	padding-top: 20px
-	.g-btn
-
 .refine__bottom
 	margin: 0
 	padding-bottom: 20px
@@ -612,3 +744,231 @@ input.input
 			text-decoration: none
 	.wrap-select_mod
 		display: block
+
+.tab-content
+	overflow: visible
+
+// pagination
+.pagination
+	height: 40px
+	line-height: 40px
+	@include border-radius(20px)
+	background-color: #cbc1b5
+	@include box-shadow(inset 0 1px 1px #968a7c)	
+	ul
+		vertical-align: middle
+		font-size: 0
+		display: block
+		@include box-shadow(none)
+		li
+			margin: 0 7px
+			display: inline-block
+			vertical-align: middle
+			&:hover
+				a, span
+					background-color: #e4dbcf
+					color: #322f2e
+			&:first-child, &:last-child
+				a, span
+					@include border-radius(10px)
+					background-color: #db4637
+					color: #FFF
+					&:hover
+						@include border-radius(10px)
+						background-color: #db4637
+						color: #FFF
+
+			a, span
+				height: 19px
+				line-height: 19px
+				padding: 0 12px
+				border: none
+				@include border-radius(10px)
+				background: transparent 
+				font-size: 14px
+				color: #A3988B
+				+ub
+	
+	li.active
+		a,span
+			@include box-shadow(inset 0 0px  01px #eee8e0)
+			background-color: #e4dbcf !important
+			font-size: 14px
+			color: #322f2e
+			+ub
+
+// building__infrastructure
+.building__infrastructure
+	margin-bottom: 30px
+	padding: 3px
+	background: #fff
+.building__h2
+	line-height: 1
+	margin: 0 0 25px
+	+u
+	font-size: 26px
+	color: #322F2E
+	.sidebar__title
+		padding-left: 20px
+.building__map
+	img
+		width: 100%
+	+border-radius(5px)
+.building__labels
+	margin-top: 20px
+	padding-left: 20px
+	+clr
+	ul
+		margin: 0
+		margin-right: 20px
+		float: left
+		width: 160px
+	li
+		list-style: none
+
+//slider
+.building__gallery
+	position: relative
+	margin-bottom: 20px
+	border: 1px solid #fff
+	border-radius: 2px
+
+.building__photo
+	+clr
+	.building__media
+		text-align: center
+		height: 430px
+		img
+			vertical-align: middle
+			text-align: center
+			width: 100%
+			height: 100%
+			display: block
+.building__thumbs
+	position: absolute
+	bottom: 20px
+	right: 20px
+	left: 20px
+	@include opacity(.8)
+	@include border-radius(10px)
+	background-color: #fff
+	+clr
+	+box
+	text-align: center  
+
+	.caro
+		width: 84%
+		height: 75px
+		margin: 0 auto
+		overflow: hidden
+		position: relative
+	ul
+		margin: 8px 0 0
+		position: absolute
+		width: 20000em
+		list-style: none
+		li
+			margin-right: 5px
+			width: 75px
+			height: 55px
+			float: left
+			cursor: pointer
+			border: 2px solid transparent
+			border-radius: 1px
+			// @include opacity(1)
+				width: 86px 
+			&:hover, &.active
+				border-color: #fff
+				background-color: #fff
+				// @include opacity(.55)
+			&.active
+				border: 2px solid #db4637
+			img
+				width: 100%
+				height: 100%
+				vertical-align: middle
+.slide__arrow-prev, .slide__arrow-next
+	position: absolute
+	top: 31px
+	left: 9px
+	padding: 0 5px
+	font-size: 12px
+	color: #575653
+	+box
+	cursor: pointer
+	+um
+	&.disabled
+		+opacity(.5)
+.slide__arrow-next
+	position: absolute
+	left: auto
+	right: 9px
+
+// checkbox
+.checkbox
+	display: inline-block
+	min-height: 40px
+	color: #b8bcbf
+	font-size: 14px
+	cursor: pointer
+	position: relative		
+	input
+		position: relative
+		width: 15px
+		height: 15px
+		+opacity(0)
+		z-index: 2
+		cursor: pointer
+	span
+		position: relative
+		top: 3px
+		margin-left: 20px
+		padding-left: 13px
+		font-size: 14px
+		+ub
+		&:after
+			content: ""
+			position: absolute 
+			top: -3px
+			left: -20px
+			+s(ico_school)
+		&:before
+			content: ""
+			position: absolute
+			+s(input_ico)
+			left: -39px
+			top: 5px
+			line-height: 16px	
+	input:checked + span
+		color: #3a3c3e
+		&:before
+			content: ""
+			+s(input_checked_ico)
+	input:checked
+		color: #ccc
+	span.g-icon-hschool
+		&:after 
+			+s(ico_hschool)
+	span.g-icon-hospital
+		&:after
+			+s(ico_hospital)
+	span.g-icon-police
+		&:after
+			+s(ico_police)
+	span.g-icon-fire 
+		&:after	
+			+s(ico_fire)
+	span.g-icon-shops 
+		&:after	
+			+s(ico_shops)
+	span.g-icon-restoraunt 
+		&:after
+			+s(ico_restoraunt)
+	span.g-icon-market 
+		&:after	
+			+s(ico_market)
+	span.g-icon-airports
+		&:after
+			+s(ico_airports)
+
+
