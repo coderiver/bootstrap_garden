@@ -128,6 +128,8 @@ a:hover { text-decoration: none; }
 .item__more { width: 110px; text-align: center; background: black; line-height: 21px; }
 .item__more a { color: #f3efe8; }
 
+.carousel { margin-bottom: 20px !important; }
+
 .carousel-indicators { top: auto; bottom: 20px; right: 20px; }
 .carousel-indicators li { border: 1px solid white; border-radius: 50%; background: transparent; }
 
