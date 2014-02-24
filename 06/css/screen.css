@@ -109,8 +109,6 @@ input[type="submit"]::-moz-focus-inner { padding: 0; border: 0; }
 
 @font-face { font-family: "FavoritCItalic"; src: url("../fonts/favoritc-italic.eot"); src: url("../fonts/favoritc-italic.eot") format("embedded-opentype"), url("../fonts/favoritc-italic.woff") format("woff"), url("../fonts/favoritc-italic.ttf") format("truetype"), url("../fonts/favoritc-italic.svg#FavoritCItalic") format("svg"); }
 
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 1162px; }
-
 .container_box { background: #f5f7ef; -webkit-box-shadow: 0 0 3px #a3aeae; -moz-box-shadow: 0 0 3px #a3aeae; box-shadow: 0 0 3px #a3aeae; }
 
 .carousel { position: relative; margin-bottom: 0; }
